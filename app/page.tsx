@@ -240,6 +240,15 @@ export default function HomePage() {
       type: "Cyberpunk Action",
       poster: "https://image.tmdb.org/t/p/original/iPPelvG1AVXY3zOJ875oSVaN24W.jpg",
       imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1990-,RoboCop,-7.6"
+    },
+    {
+      title: "Good Will Hunting",
+      year: "1997",
+      role: "Janitor",
+      rating: "8.3",
+      type: "Drama",
+      poster: "https://image.tmdb.org/t/p/original/bABCBKYBK7A5G1x0FzoeoNfuj2.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1998-,Good%20Will%20Hunting,-8.3"
     }
   ];
 
@@ -354,82 +363,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Film Credits Section */}
-        <section className="border-t">
-          <div className="container py-20 md:py-28">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                film credits
-              </h2>
-              <p className="mb-12 text-lg text-muted-foreground">
-                featured in hollywood blockbusters and indie films
-              </p>
-            </div>
-
-            <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {films.map((film, index) => (
-                <Link
-                  key={index}
-                  href={film.imdbUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 bg-gradient-to-b from-card to-card/50 cursor-pointer">
-                    <div className="relative aspect-[2/3] overflow-hidden">
-                      <Image 
-                        src={film.poster} 
-                        alt={`${film.title} poster`}
-                        width={300}
-                        height={450}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                      <div className="absolute top-2 left-2 inline-flex items-center gap-1 text-sm font-semibold text-white bg-black/50 px-2 py-1 rounded">
-                        <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        {film.rating}
-                      </div>
-                      <div className="absolute bottom-2 left-2 right-2">
-                        <p className="text-white text-sm font-medium">{film.role}</p>
-                      </div>
-                      <div className="absolute top-2 right-2">
-                        <svg className="h-4 w-4 text-white bg-black/50 p-1 rounded" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                    </div>
-                    
-                    <CardHeader className="pb-2">
-                      <Badge className="w-fit mb-2" variant="secondary">
-                        {film.type}
-                      </Badge>
-                      <CardTitle className="text-lg leading-tight line-clamp-2 group-hover:text-primary transition-colors">
-                        {film.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <p className="text-sm text-muted-foreground mb-1">{film.year}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button size="lg" variant="outline" asChild>
-                <Link href="https://www.imdb.com/name/nm1590539/" target="_blank" rel="noopener noreferrer">
-                  full filmography
-                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-
         {/* Videos Section */}
         <section className="border-t">
           <div className="container py-20 md:py-28">
@@ -445,16 +378,19 @@ export default function HomePage() {
             <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
+                  title: "How to Start with SEO in 2024",
                   url: "https://www.youtube.com/watch?v=ak2JiS2Ntyw",
                   thumbnail: "https://img.youtube.com/vi/ak2JiS2Ntyw/maxresdefault.jpg",
                   platform: "youtube"
                 },
                 {
+                  title: "AI Tools That Actually Save Time",
                   url: "https://www.youtube.com/watch?v=jhdNMmI3ZOA", 
                   thumbnail: "https://img.youtube.com/vi/jhdNMmI3ZOA/maxresdefault.jpg",
                   platform: "youtube"
                 },
                 {
+                  title: "Building Your First SaaS Product",
                   url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
                   thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
                   platform: "youtube"
@@ -471,7 +407,7 @@ export default function HomePage() {
                     <div className="relative aspect-video overflow-hidden">
                       <Image 
                         src={video.thumbnail} 
-                        alt="Video thumbnail"
+                        alt={video.title}
                         width={480}
                         height={270}
                         className="w-full h-full object-cover"
@@ -484,9 +420,12 @@ export default function HomePage() {
                       </div>
                     </div>
                     
-                    <CardHeader className="pb-3">
-                      <div className="flex justify-end">
-                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <CardHeader>
+                      <div className="flex items-start justify-between gap-2">
+                        <CardTitle className="text-base line-clamp-2 group-hover:text-primary transition-colors">
+                          {video.title}
+                        </CardTitle>
+                        <svg className="h-4 w-4 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                         </svg>
                       </div>
@@ -558,6 +497,50 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Film Credits Section */}
+        <section className="border-t">
+          <div className="container py-12 md:py-16">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="mb-2 text-2xl font-bold md:text-3xl">
+                film credits
+              </h2>
+              <p className="mb-8 text-sm text-muted-foreground">
+                featured in hollywood blockbusters and indie films
+              </p>
+            </div>
+
+            <div className="mx-auto grid max-w-5xl gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+              {films.map((film, index) => (
+                <Link
+                  key={index}
+                  href={film.imdbUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="overflow-hidden hover:shadow-lg transition-all group">
+                    <div className="relative aspect-[2/3] overflow-hidden">
+                      <Image 
+                        src={film.poster} 
+                        alt={`${film.title} poster`}
+                        width={200}
+                        height={300}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <div className="absolute bottom-2 left-2 right-2">
+                        <p className="text-white text-xs font-semibold line-clamp-1">{film.title}</p>
+                        <p className="text-white text-sm font-medium">{film.role}</p>
+                        <p className="text-white/70 text-xs">{film.year}</p>
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

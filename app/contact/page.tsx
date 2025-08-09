@@ -1,180 +1,92 @@
-"use client";
-
-import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { siteConfig } from "@/site.config";
-import { Mail, MessageSquare, Send } from "lucide-react";
+import { Logo } from "@/components/Logo";
+import { Card, CardContent } from "@/components/ui/card";
+import { Twitter, Linkedin, Instagram, Github } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // For now, we'll use mailto. In production, you'd want to use a proper email service
-    const mailtoLink = `mailto:${siteConfig.author.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
-    window.location.href = mailtoLink;
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        <div className="container max-w-6xl py-12 md:py-20">
+        <div className="container max-w-4xl py-12 md:py-20">
           <div className="text-center mb-12">
-            <h1 className="mb-4 text-4xl font-bold">Contact Us</h1>
-            <p className="text-lg text-muted-foreground">
-              Have questions or feedback? We&apos;d love to hear from you.
-            </p>
+            <Logo size={150} showLink={false} className="h-32 w-auto mx-auto" />
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {/* Contact Form */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Send us a message</CardTitle>
-                <CardDescription>
-                  Fill out the form below and we&apos;ll get back to you as soon as possible.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        placeholder="Your name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="your@email.com"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
+          <Card className="mx-auto max-w-2xl border-0 shadow-none">
+            <CardContent className="pt-6 space-y-4">
+              <div className="grid gap-4">
+                <Link 
+                  href="https://twitter.com/devinschumacher" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
+                >
+                  <Twitter className="h-5 w-5 text-primary" />
+                  <div className="text-left">
+                    <p className="font-medium">twitter</p>
+                    <p className="text-sm text-muted-foreground">@devinschumacher</p>
                   </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      placeholder="What is this about?"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Your message..."
-                      className="min-h-[150px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  
-                  <Button type="submit" className="w-full">
-                    <Send className="mr-2 h-4 w-4" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+                </Link>
 
-            {/* Contact Information */}
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Get in touch</CardTitle>
-                  <CardDescription>
-                    Choose the best way to reach us
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-primary" />
-                    <div>
-                      <p className="font-medium">Email</p>
-                      <p className="text-sm text-muted-foreground">{siteConfig.author.email}</p>
-                    </div>
+                <Link 
+                  href="https://instagram.com/dvnschmchr" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
+                >
+                  <Instagram className="h-5 w-5 text-primary" />
+                  <div className="text-left">
+                    <p className="font-medium">instagram</p>
+                    <p className="text-sm text-muted-foreground">@dvnschmchr</p>
                   </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <MessageSquare className="h-5 w-5 text-primary" />
-                    <div>
-                      <p className="font-medium">Response Time</p>
-                      <p className="text-sm text-muted-foreground">We typically respond within 24-48 hours</p>
-                    </div>
+                </Link>
+
+                <Link 
+                  href="https://linkedin.com/in/devinschumacher" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
+                >
+                  <Linkedin className="h-5 w-5 text-primary" />
+                  <div className="text-left">
+                    <p className="font-medium">linkedin</p>
+                    <p className="text-sm text-muted-foreground">devinschumacher</p>
                   </div>
-                </CardContent>
-              </Card>
+                </Link>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle>Common Topics</CardTitle>
-                  <CardDescription>
-                    What can we help you with?
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li>• Technical issues with downloads</li>
-                    <li>• Feature requests and suggestions</li>
-                    <li>• Copyright and DMCA inquiries</li>
-                    <li>• Partnership opportunities</li>
-                    <li>• General feedback</li>
-                    <li>• Bug reports</li>
-                  </ul>
-                </CardContent>
-              </Card>
+                <Link 
+                  href="https://youtube.com/@devinschumacher" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
+                >
+                  <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  <div className="text-left">
+                    <p className="font-medium">youtube</p>
+                    <p className="text-sm text-muted-foreground">@devinschumacher</p>
+                  </div>
+                </Link>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle>Before You Contact Us</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2 text-sm text-muted-foreground">
-                  <p>• Check our <Link href="/blog" className="text-primary hover:underline">blog</Link> for tutorials and guides</p>
-                  <p>• Review our <Link href="/terms" className="text-primary hover:underline">Terms of Service</Link></p>
-                  <p>• Read our <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link></p>
-                  <p>• For copyright issues, see our <Link href="/dmca" className="text-primary hover:underline">DMCA Policy</Link></p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+                <Link 
+                  href="https://github.com/devinschumacher" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
+                >
+                  <Github className="h-5 w-5 text-primary" />
+                  <div className="text-left">
+                    <p className="font-medium">github</p>
+                    <p className="text-sm text-muted-foreground">devinschumacher</p>
+                  </div>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
         </div>
         
         <Footer />

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { PlayCircle, ArrowLeft, ExternalLink, Clock, Eye } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 interface Video {
@@ -21,8 +22,9 @@ interface Video {
 
 const videos: Video[] = [
   {
-    title: "Video 1",
-    description: "Educational content on SEO and digital marketing",
+    title: "How to Start with SEO in 2024",
+    description: "Complete beginner's guide to search engine optimization",
+    thumbnail: "https://img.youtube.com/vi/ak2JiS2Ntyw/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=ak2JiS2Ntyw",
     platform: "youtube",
     category: "seo",
@@ -30,8 +32,9 @@ const videos: Video[] = [
     publishedAt: "2024-03-15"
   },
   {
-    title: "Video 2", 
-    description: "AI and automation tools for business",
+    title: "AI Tools That Actually Save Time", 
+    description: "My top AI tools for productivity and business automation",
+    thumbnail: "https://img.youtube.com/vi/jhdNMmI3ZOA/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=jhdNMmI3ZOA",
     platform: "youtube",
     category: "ai",
@@ -39,8 +42,9 @@ const videos: Video[] = [
     publishedAt: "2024-03-10"
   },
   {
-    title: "Video 3",
-    description: "Programming and development tutorials",
+    title: "Building Your First SaaS Product",
+    description: "Step-by-step guide to launching a software as a service business",
+    thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
     platform: "youtube", 
     category: "programming",
@@ -48,8 +52,9 @@ const videos: Video[] = [
     publishedAt: "2024-03-05"
   },
   {
-    title: "Video 4",
-    description: "Entrepreneurship and business strategies",
+    title: "Scaling Your Business with SEO",
+    description: "Advanced SEO strategies for business growth",
+    thumbnail: "https://img.youtube.com/vi/ST-MXvPVypY/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=ST-MXvPVypY",
     platform: "youtube",
     category: "entrepreneurship", 
@@ -57,8 +62,9 @@ const videos: Video[] = [
     publishedAt: "2024-03-01"
   },
   {
-    title: "Video 5",
-    description: "Marketing and growth techniques",
+    title: "Content Marketing That Converts",
+    description: "Creating content that drives real business results",
+    thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=GTaOBy7mxF0",
     platform: "youtube",
     category: "marketing",
@@ -66,18 +72,20 @@ const videos: Video[] = [
     publishedAt: "2024-02-28"
   },
   {
-    title: "Building Your First SaaS Product",
-    description: "Step-by-step guide to launching a software as a service business",
-    url: "https://youtube.com/@devinschumacher",
+    title: "The Complete TypeScript Tutorial",
+    description: "Master TypeScript from basics to advanced concepts",
+    thumbnail: "https://img.youtube.com/vi/d56mG7DezGs/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=d56mG7DezGs",
     platform: "youtube",
     duration: "15:20",
     views: "28K",
-    category: "entrepreneurship",
-    publishedAt: "2024-03-05"
+    category: "programming",
+    publishedAt: "2024-02-25"
   },
   {
     title: "Quick SEO Tip: Title Tags",
     description: "60-second tip on optimizing your title tags for better rankings",
+    thumbnail: "https://img.youtube.com/vi/RBTBEfd7z_Y/maxresdefault.jpg",
     url: "https://tiktok.com/@dvnschmchr",
     platform: "tiktok",
     duration: "0:58",
@@ -88,6 +96,7 @@ const videos: Video[] = [
   {
     title: "Day in the Life: Tech Entrepreneur",
     description: "Follow my typical work day running multiple tech companies",
+    thumbnail: "https://img.youtube.com/vi/rG7fTee3WNo/maxresdefault.jpg",
     url: "https://instagram.com/dvnschmchr",
     platform: "instagram",
     duration: "1:00",
@@ -98,7 +107,8 @@ const videos: Video[] = [
   {
     title: "Python vs JavaScript for Beginners",
     description: "Which programming language should you learn first? Complete comparison",
-    url: "https://youtube.com/@devinschumacher",
+    thumbnail: "https://img.youtube.com/vi/QpdhBUYk7Kk/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=QpdhBUYk7Kk",
     platform: "youtube",
     duration: "10:15",
     views: "52K",
@@ -109,7 +119,8 @@ const videos: Video[] = [
   {
     title: "Marketing Mistakes That Kill Startups",
     description: "5 common marketing mistakes and how to avoid them",
-    url: "https://youtube.com/@devinschumacher",
+    thumbnail: "https://img.youtube.com/vi/dMf9_3Ji1qo/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=dMf9_3Ji1qo",
     platform: "youtube",
     duration: "9:30",
     views: "38K",
@@ -119,6 +130,7 @@ const videos: Video[] = [
   {
     title: "AI Changed My Business",
     description: "Real examples of how we use AI at SERP to scale operations",
+    thumbnail: "https://img.youtube.com/vi/hYrDbGzZVUQ/maxresdefault.jpg",
     url: "https://tiktok.com/@dvnschmchr",
     platform: "tiktok",
     duration: "0:45",
@@ -223,9 +235,19 @@ export default function VideosPage() {
                     className="group"
                   >
                     <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-                      {/* Thumbnail Placeholder */}
+                      {/* Thumbnail */}
                       <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                        <PlayCircle className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform" />
+                        {video.thumbnail ? (
+                          <Image 
+                            src={video.thumbnail} 
+                            alt={video.title}
+                            width={480}
+                            height={270}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <PlayCircle className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform" />
+                        )}
                         {video.duration && (
                           <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
                             {video.duration}
@@ -284,9 +306,19 @@ export default function VideosPage() {
                   className="group"
                 >
                   <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-                    {/* Thumbnail Placeholder */}
+                    {/* Thumbnail */}
                     <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                      <PlayCircle className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform" />
+                      {video.thumbnail ? (
+                        <Image 
+                          src={video.thumbnail} 
+                          alt={video.title}
+                          width={480}
+                          height={270}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <PlayCircle className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform" />
+                      )}
                       {video.duration && (
                         <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
                           {video.duration}

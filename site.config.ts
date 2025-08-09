@@ -8,7 +8,7 @@ export const siteConfig = {
     email: "yeahright@devinschumacher.com",
   },
   social: {
-    youtube: "https://youtube.com/@devinschumacher",
+    youtube: "https://www.youtube.com/@devinschumacher?sub_confirmation=1",
     twitter: "https://twitter.com/@dvnschmchr",
   },
   categories: [
