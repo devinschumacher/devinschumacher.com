@@ -19,7 +19,12 @@
       "Bash(rm:*)",
       "Bash(npx eslint:*)",
       "Bash(cp:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(git -C /tmp/uploads add images/)",
+      "Bash(git -C /tmp/uploads config user.email \"action@github.com\")",
+      "Bash(git -C /tmp/uploads config user.name \"GitHub Actions\")",
+      "Bash(git -C /tmp/uploads commit -m \"Add blog post images\")",
+      "Bash(git -C /tmp/uploads push origin main)"
     ],
     "deny": []
   }
