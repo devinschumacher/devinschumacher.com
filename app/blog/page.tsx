@@ -1,4 +1,5 @@
 import { getAllPosts } from '@/lib/blog';
+import { urlMappings } from '@/lib/url-mappings';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -22,7 +23,6 @@ export default function BlogPage() {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        {/* Hero Section */}
         <section className="border-b bg-gradient-to-b from-primary/5 to-background">
           <div className="container py-16 md:py-24">
             <div className="mx-auto max-w-4xl text-center">
@@ -36,7 +36,6 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* Blog Posts */}
         <section className="container py-12 md:py-20">
           <div className="mx-auto max-w-6xl">
             {posts.length === 0 ? (
@@ -47,73 +46,98 @@ export default function BlogPage() {
               </div>
             ) : (
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {posts.map((post) => (
-                  <Link key={post.slug} href={post.customSlug || `/blog/${post.slug}`}>
-                    <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 overflow-hidden">
-                      {post.image ? (
-                        <div className="aspect-video w-full overflow-hidden relative">
-                          <Image
-                            src={post.image}
-                            alt={post.title}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          />
-                        </div>
-                      ) : (
-                        <div className="aspect-video w-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                          <div className="text-center p-6">
-                            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
-                              <FileText className="h-8 w-8 text-primary/60" />
-                            </div>
-                            <div className="flex flex-wrap gap-2 justify-center">
-                              {post.tags && Array.isArray(post.tags) && post.tags.slice(0, 2).map((tag: string) => (
-                                <Badge key={tag} variant="secondary" className="text-xs">
-                                  {tag}
-                                </Badge>
-                              ))}
+                {posts.map((post) => {
+                  let postUrl;
+                  
+                  if (post.customSlug) {
+                    // Use the custom slug from frontmatter directly
+                    postUrl = post.customSlug.startsWith('/') ? post.customSlug : `/${post.customSlug}`;
+                    if (!postUrl.endsWith('/')) {
+                      postUrl += '/';
+                    }
+                  } else {
+                    // Check if this post's content path has a direct URL mapping
+                    const contentPath = post.slug;
+                    const directUrl = Object.keys(urlMappings).find(url => 
+                      urlMappings[url] === contentPath
+                    );
+                    
+                    if (directUrl) {
+                      postUrl = directUrl;
+                    } else {
+                      // Use the default blog route
+                      postUrl = `/blog/${post.slug}/`;
+                    }
+                  }
+                  
+                  return (
+                    <Link key={post.slug} href={postUrl}>
+                      <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 overflow-hidden">
+                        {post.image ? (
+                          <div className="aspect-video w-full overflow-hidden relative">
+                            <Image
+                              src={post.image}
+                              alt={post.title}
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                          </div>
+                        ) : (
+                          <div className="aspect-video w-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                            <div className="text-center p-6">
+                              <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
+                                <FileText className="h-8 w-8 text-primary/60" />
+                              </div>
+                              <div className="flex flex-wrap gap-2 justify-center">
+                                {post.tags && Array.isArray(post.tags) && post.tags.slice(0, 2).map((tag: string) => (
+                                  <Badge key={tag} variant="secondary" className="text-xs">
+                                    {tag}
+                                  </Badge>
+                                ))}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      )}
-                      <CardHeader>
-                        {post.category && (
-                          <Link href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}>
-                            <Badge className="mb-2 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
-                              {post.category}
-                            </Badge>
-                          </Link>
                         )}
-                        <CardTitle className="line-clamp-2">{post.title}</CardTitle>
-                        <CardDescription className="line-clamp-3">
-                          {post.description}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
-                          <div className="flex items-center gap-1">
-                            <User className="h-3 w-3" />
-                            <span>{post.author}</span>
+                        <CardHeader>
+                          {post.category && (
+                            <Link href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}>
+                              <Badge className="mb-2 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
+                                {post.category}
+                              </Badge>
+                            </Link>
+                          )}
+                          <CardTitle className="line-clamp-2">{post.title}</CardTitle>
+                          <CardDescription className="line-clamp-3">
+                            {post.description}
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
+                            <div className="flex items-center gap-1">
+                              <User className="h-3 w-3" />
+                              <span>{post.author}</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Calendar className="h-3 w-3" />
+                              <time dateTime={post.date}>
+                                {format(new Date(post.date), 'MMM d, yyyy')}
+                              </time>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Clock className="h-3 w-3" />
+                              <span>{post.readingTime}</span>
+                            </div>
                           </div>
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3" />
-                            <time dateTime={post.date}>
-                              {format(new Date(post.date), 'MMM d, yyyy')}
-                            </time>
+                          <div className="mt-4 flex items-center text-sm font-medium text-primary">
+                            Read more
+                            <ArrowRight className="ml-1 h-4 w-4" />
                           </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="h-3 w-3" />
-                            <span>{post.readingTime}</span>
-                          </div>
-                        </div>
-                        <div className="mt-4 flex items-center text-sm font-medium text-primary">
-                          Read more
-                          <ArrowRight className="ml-1 h-4 w-4" />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  );
+                })}
               </div>
             )}
           </div>

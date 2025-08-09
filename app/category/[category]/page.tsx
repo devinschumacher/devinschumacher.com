@@ -1,4 +1,5 @@
 import { getAllPosts } from '@/lib/blog';
+import { urlMappings } from '@/lib/url-mappings';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -100,8 +101,33 @@ export default async function CategoryPage({ params }: PageProps) {
             ) : (
               <>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {categoryPosts.map((post) => (
-                    <Link key={post.slug} href={post.customSlug ? `/${post.customSlug}/` : `/blog/${post.slug}`}>
+                  {categoryPosts.map((post) => {
+                    // Use the frontmatter slug directly if it exists
+                    let postUrl;
+                    
+                    if (post.customSlug) {
+                      // Use the custom slug from frontmatter directly
+                      postUrl = post.customSlug.startsWith('/') ? post.customSlug : `/${post.customSlug}`;
+                      if (!postUrl.endsWith('/')) {
+                        postUrl += '/';
+                      }
+                    } else {
+                      // Check if this post's content path has a direct URL mapping
+                      const contentPath = post.slug;
+                      const directUrl = Object.keys(urlMappings).find(url => 
+                        urlMappings[url] === contentPath
+                      );
+                      
+                      if (directUrl) {
+                        postUrl = directUrl;
+                      } else {
+                        // Use the default blog route
+                        postUrl = `/blog/${post.slug}/`;
+                      }
+                    }
+                    
+                    return (
+                    <Link key={post.slug} href={postUrl}>
                       <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 overflow-hidden">
                         {post.image ? (
                           <div className="aspect-video w-full overflow-hidden relative">
@@ -157,7 +183,8 @@ export default async function CategoryPage({ params }: PageProps) {
                         </CardContent>
                       </Card>
                     </Link>
-                  ))}
+                    );
+                  })}
                 </div>
                 
                 <div className="mt-12 text-center">

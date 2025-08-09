@@ -16,7 +16,10 @@
       "Bash(node:*)",
       "Bash(sed:*)",
       "Bash(git add:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(npx eslint:*)",
+      "Bash(cp:*)",
+      "Bash(npm run dev:*)"
     ],
     "deny": []
   }
