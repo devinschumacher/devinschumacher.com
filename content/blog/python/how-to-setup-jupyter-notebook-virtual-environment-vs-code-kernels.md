@@ -23,7 +23,6 @@ Let's get to it.
 
 https://youtu.be/-j6y-5t37os
 
-👉 **Get the FREE checklist here:** [https://serp.ly/ps-jupyter-vscode](https://serp.ly/ps-jupyter-vscode)
 
 * * *
 
@@ -66,7 +65,7 @@ so if you feel like just being a lemming and following my lead, here ya go:
 
 7. VS Code Jupyter Notebook Previewer (extension ID: `jithurjacob.nbpreviewer`)
 
-* * *
+
 
 ## Process
 
@@ -80,71 +79,69 @@ I like doing it without the GUI because "practice makes progress".
 
 Tweet that. You'll look clever & sophisticated.
 
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Practice makes p̶e̶r̶f̶e̶c̶t̶ progress.</p>— Devin Schumacher (@dvnschmchr) <a href="https://twitter.com/dvnschmchr/status/1585719694010462208?ref_src=twsrc%5Etfw">October 27, .</a></blockquote>
-
 And then get back to work because you aren't here to be dickin' around on social media.
 
 Create your project folder:
 
-`
+```
 # syntax
 mkdir [folder-name]
 
 # example
 mkdir myproject
-`
+```
 
 ### Step 2. Create, activate & select your virtual environment
 
 Navigate to / open your project folder and create a virtual environment inside of it:
 
-`
+```
 # syntax
 python3 -m venv &lt;virtual environment name&gt;
 
 # example
 # that would create a virtual environment named 'myenv'
 python3 -m venv myenv
-`
+```
 
 Now activate the virtual environment and when VS CODE prompts you to set it as default for the project, hit yes.
 
-`
+```
 # syntax
 source &lt;virtual environment name&gt;/bin/activate
 
 # example
 source myenv/bin/activate
-`
+```
 
 ### Step 3. Install `ipykernel`
 
 Now that your virtual environment is activated, install `ipykernel`
 
-`
+```
 pip3 install ipykernel
-`
+```
 
 ### Step 4. Create new kernel
 
 Now you can create a new kernel to be used for your project:
 
-`
+```
 # syntax
 python3 -m ipykernel install --user --name="[projectname]"
 
 # example
 # That would create a kernel named 'myproject'
 python3 -m ipykernel install --user --name="myproject"
-`
+```
 
 ### Step 5. Start jupyter
 
 Now you can start Jupyter. I do it from the VS Code terminal.
 
-`
+```
 jupyter notebook
-`
+```
 
 If you did this right you should see something like this in your terminal:
 
@@ -178,13 +175,13 @@ Click that, and a dropdown will appear.
 
 Now, you will simply enter one of the URLs you received when you ran the Jupyter command back in Step 5:
 
-`
+```
 To access the notebook, open this file in a browser:
         file:///Users/[your-username]/Library/Jupyter/runtime/nbserver-15044-open.html
 
     Or copy and paste one of these URLs:
         http://localhost:8889/?token="f1ae910e56381c26a62cfb18f83241076bd11d84f7e8e36e"
      or https://127.0.0.1:8889/?token="f1ae910e56381c26a62cfb18f83241076bd11d84f7e8e36e"
-`
+```
 
-* * *
+

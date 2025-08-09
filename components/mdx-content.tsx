@@ -165,12 +165,12 @@ function remarkYouTubeEmbed() {
 }
 
 export function MDXContent({ source }: { source: string }) {
-  // Pre-process the source to convert bare YouTube URLs
+  // Pre-process the source to convert bare YouTube URLs to a custom component syntax
   const processedSource = source.replace(
     /^(https?:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^\s]*)$/gm,
     (match) => {
       const videoId = getYouTubeVideoId(match);
-      return videoId ? `<div data-youtube-embed="${videoId}"></div>` : match;
+      return videoId ? `<YouTubeEmbed videoId="${videoId}" />` : match;
     }
   );
 
@@ -180,12 +180,7 @@ export function MDXContent({ source }: { source: string }) {
         source={processedSource} 
         components={{
           ...components,
-          div: ({ children, 'data-youtube-embed': videoId, ...props }: any) => {
-            if (videoId) {
-              return <YouTubeEmbed videoId={videoId} />;
-            }
-            return <div {...props}>{children}</div>;
-          }
+          YouTubeEmbed: ({ videoId }: { videoId: string }) => <YouTubeEmbed videoId={videoId} />
         }}
         options={{
           mdxOptions: {
