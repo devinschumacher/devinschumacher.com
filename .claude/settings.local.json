@@ -1,11 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:tinywow.com)",
       "Bash(pnpm run:*)",
       "Bash(pnpm dev:*)",
-      "Bash(ls:*)",
-      "Bash(git submodule:*)"
+      "Bash(ls:*)"
     ],
     "deny": []
   }

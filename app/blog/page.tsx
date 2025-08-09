@@ -48,7 +48,7 @@ export default function BlogPage() {
             ) : (
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {posts.map((post) => (
-                  <Link key={post.slug} href={`/blog/${post.slug}`}>
+                  <Link key={post.slug} href={post.customSlug || `/blog/${post.slug}`}>
                     <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 overflow-hidden">
                       {post.image ? (
                         <div className="aspect-video w-full overflow-hidden relative">

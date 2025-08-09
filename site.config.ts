@@ -1,34 +1,36 @@
 export const siteConfig = {
-  name: "Looma",
-  url: "https://getlooma.com",
-  description: "Looma is how you download Loom videos, audio, transcripts, mp4s, and more - on chrome, firefox, windows or mac.",
-  title: "Looma - Online Tools for Downloading loom Videos, Audio, Transcripts & More",
+  name: "Devin Schumacher",
+  url: "https://devinschumacher.com",
+  description: "Devin Schumacher",
+  title: "Devin Schumacher",
   author: {
-    name: "Mr Video Downloader",
-    email: "contact@downloadloom.com",
+    name: "Devin Schumacher",
+    email: "yeahright@devinschumacher.com",
   },
   social: {
-    youtube: "https://youtube.com/",
-    twitter: "https://twitter.com/",
+    youtube: "https://youtube.com/@devinschumacher",
+    twitter: "https://twitter.com/@dvnschmchr",
   },
   categories: [
-    "Downloaders",
+    "SEO",
+    "Reviews",
+    "Best",
   ],
   metadata: {
-    keywords: ["Looma", "loom downloader", "loom video download", "loom mp4", "loom audio download", "loom transcript", "loom to mp4", "Looma chrome", "Looma firefox", "loom download windows", "loom download mac", "online loom downloader", "free loom download"],
+    keywords: ["Devin Schumacher"],
     openGraph: {
       type: "website",
       locale: "en_US",
-      siteName: "Looma",
+      siteName: "Devin Schumacher",
     },
     twitter: {
       card: "summary_large_image",
-      creator: "@",
+      creator: "@dvnschmchr",
     },
   },
   // Analytics Configuration
   analytics: {
-    gtmId: "GTM-57L458CF", // Google Tag Manager ID
+    gtmId: "GTM-NFB664F",
   },
 } as const;
 

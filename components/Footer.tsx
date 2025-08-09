@@ -34,26 +34,26 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="mb-4 text-sm font-semibold">More Tools</h4>
+            <h4 className="mb-4 text-sm font-semibold">Extensions</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a 
-                  href="https://getlooma.com" 
+                  href="#" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary"
                 >
-                  Looma
+                  #
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://downloadvimeo.com" 
+                  href="#" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary"
                 >
-                  DownloadVimeo
+                  #
                 </a>
               </li>
               <li>
