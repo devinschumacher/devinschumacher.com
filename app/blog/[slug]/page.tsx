@@ -85,10 +85,25 @@ const components = {
 };
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  try {
+    const posts = getAllPosts();
+    console.log(`Found ${posts.length} posts for static generation`);
+    
+    if (posts.length === 0) {
+      console.warn('No posts found! This might cause build issues.');
+      return [];
+    }
+    
+    const params = posts.map((post) => ({
+      slug: post.slug,
+    }));
+    
+    console.log(`Generated ${params.length} static params:`, params.slice(0, 5));
+    return params;
+  } catch (error) {
+    console.error('Error in generateStaticParams:', error);
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
