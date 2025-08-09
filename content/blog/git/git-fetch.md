@@ -71,8 +71,24 @@ here are the steps to take for getting your local repository in sync with the re
 
 1\. `git fetch` to fetch the remote repository:
 
+```bash
+git fetch
+```
+
 2\. `git log` to compare your local branch with the remote:
+
+```bash
+git log --oneline --graph --decorate --all
+```
 
 3\. `git checkout` to checkout the local branch where you'll be merging the changes to:
 
-4\. `git merge` to merge the changes
+```bash
+git checkout main
+```
+
+4\. `git merge` to merge the changes:
+
+```bash
+git merge origin/main
+```

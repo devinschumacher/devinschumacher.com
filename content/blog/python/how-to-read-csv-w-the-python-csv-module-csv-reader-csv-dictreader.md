@@ -27,36 +27,42 @@ Let’s explore the difference between the two options using an example .csv fil
 
 Using `csv.Reader()` to explore the friends\_birthdays.csv file:
 
-`
+```python
 import csv
 
 with open('friends_birthdays.csv') as f:
-    my_csv = csv.reader(f, delimiter="',')"
+    my_csv = csv.reader(f, delimiter="',')")
     line_count = 0
     for row in my_csv:
+        print(f"{row[0]} lives in {row[1]} and has a birthday in {row[2]}.")
+```
 
 ### output
+```
 # name lives in location and has a birthday in birthday_month
 # Anthony lives in Tokyo and has a birthday in June
 # Alex lives in Maryland and has a birthday in September
-`
+```
 
 Notice how this prints the header row in the output.
 
 To remove that you can adjust your code to remove the header row by first turning your read csv into a list, and then slicing off the top row.
 
-`
+```python
 import csv
 
 with open('friends_birthdays.csv') as f:
     my_csv = list(csv.reader(f))
     my_csv = my_csv[1:]
     for row in my_csv:
+        print(f"{row[0]} lives in {row[1]} and birthday is {row[2]}.")
+```
 
 ### output
+```
 # Anthony lives in Tokyo and birthday is June
 # Alex lives in Maryland and birthday is September
-`
+```
 
 ## csv.DictReader()
 
@@ -64,15 +70,18 @@ with open('friends_birthdays.csv') as f:
 
 Using `csv.DictReader()` to explore the friends\_birthdays.csv file:
 
-`
+```python
 import csv
 
 with open('friends_birthdays.csv') as file:
-    my_csv = csv.DictReader(file, delimiter="',')"
+    my_csv = csv.DictReader(file, delimiter="',')")
     line_count = 0
     for row in my_csv:
+        print(f"{row['name']} lives in {row['location']} and has a birthday in {row['birthday_month']}.")
+```
 
 ### output
+```
 # Anthony lives in Tokyo and has a birthday in June.
 # Alex lives in Maryland and has a birthday in September.
-`
+```

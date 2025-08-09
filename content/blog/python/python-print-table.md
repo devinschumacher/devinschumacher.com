@@ -46,7 +46,7 @@ this is how you would take that data and turn it into a table in python:
 
 7. print the data into rows
 
-`
+```python
 #1 the data
 
 data = [
@@ -65,19 +65,19 @@ print("Revenue | Profit | Percent Change")
 #4 print the data into rows
 
 for revenue, profit in data:
-    row = template.format(revenue="revenue," profit="profit," percent="profit/revenue)"
+    row = template.format(revenue=revenue, profit=profit, percent=profit/revenue)
     print(row)
-`
+```
 
 **output**
 
-`
+```
 Revenue | Profit | Percent Change
 1,100 | +11 | 1%
 2,200 | +19 | 1%
 2,400 | +110 | 5%
 2,300 | -112 | -5%
-`
+```
 
 * * *
 

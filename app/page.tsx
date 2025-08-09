@@ -4,6 +4,7 @@ import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ProjectCard, type Project } from "@/components/project-card";
 import Link from "next/link";
 import Image from "next/image";
 import { 
@@ -59,7 +60,7 @@ export default async function HomePage() {
     }
   ];
 
-  const projects = [
+  const projects: Project[] = [
     {
       name: "SERP",
       description: "Business services directory and AI tools marketplace platform",
@@ -190,7 +191,7 @@ export default async function HomePage() {
       rating: "5.4",
       type: "Sports Drama",
       poster: "https://image.tmdb.org/t/p/w1280/tevHaVxtrMTaUi8f3YjLWYSSY8A.jpg",
-      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1990-,Rocky%20V,-5.4"
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1993-,Rocky%20V,-5.4"
     },
     {
       title: "RoboCop",
@@ -283,32 +284,13 @@ export default async function HomePage() {
 
             <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
-                <Link 
+                <ProjectCard
                   key={index}
-                  href={project.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <Card className="group relative overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer h-full">
-                    <CardHeader>
-                      <div className="mb-2">
-                        <Badge 
-                          className={`${categoryColors[project.category] || 'bg-gray-500/10 text-gray-700 dark:text-gray-400'}`}
-                          variant="secondary"
-                        >
-                          {project.category.replace('-', ' ')}
-                        </Badge>
-                      </div>
-                      <CardTitle className="text-2xl">{project.name}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground line-clamp-3">
-                        {project.content}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                  project={project}
+                  index={index}
+                  categoryColors={categoryColors}
+                  wrapWithLink={true}
+                />
               ))}
             </div>
             

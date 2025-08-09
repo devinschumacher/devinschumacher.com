@@ -41,9 +41,9 @@ the `.prettierignore file follows the .gitignore` syntax, so it would be a littl
 
 `.prettierignore` file example:
 
-`
+```
 *
-`
+```
 
 ### how to ignore specific files in a folder with `.prettierignore`
 
@@ -53,11 +53,11 @@ the `.prettierignore file follows the .gitignore` syntax, so it would be a littl
 
 `.prettierignore` file example:
 
-`
+```
 filename.txt
 filename.csv
 filename.whatever
-`
+```
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/1prettierignore-file-example-1-1-1024x642-1.png)
 
@@ -78,14 +78,14 @@ you write them basically the same way you write comments.
 
 inline `.prettierignore` for markdown (MD)
 
-`
+```markdown
 {/*  prettier-ignore  */}
 whatever you write directly below will get ignored
-`
+```
 
 and if you want to ignore a block / range / area / whatever of text:
 
-`
+```markdown
 {/*  prettier-ignore-start  */}
 now you can write multi-line things
 and it wont format them!
@@ -95,7 +95,7 @@ right?
 just make sure to add the closing comment line someday...
 like this
 {/*  prettier-ignore-end  */}
-`
+```
 
 ## Did that help solve your dilemma?...
 

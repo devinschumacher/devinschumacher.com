@@ -2,6 +2,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import Image from 'next/image';
 import Link from 'next/link';
+import { CodeBlock } from './code-block';
 
 // Helper function to extract YouTube video ID from URL
 function getYouTubeVideoId(url: string): string | null {
@@ -90,11 +91,21 @@ const components = {
     </code>
   ),
   
-  pre: ({ children, ...props }: any) => (
-    <pre className="my-8 overflow-x-auto rounded-lg bg-muted/30 border border-border/50 p-6 text-sm font-mono leading-6" {...props}>
-      {children}
-    </pre>
-  ),
+  pre: ({ children, ...props }: any) => {
+    const child = children?.props?.children;
+    const className = children?.props?.className || '';
+    const language = className.replace('language-', '');
+    
+    if (typeof child === 'string') {
+      return <CodeBlock language={language || 'bash'}>{child}</CodeBlock>;
+    }
+    
+    return (
+      <pre className="my-8 overflow-x-auto rounded-lg bg-gray-900 border border-gray-700 p-4 text-sm font-mono leading-6 text-gray-100" {...props}>
+        {children}
+      </pre>
+    );
+  },
   
   img: ({ src, alt, ...props }: any) => {
     if (!src) return null;

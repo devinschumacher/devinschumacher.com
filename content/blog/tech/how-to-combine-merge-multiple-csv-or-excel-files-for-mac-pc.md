@@ -109,13 +109,13 @@ It will look like this:
 
 This is a fancy name. Don't worry about it, just follow the steps.
 
-1. Type: `pwd`
+1. Type:
 
-3. Hit the `return` key
-
-`
+```bash
 pwd
-`
+```
+
+2. Hit the `return` key
 
 **
 It will look like this:
@@ -129,9 +129,15 @@ It will look like this:
 
 Set your "directory" to the folder you created that has your CSV files in it.
 
-1. type: `cd /Users/devin/Desktop/combine` (obviously replace "devin" with your name... unless your name is devin).
+1. type:
 
-3. hit the `return` key
+```bash
+cd /Users/devin/Desktop/combine
+```
+
+(obviously replace "devin" with your name... unless your name is devin).
+
+2. hit the `return` key
 
 **Note**: you will need to change your file path so it matches your username & folder name
 
@@ -141,9 +147,13 @@ Set your "directory" to the folder you created that has your CSV files in it.
 
 Now you are ready to merge your files.
 
-1. type: `cat *.csv >combined.csv`
+1. type:
 
-3. hit the `return` key
+```bash
+cat *.csv >combined.csv
+```
+
+2. hit the `return` key
 
 **
 It will look like this:
