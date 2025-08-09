@@ -43,4 +43,3 @@ next-env.d.ts
 # Claude
 .claude
 .claude/
-content/
