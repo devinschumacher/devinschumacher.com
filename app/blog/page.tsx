@@ -77,6 +77,13 @@ export default function BlogPage() {
                         </div>
                       )}
                       <CardHeader>
+                        {post.category && (
+                          <Link href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}>
+                            <Badge className="mb-2 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
+                              {post.category}
+                            </Badge>
+                          </Link>
+                        )}
                         <CardTitle className="line-clamp-2">{post.title}</CardTitle>
                         <CardDescription className="line-clamp-3">
                           {post.description}

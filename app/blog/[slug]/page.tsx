@@ -182,6 +182,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
           {/* Post Header */}
           <header className="mb-12">
+            {post.meta.category && (
+              <Link href={`/category/${post.meta.category.toLowerCase().replace(/\s+/g, '-')}`}>
+                <Badge className="mb-4 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
+                  {post.meta.category}
+                </Badge>
+              </Link>
+            )}
+            
             <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
               {post.meta.title}
             </h1>
@@ -221,7 +229,19 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </header>
 
           {/* Post Content */}
-          <div className="prose prose-gray max-w-none dark:prose-invert">
+          <div className="prose prose-lg dark:prose-invert max-w-none 
+                      prose-headings:font-bold prose-headings:tracking-tight
+                      prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl
+                      prose-p:leading-7 prose-p:text-foreground/90
+                      prose-ul:list-disc prose-ul:ml-6 prose-ul:space-y-1
+                      prose-ol:list-decimal prose-ol:ml-6 prose-ol:space-y-1
+                      prose-li:marker:text-muted-foreground prose-li:leading-7
+                      prose-strong:font-semibold prose-strong:text-foreground
+                      prose-a:text-primary prose-a:underline prose-a:underline-offset-2
+                      prose-blockquote:border-l-4 prose-blockquote:border-primary/20 prose-blockquote:pl-6
+                      prose-blockquote:italic prose-blockquote:text-muted-foreground
+                      prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+                      prose-pre:bg-muted prose-pre:p-4 prose-img:rounded-lg prose-img:w-full">
             <MDXRemote source={post.content} components={components} />
           </div>
 

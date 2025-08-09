@@ -14,27 +14,27 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="mb-4 text-sm font-semibold">Download Formats</h4>
+            <h4 className="mb-4 text-sm font-semibold">Links</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>MP4 Video</li>
-              <li>WebM Video</li>
-              <li>MP3 Audio</li>
-              <li>Transcripts</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
             </ul>
           </div>
           
           <div>
-            <h4 className="mb-4 text-sm font-semibold">Platforms</h4>
+            <h4 className="mb-4 text-sm font-semibold">Links</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Windows</li>
-              <li>Mac</li>
-              <li>Linux</li>
-              <li>Mobile</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
             </ul>
           </div>
           
           <div>
-            <h4 className="mb-4 text-sm font-semibold">Extensions</h4>
+            <h4 className="mb-4 text-sm font-semibold">Brands</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a 

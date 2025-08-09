@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 import { 
   ArrowRight,
   Code2,
@@ -15,20 +16,9 @@ import {
   Twitter,
   Youtube,
   Linkedin,
-  Calendar,
-  Eye,
-  Play,
-  ShoppingBag,
-  Building2,
-  ExternalLink,
-  DollarSign
+  Calendar
 } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
 import { siteConfig } from "@/site.config";
-import { getFeaturedVideos } from "@/lib/videos";
-import { getFeaturedProducts } from "@/lib/products";
-import { getFeaturedBrands } from "@/lib/brands";
 
 export default function HomePage() {
 
@@ -57,22 +47,28 @@ export default function HomePage() {
 
   const recentPosts = [
     {
-      title: "Building Scalable Web Applications",
-      excerpt: "Learn the best practices for building web applications that can handle millions of users.",
-      date: "2024-01-15",
-      readTime: "5 min read"
+      title: "What is SEO",
+      excerpt: "SEO is the science and art of bringing people to your website from search engines who are interested in your products and services.",
+      date: "2022-09-23",
+      readTime: "8 min read",
+      slug: "/what-is-seo/",
+      category: "SEO"
     },
     {
-      title: "The Future of AI in Web Development",
-      excerpt: "Exploring how AI is transforming the way we build and interact with web applications.",
-      date: "2024-01-10",
-      readTime: "8 min read"
+      title: "On-Page SEO",
+      excerpt: "Learn how to optimize your website's on-page elements for better search engine rankings.",
+      date: "2022-08-26",
+      readTime: "10 min read",
+      slug: "/on-page-seo/",
+      category: "SEO"
     },
     {
-      title: "Mastering TypeScript for Production",
-      excerpt: "Advanced TypeScript patterns and techniques for building robust applications.",
-      date: "2024-01-05",
-      readTime: "10 min read"
+      title: "SERP Features",
+      excerpt: "Understanding the different features that appear on search engine results pages.",
+      date: "2022-08-25",
+      readTime: "6 min read",
+      slug: "/serp-features/",
+      category: "SEO"
     }
   ];
 
@@ -217,24 +213,31 @@ export default function HomePage() {
 
           <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
             {recentPosts.map((post, index) => (
-              <Card key={index} className="transition-all hover:shadow-lg">
-                <CardHeader>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                    <Calendar className="h-4 w-4" />
-                    <span>{post.date}</span>
-                  </div>
-                  <CardTitle className="text-xl line-clamp-2">{post.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground line-clamp-3 mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <Badge variant="secondary">{post.readTime}</Badge>
-                    <Link href="/blog" className="text-primary hover:underline text-sm font-medium">
-                      Read more →
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+              <Link key={index} href={post.slug}>
+                <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1">
+                  <CardHeader>
+                    {post.category && (
+                      <Badge className="mb-2 w-fit" variant="secondary">
+                        {post.category}
+                      </Badge>
+                    )}
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                      <Calendar className="h-4 w-4" />
+                      <span>{post.date}</span>
+                    </div>
+                    <CardTitle className="text-xl line-clamp-2">{post.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground line-clamp-3 mb-4">{post.excerpt}</p>
+                    <div className="flex items-center justify-between">
+                      <Badge variant="outline">{post.readTime}</Badge>
+                      <span className="text-primary text-sm font-medium">
+                        Read more →
+                      </span>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
 
@@ -316,15 +319,12 @@ export default function HomePage() {
             <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
               <Link href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Youtube className="h-5 w-5" />
-                <span>YouTube</span>
               </Link>
               <Link href="https://github.com/devinschumacher" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
-                <span>GitHub</span>
               </Link>
               <Link href="https://linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
-                <span>LinkedIn</span>
               </Link>
             </div>
           </div>

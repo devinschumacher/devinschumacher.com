@@ -1,13 +1,14 @@
 import { notFound } from 'next/navigation';
 import { getPostBySlug } from '@/lib/blog';
 import { getContentPath, getAllUrlPaths } from '@/lib/url-mappings';
-import { MDXRemote } from 'next-mdx-remote/rsc';
+import { MDXContent } from '@/components/mdx-content';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock, User, Tag } from 'lucide-react';
 import { format } from 'date-fns';
 import Image from 'next/image';
+import Link from 'next/link';
 import { siteConfig } from '@/site.config';
 import { Metadata } from 'next';
 
@@ -29,7 +30,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const slugPath = `/comparison/${params.slug}/`;
+  const { slug } = await params;
+  const slugPath = `/comparison/${slug}/`;
   const contentPath = getContentPath(slugPath);
   
   if (!contentPath) {
@@ -59,8 +61,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function ComparisonPostPage({ params }: PageProps) {
-  const slugPath = `/comparison/${params.slug}/`;
+export default async function ComparisonPostPage({ params }: PageProps) {
+  const { slug } = await params;
+  const slugPath = `/comparison/${slug}/`;
   const contentPath = getContentPath(slugPath);
   
   if (!contentPath) {
@@ -81,9 +84,11 @@ export default function ComparisonPostPage({ params }: PageProps) {
           <div className="mx-auto max-w-4xl">
             {/* Article Header */}
             <header className="mb-12">
-              <Badge className="mb-4" variant="secondary">
-                Comparison
-              </Badge>
+              <Link href="/category/comparison">
+                <Badge className="mb-4 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
+                  Comparison
+                </Badge>
+              </Link>
               
               <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-5xl">
                 {post.meta.title}
@@ -141,9 +146,7 @@ export default function ComparisonPostPage({ params }: PageProps) {
             )}
 
             {/* Article Content */}
-            <div className="prose prose-lg dark:prose-invert max-w-none">
-              <MDXRemote source={post.content} />
-            </div>
+            <MDXContent source={post.content} />
           </div>
         </article>
         
