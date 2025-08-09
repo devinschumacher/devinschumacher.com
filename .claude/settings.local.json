@@ -3,7 +3,10 @@
     "allow": [
       "Bash(pnpm run:*)",
       "Bash(pnpm dev:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "WebFetch(domain:serp.co)",
+      "WebFetch(domain:serp.ai)",
+      "Bash(mv:*)"
     ],
     "deny": []
   }

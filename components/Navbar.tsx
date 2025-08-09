@@ -15,9 +15,9 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">{siteConfig.name}</span>
+          {/* Site Name */}
+          <Link href="/" className="flex items-center">
+            <span className="text-2xl font-bold text-primary">{siteConfig.name.toLowerCase()}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -26,17 +26,20 @@ export function Navbar() {
               href="/blog"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
-              Blog
+              blog
             </Link>
-            {categories.map((category) => (
-              <Link
-                key={category}
-                href={`#${category.toLowerCase().replace(" ", "-")}`}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-              >
-                {category}
-              </Link>
-            ))}
+            <Link
+              href="/projects"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              projects
+            </Link>
+            <Link
+              href="/videos"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              videos
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,18 +63,22 @@ export function Navbar() {
                 className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Blog
+                blog
               </Link>
-              {categories.map((category) => (
-                <Link
-                  key={category}
-                  href={`#${category.toLowerCase().replace(" ", "-")}`}
-                  className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {category}
-                </Link>
-              ))}
+              <Link
+                href="/projects"
+                className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                projects
+              </Link>
+              <Link
+                href="/videos"
+                className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                videos
+              </Link>
             </div>
           </div>
         )}

@@ -67,7 +67,7 @@ export default function BlogPage() {
                               <FileText className="h-8 w-8 text-primary/60" />
                             </div>
                             <div className="flex flex-wrap gap-2 justify-center">
-                              {post.tags.slice(0, 2).map((tag: string) => (
+                              {post.tags && Array.isArray(post.tags) && post.tags.slice(0, 2).map((tag: string) => (
                                 <Badge key={tag} variant="secondary" className="text-xs">
                                   {tag}
                                 </Badge>

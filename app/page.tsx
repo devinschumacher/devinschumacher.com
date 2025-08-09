@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,7 +17,8 @@ import {
   Twitter,
   Youtube,
   Linkedin,
-  Calendar
+  Calendar,
+  Instagram
 } from "lucide-react";
 import { siteConfig } from "@/site.config";
 
@@ -55,43 +57,106 @@ export default function HomePage() {
       category: "SEO"
     },
     {
-      title: "On-Page SEO",
-      excerpt: "Learn how to optimize your website's on-page elements for better search engine rankings.",
-      date: "2022-08-26",
-      readTime: "10 min read",
-      slug: "/on-page-seo/",
-      category: "SEO"
+      title: "Best AI Chatbots",
+      excerpt: "Comprehensive guide to the top AI chatbot platforms for business and personal use.",
+      date: "2024-01-15",
+      readTime: "12 min read",
+      slug: "/best/ai-chatbots/",
+      category: "Best"
     },
     {
-      title: "SERP Features",
-      excerpt: "Understanding the different features that appear on search engine results pages.",
-      date: "2022-08-25",
-      readTime: "6 min read",
-      slug: "/serp-features/",
-      category: "SEO"
+      title: "Python Lists Guide",
+      excerpt: "Master Python lists with this comprehensive guide covering all list operations and methods.",
+      date: "2023-11-20",
+      readTime: "7 min read",
+      slug: "/python-lists/",
+      category: "Python"
+    },
+    {
+      title: "TypeScript Enum Types",
+      excerpt: "Learn how to use enums in TypeScript for better type safety and code organization.",
+      date: "2023-09-10",
+      readTime: "5 min read",
+      slug: "/typescript-enum-types/",
+      category: "TypeScript"
+    },
+    {
+      title: "Arrays in TypeScript",
+      excerpt: "Complete guide to working with arrays in TypeScript, including type annotations and methods.",
+      date: "2023-09-15",
+      readTime: "8 min read",
+      slug: "/arrays-in-typescript/",
+      category: "TypeScript"
+    },
+    {
+      title: "Git Fundamentals",
+      excerpt: "Everything you need to know about Git version control system for effective collaboration.",
+      date: "2023-10-15",
+      readTime: "15 min read",
+      slug: "/git/",
+      category: "Git"
     }
   ];
 
   const projects = [
     {
-      title: "SERP AI Platform",
-      description: "AI software platform that connects consumers with brands using machine learning and artificial intelligence.",
-      tags: ["AI/ML", "Python", "React"],
-      link: "/projects/serp-ai"
+      name: "SERP",
+      description: "Business services directory and AI tools marketplace platform",
+      category: "software",
+      featured: true,
+      url: "https://serp.co",
+      content: "SERP is a comprehensive directory platform that connects businesses with various services and AI-powered tools. The platform serves as a marketplace for discovering and accessing business solutions across multiple industries."
     },
     {
-      title: "SEO Agency Platform",
-      description: "Enterprise SEO management platform serving 100+ international clients with advanced analytics and reporting.",
-      tags: ["SEO", "Analytics", "Marketing"],
-      link: "/projects/seo-platform"
+      name: "SERP AI",
+      description: "AI-powered tools and services aggregator platform",
+      category: "artificial-intelligence",
+      featured: true,
+      url: "https://serp.ai",
+      content: "SERP AI showcases cutting-edge AI-powered tools and services across diverse industries. From protein engineering to content creation and legal services automation, the platform curates innovative AI solutions."
     },
     {
-      title: "AI Learning Hub",
-      description: "Open platform providing free access to AI tools, datasets, models, research, and educational resources.",
-      tags: ["Education", "AI", "Open Source"],
-      link: "/projects/ai-hub"
+      name: "Boxing Undefeated",
+      description: "Your comprehensive guide to the sweet science",
+      category: "boxing",
+      featured: true,
+      url: "https://boxingundefeated.com",
+      content: "Boxing Undefeated is the definitive online resource for boxing enthusiasts, featuring an extensive database of professional boxer profiles, detailed fight records, and career statistics."
+    },
+    {
+      name: "DAFT FM",
+      description: "All things audio - music discovery and audio content platform",
+      category: "music",
+      featured: true,
+      url: "https://daft.fm",
+      content: "DAFT FM is an audio-focused platform dedicated to music discovery and audio content curation. Featuring song collections, ratings, and audio equipment reviews."
+    },
+    {
+      name: "@devingoessnowboarding",
+      description: "Snowboarding content creator sharing mountain adventures",
+      category: "snowboarding",
+      featured: true,
+      url: "https://instagram.com/devingoessnowboarding",
+      content: "Devin Goes Snowboarding is a snowboarding-focused social media brand documenting mountain adventures, riding sessions, and the snowboarding lifestyle."
+    },
+    {
+      name: "SERP University",
+      description: "Learn SEO, digital marketing, programming while building a brand online and making money on your own terms.",
+      category: "education",
+      featured: true,
+      url: "https://serp.ly/@serp/community",
+      content: "SERP University is a comprehensive SEO education platform providing free courses, tutorials, and resources for digital marketers and business owners."
     }
   ];
+  
+  const categoryColors: Record<string, string> = {
+    'software': 'bg-blue-500/10 text-blue-700 dark:text-blue-400',
+    'artificial-intelligence': 'bg-purple-500/10 text-purple-700 dark:text-purple-400',
+    'boxing': 'bg-green-500/10 text-green-700 dark:text-green-400',
+    'music': 'bg-orange-500/10 text-orange-700 dark:text-orange-400',
+    'snowboarding': 'bg-pink-500/10 text-pink-700 dark:text-pink-400',
+    'education': 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400'
+  };
 
   return (
     <>
@@ -100,14 +165,9 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative overflow-hidden border-b bg-gradient-to-b from-primary/5 to-background">
           <div className="absolute inset-0 bg-grid-black/[0.02] dark:bg-grid-white/[0.02]" />
-          <div className="container relative py-20 md:py-32">
+          <div className="container relative py-10 md:py-32">
             <div className="mx-auto max-w-4xl text-center">
-              <Badge className="mb-4" variant="secondary">
-                Founder @ SERP
-              </Badge>
-              <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                Hi, I'm Devin Schumacher
-              </h1>
+              <Logo size={200} showLink={false} className="h-40 w-auto mx-auto mb-6" />
               <p className="mb-10 text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto">
                 widely regarded as the World's best SEO & grumpy cat impersonator.
               </p>
@@ -121,15 +181,23 @@ export default function HomePage() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="px-8 py-6 text-base font-semibold" asChild>
-                  <Link href="#contact">
-                    <Mail className="mr-2 h-5 w-5" />
-                    Get In Touch
+                  <Link href="https://serp.ly/@serp/community" target="_blank" rel="noopener noreferrer">
+                    <Users className="mr-2 h-5 w-5" />
+                    SERP University
                   </Link>
                 </Button>
               </div>
 
               {/* Social Links */}
               <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
+                <Link href="https://tiktok.com/@dvnschmchr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                  </svg>
+                </Link>
+                <Link href="https://instagram.com/dvnschmchr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Instagram className="h-6 w-6" />
+                </Link>
                 <Link href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Youtube className="h-6 w-6" />
                 </Link>
@@ -147,8 +215,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* About Section */}
-        <section className="container py-20 md:py-28">
+        {/* About Section - Hidden */}
+        {/* <section className="container py-20 md:py-28">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
               About Me
@@ -165,9 +233,10 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Skills Section */}
+        {/* Skills Section - Hidden */}
+        {/*
         <section className="border-y bg-muted/30">
           <div className="container py-20 md:py-28">
             <div className="mx-auto max-w-4xl text-center">
@@ -198,119 +267,127 @@ export default function HomePage() {
               })}
             </div>
           </div>
-        </section>
-
-        {/* Recent Blog Posts Section */}
-        <section className="container py-20 md:py-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-              Recent Blog Posts
-            </h2>
-            <p className="mb-12 text-lg text-muted-foreground">
-              Insights on SEO, AI, digital marketing, and entrepreneurship
-            </p>
-          </div>
-
-          <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
-            {recentPosts.map((post, index) => (
-              <Link key={index} href={post.slug}>
-                <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1">
-                  <CardHeader>
-                    {post.category && (
-                      <Badge className="mb-2 w-fit" variant="secondary">
-                        {post.category}
-                      </Badge>
-                    )}
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                      <Calendar className="h-4 w-4" />
-                      <span>{post.date}</span>
-                    </div>
-                    <CardTitle className="text-xl line-clamp-2">{post.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground line-clamp-3 mb-4">{post.excerpt}</p>
-                    <div className="flex items-center justify-between">
-                      <Badge variant="outline">{post.readTime}</Badge>
-                      <span className="text-primary text-sm font-medium">
-                        Read more →
-                      </span>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/blog">
-                View All Posts
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </section>
+        </section> */}
 
         {/* Projects Section */}
         <section className="border-t bg-muted/30">
           <div className="container py-20 md:py-28">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                Featured Projects
               </h2>
               <p className="mb-12 text-lg text-muted-foreground">
-                A selection of my recent work
               </p>
             </div>
 
-            <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
-                <Card key={index} className="transition-all hover:shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="text-xl">{project.title}</CardTitle>
-                    <CardDescription className="mt-2">
-                      {project.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag, tagIndex) => (
-                        <Badge key={tagIndex} variant="secondary">
-                          {tag}
+                <Link 
+                  key={index}
+                  href={project.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <Card className="group relative overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer h-full">
+                    <CardHeader>
+                      <div className="mb-2">
+                        <Badge 
+                          className={`${categoryColors[project.category] || 'bg-gray-500/10 text-gray-700 dark:text-gray-400'}`}
+                          variant="secondary"
+                        >
+                          {project.category.replace('-', ' ')}
                         </Badge>
-                      ))}
-                    </div>
-                    <Link href={project.link} className="text-primary hover:underline text-sm font-medium">
-                      View Project →
-                    </Link>
-                  </CardContent>
-                </Card>
+                      </div>
+                      <CardTitle className="text-2xl">{project.name}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground line-clamp-3">
+                        {project.content}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
+            </div>
+            
+            <div className="text-center mt-12">
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/projects">
+                  Projects
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
 
 
+        {/* Recent Blog Posts Section */}
+        <section className="border-t">
+          <div className="container py-20 md:py-28">
+            <div className="mx-auto max-w-4xl space-y-4">
+              {recentPosts.map((post, index) => (
+                <div key={index} className="group relative">
+                  <div className="flex items-start gap-6 p-6 rounded-lg border bg-card hover:bg-accent/5 transition-all hover:shadow-md cursor-pointer">
+                    <Link href={post.slug} className="absolute inset-0 z-0">
+                      <span className="sr-only">Read {post.title}</span>
+                    </Link>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-3 mb-2">
+                        {post.category && (
+                          <Link 
+                            href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}
+                            className="relative z-10"
+                          >
+                            <Badge className="hover:bg-secondary/80 transition-colors" variant="secondary">
+                              {post.category}
+                            </Badge>
+                          </Link>
+                        )}
+                      </div>
+                      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-muted-foreground line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/blog">
+                  Blog
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
-        <section className="container py-20 md:py-28" id="contact">
+        <section className="border-t container py-20 md:py-28" id="contact">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-              Get In Touch
+              
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              Let's connect and talk about AI, SEO, or whatever's on your mind
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="group px-8 py-6 text-base font-semibold" asChild>
-                <Link href={`mailto:${siteConfig.author.email}`}>
-                  <Mail className="mr-2 h-5 w-5" />
-                  Send Me an Email
+                <Link href="https://serp.ly/@serp/community">
+                  SERP University
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="group px-8 py-6 text-base font-semibold" asChild>
-                <Link href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer">
-                  <Twitter className="mr-2 h-5 w-5" />
-                  Follow on Twitter
+                <Link href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer">
+                  <Youtube className="mr-2 h-5 w-5" />
+                  Linkedin
                 </Link>
               </Button>
             </div>
