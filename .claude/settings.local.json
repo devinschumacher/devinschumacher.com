@@ -30,7 +30,9 @@
       "Bash(git -C /tmp/uploads ls-files images/)",
       "Bash(gh run list:*)",
       "Bash(gh run view:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(git fetch:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": []
   }

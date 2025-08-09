@@ -22,8 +22,19 @@ import {
   Instagram
 } from "lucide-react";
 import { siteConfig } from "@/site.config";
+import { getAllPosts } from "@/lib/blog";
 
-export default function HomePage() {
+export default async function HomePage() {
+  // Get all posts and take the 6 most recent ones
+  const allPosts = getAllPosts();
+  const recentPosts = allPosts.slice(0, 6).map(post => ({
+    title: post.title,
+    excerpt: post.description,
+    date: post.date,
+    readTime: post.readingTime,
+    slug: post.customSlug ? `/${post.customSlug}/` : `/${post.slug}/`,
+    category: post.category
+  }));
 
   const skills = [
     {
@@ -45,57 +56,6 @@ export default function HomePage() {
       icon: Users,
       title: "Business Growth & Marketing",
       description: "5x Two Comma Club award winner. Generated hundreds of millions in revenue helping businesses scale through strategic digital marketing."
-    }
-  ];
-
-  const recentPosts = [
-    {
-      title: "What is SEO",
-      excerpt: "SEO is the science and art of bringing people to your website from search engines who are interested in your products and services.",
-      date: "2022-09-23",
-      readTime: "8 min read",
-      slug: "/what-is-seo/",
-      category: "SEO"
-    },
-    {
-      title: "Best AI Chatbots",
-      excerpt: "Comprehensive guide to the top AI chatbot platforms for business and personal use.",
-      date: "2024-01-15",
-      readTime: "12 min read",
-      slug: "/best/ai-chatbots/",
-      category: "Best"
-    },
-    {
-      title: "Python Lists Guide",
-      excerpt: "Master Python lists with this comprehensive guide covering all list operations and methods.",
-      date: "2023-11-20",
-      readTime: "7 min read",
-      slug: "/python-lists/",
-      category: "Python"
-    },
-    {
-      title: "TypeScript Enum Types",
-      excerpt: "Learn how to use enums in TypeScript for better type safety and code organization.",
-      date: "2023-09-10",
-      readTime: "5 min read",
-      slug: "/typescript-enum-types/",
-      category: "TypeScript"
-    },
-    {
-      title: "Arrays in TypeScript",
-      excerpt: "Complete guide to working with arrays in TypeScript, including type annotations and methods.",
-      date: "2023-09-15",
-      readTime: "8 min read",
-      slug: "/arrays-in-typescript/",
-      category: "TypeScript"
-    },
-    {
-      title: "Git Fundamentals",
-      excerpt: "Everything you need to know about Git version control system for effective collaboration.",
-      date: "2023-10-15",
-      readTime: "15 min read",
-      slug: "/git/",
-      category: "Git"
     }
   ];
 
