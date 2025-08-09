@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { X } from 'lucide-react';
 
 interface ImageLightboxProps {
@@ -18,14 +19,17 @@ export function ImageLightbox({ src, alt = '' }: ImageLightboxProps) {
     <>
       {/* Image thumbnail */}
       <div className="my-8 lg:my-12 flex justify-center">
-        <img
-          src={src}
-          alt={alt}
-          className="rounded-lg shadow-lg max-w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
-          style={{ maxWidth: '800px', maxHeight: '600px', objectFit: 'contain' }}
-          loading="lazy"
-          onClick={handleOpen}
-        />
+        <div className="relative max-w-full max-h-[600px] cursor-pointer hover:opacity-90 transition-opacity" onClick={handleOpen}>
+          <Image
+            src={src}
+            alt={alt}
+            width={800}
+            height={600}
+            className="rounded-lg shadow-lg object-contain"
+            style={{ maxWidth: '800px', maxHeight: '600px' }}
+            loading="lazy"
+          />
+        </div>
       </div>
 
       {/* Lightbox modal */}
@@ -42,9 +46,11 @@ export function ImageLightbox({ src, alt = '' }: ImageLightboxProps) {
             <X className="h-8 w-8" />
           </button>
           
-          <img
+          <Image
             src={src}
             alt={alt}
+            width={1200}
+            height={800}
             className="max-w-full max-h-[90vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />

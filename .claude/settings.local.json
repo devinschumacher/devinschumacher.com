@@ -15,7 +15,8 @@
       "Bash(mkdir:*)",
       "Bash(node:*)",
       "Bash(sed:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
