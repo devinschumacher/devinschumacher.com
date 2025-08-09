@@ -13,9 +13,9 @@ import { siteConfig } from '@/site.config';
 import { Metadata } from 'next';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -119,7 +119,7 @@ export default async function BestPostPage({ params }: PageProps) {
               </div>
 
               {/* Tags */}
-              {post.meta.tags && post.meta.tags.length > 0 && (
+              {post.meta.tags && Array.isArray(post.meta.tags) && post.meta.tags.length > 0 && (
                 <div className="mt-6 flex flex-wrap gap-2">
                   {post.meta.tags.map((tag: string) => (
                     <Badge key={tag} variant="outline">

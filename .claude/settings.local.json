@@ -6,7 +6,13 @@
       "Bash(ls:*)",
       "WebFetch(domain:serp.co)",
       "WebFetch(domain:serp.ai)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)",
+      "Bash(npx next dev:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   ArrowRight,
   Code2,
@@ -136,7 +137,7 @@ export default function HomePage() {
       description: "Snowboarding content creator sharing mountain adventures",
       category: "snowboarding",
       featured: true,
-      url: "https://instagram.com/devingoessnowboarding",
+      url: "https://youtube.com/@devingoessnowboarding",
       content: "Devin Goes Snowboarding is a snowboarding-focused social media brand documenting mountain adventures, riding sessions, and the snowboarding lifestyle."
     },
     {
@@ -158,6 +159,90 @@ export default function HomePage() {
     'education': 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400'
   };
 
+  const films = [
+    {
+      title: "The Lord of the Rings: The Fellowship of the Ring",
+      year: "2001",
+      role: "Party Hobbit",
+      rating: "8.9",
+      type: "Epic Fantasy",
+      poster: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=The%20Lord%20of%20the%20Rings%3A%20The%20Fellowship%20of%20the%20Ring"
+    },
+    {
+      title: "Pulp Fiction", 
+      year: "1994",
+      role: "Diner Patron",
+      rating: "8.8",
+      type: "Crime Drama",
+      poster: "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1995-,Pulp%20Fiction,-8.8"
+    },
+    {
+      title: "Jurassic Park",
+      year: "1993", 
+      role: "Lab Technician",
+      rating: "8.2",
+      type: "Sci-Fi Adventure",
+      poster: "https://image.tmdb.org/t/p/original/fjTU1Bgh3KJu4aatZil3sofR2zC.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1994-,Jurassic%20Park,-8.2"
+    },
+    {
+      title: "The Bourne Identity",
+      year: "2002",
+      role: "Policeman", 
+      rating: "7.8",
+      type: "Action Thriller",
+      poster: "https://image.tmdb.org/t/p/original/vklZuhqnjVn4NMv5npOt86KXUhf.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=2015-,The%20Bourne%20Identity,-7.8"
+    },
+    {
+      title: "American Psycho",
+      year: "2000",
+      role: "Restaurant Patron",
+      rating: "7.6",
+      type: "Psychological Thriller",
+      poster: "https://image.tmdb.org/t/p/original/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=2001-,American%20Psycho,-7.6"
+    },
+    {
+      title: "Starship Troopers",
+      year: "1997",
+      role: "Trooper",
+      rating: "7.3",
+      type: "Sci-Fi Action",
+      poster: "https://image.tmdb.org/t/p/original/wlveVIVxvI7AHR4u5X9J0n31gmE.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1997-,Starship%20Troopers,-7.3"
+    },
+    {
+      title: "Independence Day",
+      year: "1996",
+      role: "Homeless Man",
+      rating: "7.0",
+      type: "Sci-Fi Blockbuster",
+      poster: "https://image.tmdb.org/t/p/original/v6kq2l5lly6YsRXOpq3c6vZMFHv.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1996-,Independence%20Day,-7.0"
+    },
+    {
+      title: "Rocky V",
+      year: "1990",
+      role: "Druggy",
+      rating: "5.4",
+      type: "Sports Drama",
+      poster: "https://image.tmdb.org/t/p/w1280/tevHaVxtrMTaUi8f3YjLWYSSY8A.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1990-,Rocky%20V,-5.4"
+    },
+    {
+      title: "RoboCop",
+      year: "1987",
+      role: "News Crew",
+      rating: "7.6",
+      type: "Cyberpunk Action",
+      poster: "https://image.tmdb.org/t/p/original/iPPelvG1AVXY3zOJ875oSVaN24W.jpg",
+      imdbUrl: "https://www.imdb.com/name/nm1590539/#:~:text=1990-,RoboCop,-7.6"
+    }
+  ];
+
   return (
     <>
       <Navbar />
@@ -169,7 +254,7 @@ export default function HomePage() {
             <div className="mx-auto max-w-4xl text-center">
               <Logo size={200} showLink={false} className="h-40 w-auto mx-auto mb-6" />
               <p className="mb-10 text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto">
-                widely regarded as the World's best SEO & grumpy cat impersonator.
+                widely regarded as the World&apos;s best SEO, grumpy cat impersonator & <Link href="https://www.imdb.com/name/nm1590539/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">occasional actor</Link>.
               </p>
               
               {/* CTA Buttons */}
@@ -215,67 +300,15 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* About Section - Hidden */}
-        {/* <section className="container py-20 md:py-28">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
-              About Me
-            </h2>
-            <div className="prose prose-lg dark:prose-invert mx-auto">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm an entrepreneur and SEO expert with over 10 years of experience in digital marketing. After graduating with a Finance degree from the University of Colorado Boulder's Leeds School of Business and working at JP Morgan Chase as a private banker, I left to start my own company.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                I founded SERP AI in 2019, a technology brand with subsidiary companies including an SEO agency, digital publishing network, software development, and artificial intelligence divisions. Our mission is "AI for the greatest good, for the greatest number" - democratizing access to AI, software, and entrepreneurial success.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                Beyond business, I'm a music producer, actor, and philanthropist. I've won 5 Two Comma Club awards and helped thousands of business owners grow their companies, generating hundreds of millions in revenue across 217+ industries. Currently serving as Director of SEO at The SEO Dentist while continuing to build SERP AI.
-              </p>
-            </div>
-          </div>
-        </section> */}
-
-        {/* Skills Section - Hidden */}
-        {/*
-        <section className="border-y bg-muted/30">
-          <div className="container py-20 md:py-28">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                What I Do
-              </h2>
-              <p className="mb-12 text-lg text-muted-foreground">
-                Combining technical expertise with creative problem-solving
-              </p>
-            </div>
-
-            <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
-              {skills.map((skill, index) => {
-                const Icon = skill.icon;
-                return (
-                  <Card key={index} className="border-2 transition-all hover:border-primary/50 hover:shadow-lg">
-                    <CardHeader>
-                      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                        <Icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <CardTitle className="text-xl">{skill.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">{skill.description}</p>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </section> */}
-
         {/* Projects Section */}
         <section className="border-t bg-muted/30">
           <div className="container py-20 md:py-28">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                projects
               </h2>
               <p className="mb-12 text-lg text-muted-foreground">
+                a collection of ventures and platforms I&apos;ve built and manage
               </p>
             </div>
 
@@ -321,10 +354,170 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Film Credits Section */}
+        <section className="border-t">
+          <div className="container py-20 md:py-28">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                film credits
+              </h2>
+              <p className="mb-12 text-lg text-muted-foreground">
+                featured in hollywood blockbusters and indie films
+              </p>
+            </div>
+
+            <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {films.map((film, index) => (
+                <Link
+                  key={index}
+                  href={film.imdbUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 bg-gradient-to-b from-card to-card/50 cursor-pointer">
+                    <div className="relative aspect-[2/3] overflow-hidden">
+                      <Image 
+                        src={film.poster} 
+                        alt={`${film.title} poster`}
+                        width={300}
+                        height={450}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                      <div className="absolute top-2 left-2 inline-flex items-center gap-1 text-sm font-semibold text-white bg-black/50 px-2 py-1 rounded">
+                        <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        {film.rating}
+                      </div>
+                      <div className="absolute bottom-2 left-2 right-2">
+                        <p className="text-white text-sm font-medium">{film.role}</p>
+                      </div>
+                      <div className="absolute top-2 right-2">
+                        <svg className="h-4 w-4 text-white bg-black/50 p-1 rounded" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    <CardHeader className="pb-2">
+                      <Badge className="w-fit mb-2" variant="secondary">
+                        {film.type}
+                      </Badge>
+                      <CardTitle className="text-lg leading-tight line-clamp-2 group-hover:text-primary transition-colors">
+                        {film.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <p className="text-sm text-muted-foreground mb-1">{film.year}</p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="text-center mt-12">
+              <Button size="lg" variant="outline" asChild>
+                <Link href="https://www.imdb.com/name/nm1590539/" target="_blank" rel="noopener noreferrer">
+                  full filmography
+                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Videos Section */}
+        <section className="border-t">
+          <div className="container py-20 md:py-28">
+            <div className="mx-auto max-w-4xl text-center">
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                videos
+              </h2>
+              <p className="mb-12 text-lg text-muted-foreground">
+                educational content on seo, ai, programming, and entrepreneurship
+              </p>
+            </div>
+
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  url: "https://www.youtube.com/watch?v=ak2JiS2Ntyw",
+                  thumbnail: "https://img.youtube.com/vi/ak2JiS2Ntyw/maxresdefault.jpg",
+                  platform: "youtube"
+                },
+                {
+                  url: "https://www.youtube.com/watch?v=jhdNMmI3ZOA", 
+                  thumbnail: "https://img.youtube.com/vi/jhdNMmI3ZOA/maxresdefault.jpg",
+                  platform: "youtube"
+                },
+                {
+                  url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
+                  thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
+                  platform: "youtube"
+                }
+              ].map((video, index) => (
+                <Link
+                  key={index}
+                  href={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+                    <div className="relative aspect-video overflow-hidden">
+                      <Image 
+                        src={video.thumbnail} 
+                        alt="Video thumbnail"
+                        width={480}
+                        height={270}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all flex items-center justify-center">
+                        <svg className="h-12 w-12 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="10"/>
+                          <polygon points="10,8 16,12 10,16"/>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    <CardHeader className="pb-3">
+                      <div className="flex justify-end">
+                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                      </div>
+                    </CardHeader>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="text-center mt-12">
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/videos">
+                  videos
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
 
         {/* Recent Blog Posts Section */}
         <section className="border-t">
           <div className="container py-20 md:py-28">
+            <div className="mx-auto max-w-4xl text-center mb-12">
+              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                latest posts
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                insights on seo, ai, programming, and entrepreneurship
+              </p>
+            </div>
             <div className="mx-auto max-w-4xl space-y-4">
               {recentPosts.map((post, index) => (
                 <div key={index} className="group relative">
@@ -372,12 +565,6 @@ export default function HomePage() {
         {/* Contact Section */}
         <section className="border-t container py-20 md:py-28" id="contact">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-              
-            </h2>
-            <p className="mb-8 text-lg text-muted-foreground">
-
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="group px-8 py-6 text-base font-semibold" asChild>
                 <Link href="https://serp.ly/@serp/community">
@@ -387,7 +574,7 @@ export default function HomePage() {
               <Button size="lg" variant="outline" className="group px-8 py-6 text-base font-semibold" asChild>
                 <Link href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer">
                   <Youtube className="mr-2 h-5 w-5" />
-                  Linkedin
+                  Youtube
                 </Link>
               </Button>
             </div>

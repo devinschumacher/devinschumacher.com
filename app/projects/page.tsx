@@ -68,7 +68,7 @@ export default async function ProjectsPage() {
                 Projects
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">
-                A collection of ventures and platforms I've built and manage
+                A collection of ventures and platforms I&apos;ve built and manage
               </p>
             </div>
           </div>

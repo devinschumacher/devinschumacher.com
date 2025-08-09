@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Clock, User, FileText } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Calendar, Clock, User, FileText, ArrowRight } from 'lucide-react';
 import { format } from 'date-fns';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -128,6 +129,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     notFound();
   }
 
+  // Get related posts (same category or tags)
+  const allPosts = getAllPosts();
+  const relatedPosts = allPosts
+    .filter(p => p.slug !== post.meta.slug) // Exclude current post
+    .filter(p => {
+      // Match by category or tags
+      const hasMatchingCategory = p.category === post.meta.category;
+      const hasMatchingTags = p.tags.some(tag => post.meta.tags.includes(tag));
+      return hasMatchingCategory || hasMatchingTags;
+    })
+    .slice(0, 3); // Limit to 3 related posts
+
   return (
     <>
       <Navbar />
@@ -244,6 +257,73 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                       prose-pre:bg-muted prose-pre:p-4 prose-img:rounded-lg prose-img:w-full">
             <MDXRemote source={post.content} components={components} />
           </div>
+
+          {/* Related Posts */}
+          {relatedPosts.length > 0 && (
+            <section className="mt-16 border-t pt-12">
+              <h2 className="mb-8 text-2xl font-bold">Related Posts</h2>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {relatedPosts.map((relatedPost) => (
+                  <Link
+                    key={relatedPost.slug}
+                    href={relatedPost.customSlug ? `/${relatedPost.customSlug}/` : `/blog/${relatedPost.slug}`}
+                    className="group"
+                  >
+                    <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+                      {relatedPost.image ? (
+                        <div className="aspect-video w-full overflow-hidden relative">
+                          <Image
+                            src={relatedPost.image}
+                            alt={relatedPost.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          />
+                        </div>
+                      ) : (
+                        <div className="aspect-video w-full bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+                          <div className="text-center p-4">
+                            <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 mb-3">
+                              <FileText className="h-6 w-6 text-primary/60" />
+                            </div>
+                            {relatedPost.category && (
+                              <Badge variant="secondary" className="text-xs">
+                                {relatedPost.category}
+                              </Badge>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                      <CardHeader>
+                        <div className="flex items-center justify-between mb-2">
+                          {relatedPost.category && (
+                            <Badge variant="secondary" className="text-xs">
+                              {relatedPost.category}
+                            </Badge>
+                          )}
+                          <span className="text-xs text-muted-foreground">
+                            {format(new Date(relatedPost.date), 'MMM d, yyyy')}
+                          </span>
+                        </div>
+                        <CardTitle className="line-clamp-2 text-lg group-hover:text-primary transition-colors">
+                          {relatedPost.title}
+                        </CardTitle>
+                        <CardDescription className="line-clamp-2">
+                          {relatedPost.description}
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="flex items-center text-sm font-medium text-primary">
+                          Read more
+                          <ArrowRight className="ml-1 h-4 w-4" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Post Footer */}
           <footer className="mt-12 border-t pt-8">

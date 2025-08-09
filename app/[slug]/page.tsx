@@ -13,9 +13,9 @@ import { siteConfig } from '@/site.config';
 import { Metadata } from 'next';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // Generate paths for single-segment URLs only (like /serp/, /anchor-text/, etc.)
