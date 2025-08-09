@@ -2,7 +2,36 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ImageLightbox } from './image-lightbox';
+
+// Helper function to extract YouTube video ID from URL
+function getYouTubeVideoId(url: string): string | null {
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/v\/([a-zA-Z0-9_-]{11})/,
+  ];
+  
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match) return match[1];
+  }
+  return null;
+}
+
+// YouTube embed component
+function YouTubeEmbed({ videoId }: { videoId: string }) {
+  return (
+    <div className="my-10 relative w-full rounded-lg overflow-hidden shadow-xl border border-border/50" style={{ paddingBottom: '56.25%' }}>
+      <iframe
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title="YouTube video player"
+        className="absolute top-0 left-0 w-full h-full"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+}
 
 const components = {
   h1: (props: any) => <h1 className="mt-12 mb-6 text-4xl md:text-5xl font-bold tracking-tight text-foreground" {...props} />,
@@ -17,7 +46,15 @@ const components = {
   li: (props: any) => <li className="leading-7 text-foreground/90 pl-2" {...props} />,
   
   a: ({ href, children, ...props }: any) => {
-    const isInternal = href && (href.startsWith('/') || href.startsWith('#'));
+    if (!href) return <a {...props}>{children}</a>;
+    
+    // Check if this is a YouTube link for embedding
+    const youtubeVideoId = getYouTubeVideoId(href);
+    if (youtubeVideoId) {
+      return <YouTubeEmbed videoId={youtubeVideoId} />;
+    }
+    
+    const isInternal = href.startsWith('/') || href.startsWith('#');
     
     if (isInternal) {
       return (
@@ -62,23 +99,18 @@ const components = {
   img: ({ src, alt, ...props }: any) => {
     if (!src) return null;
     
-    // Handle external images
-    if (src.startsWith('http')) {
-      return (
-        <div className="my-8 rounded-lg overflow-hidden shadow-lg border border-border/50">
-          <img 
-            src={src} 
-            alt={alt || ''} 
-            className="w-full h-auto"
-            loading="lazy"
-            {...props}
-          />
-        </div>
-      );
-    }
-    
-    // Use ImageLightbox for local images
-    return <ImageLightbox src={src} alt={alt || ''} />;
+    // Handle all images consistently to avoid hydration mismatch
+    return (
+      <div className="my-8 rounded-lg overflow-hidden shadow-lg border border-border/50">
+        <img 
+          src={src} 
+          alt={alt || ''} 
+          className="w-full h-auto"
+          loading="lazy"
+          {...props}
+        />
+      </div>
+    );
   },
   
   hr: (props: any) => <hr className="my-12 border-t-2 border-border/50" {...props} />,
@@ -111,12 +143,50 @@ const components = {
   ),
 };
 
+// Custom remark plugin to convert bare YouTube URLs to embeds
+function remarkYouTubeEmbed() {
+  return (tree: any) => {
+    const { visit } = require('unist-util-visit');
+    
+    visit(tree, 'paragraph', (node: any) => {
+      if (node.children && node.children.length === 1 && node.children[0].type === 'text') {
+        const text = node.children[0].value;
+        const youtubeVideoId = getYouTubeVideoId(text);
+        
+        if (youtubeVideoId) {
+          // Replace the paragraph with a custom YouTube embed node
+          node.type = 'html';
+          node.value = `<div data-youtube-embed="${youtubeVideoId}"></div>`;
+          node.children = undefined;
+        }
+      }
+    });
+  };
+}
+
 export function MDXContent({ source }: { source: string }) {
+  // Pre-process the source to convert bare YouTube URLs
+  const processedSource = source.replace(
+    /^(https?:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^\s]*)$/gm,
+    (match) => {
+      const videoId = getYouTubeVideoId(match);
+      return videoId ? `<div data-youtube-embed="${videoId}"></div>` : match;
+    }
+  );
+
   return (
     <div className="mx-auto max-w-none">
       <MDXRemote 
-        source={source} 
-        components={components}
+        source={processedSource} 
+        components={{
+          ...components,
+          div: ({ children, 'data-youtube-embed': videoId, ...props }: any) => {
+            if (videoId) {
+              return <YouTubeEmbed videoId={videoId} />;
+            }
+            return <div {...props}>{children}</div>;
+          }
+        }}
         options={{
           mdxOptions: {
             remarkPlugins: [remarkGfm],

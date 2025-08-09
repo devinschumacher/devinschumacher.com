@@ -35,7 +35,8 @@
       "Bash(git ls-tree:*)",
       "Bash(curl:*)",
       "Bash(pkill:*)",
-      "Bash(true)"
+      "Bash(true)",
+      "Bash(npm run check-links:*)"
     ],
     "deny": []
   }

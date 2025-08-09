@@ -132,9 +132,9 @@ First, you need to sign into your management console and locate the page where y
 
 The second field is where you will enter the text for your DMARC record. For example, you can use the following text:
 
-`
+```
 v="DMARC1;" p="none;" rua="mailto:postmaster@example.com;" ruf="mailto:postmaster@example.com;"
-`
+```
 
 Note that the text record value may need to be adjusted based on your desired settings. The value of `p="none`" means that no action will be taken when authentication fails. If you want to take action in case of failed authentication, you can use `quarantine` or `reject`.
 

@@ -109,18 +109,3 @@ Use a link shortener, like [serp.ly](https://serp.ly/)!
 
 Cheers & stay funky my friends 🦩
 
-* * *
-
-### Want more awesome stuff?
-
-- 🎁 SEO, Digital Marketing Resources: [https://serp.ly/@devin/stuff](https://serp.ly/@devin/stuff)
-
-- 💌 SEO, Digital Marketing Insider Info: @ [https://serp.ly/@devin/email](https://serp.ly/@devin/email)
-
-- 🎁 Artificial Intelligence Tools & Resources: [https://serp.ly/@serpai/stuff](https://serp.ly/@serpai/stuff)
-
-- 💌 Artificial Intelligence Insider Info: @ [https://serp.ly/@serpai/email](https://serp.ly/@serpai/email)
-
-- 👨‍👩‍👧‍👦 Join the SERP Community: [https://serp.ly/@serp/discord](https://serp.ly/@serp/discord)
-
-- 🔰 Join the AI Alliance: [https://serp.ly/@serpai/badge-generators/alliance](https://serp.ly/@serpai/badge-generators/alliance)
