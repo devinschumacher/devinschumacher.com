@@ -10,7 +10,6 @@ tags:
 
 Converting information from an image into a document is a tedious and time-consuming task. But OCR software makes that task simple and quick. All it takes is one of the many best OCR software out there to cause this process to be seamless and efficient.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/giphy-3.webp)
 
 OCR software comes in many forms so choosing the best one can be overwhelming. After all, some software might let you scan invoices and save them in multiple formats, while another features editing those same documents.
 
@@ -169,7 +168,6 @@ Jokes aside, Nanonets is very friendly towards the user, meaning you won't have 
 
 You'll easily be able to digitize chosen documents and prepare them in any way you want. Additionally, the software is quick, precise, and allows users to create custom OCR models from zero. The only issue is that it comes either free (not so many features), costs $499 per month, or is a costly model.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/giphy-2.webp)
 
 With that said though, Nanonets is one of the most advanced OCR software out there so if you have the cash - you won't need anything else.
 
@@ -213,7 +211,6 @@ If you or your company are looking to convert JPEG and PNG images, that's the ty
 
 Whether it's free OCR software or paid, all of them come with a predetermined accuracy. Most of these claim to have between 95% and 99% accuracy; keep in mind that this accuracy refers to 'character errors' and not word errors. So even a 90% accuracy software is a good deal.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/giphy-1-1.webp)
 
 Another thing to research or ask the OCR software company is the text scanning specifications. What kind of fonts can the software recognize, can it distinguish and properly convert documents written in handwriting, etc.
 
@@ -272,4 +269,3 @@ As for which OCR engine and software is the best - there are multiple 'best ones
 
 In the end, as long as the software can convert PDFs and other files, it will be an excellent fit for you. Just make sure that the software supports the file formats you need.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/giphy-1.webp)

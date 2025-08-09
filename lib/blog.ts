@@ -6,8 +6,8 @@ import readingTime from 'reading-time';
 const postsDirectory = path.join(process.cwd(), 'content/blog');
 
 export interface PostMeta {
-  slug: string;
-  customSlug?: string;
+  slug: string; // The URL slug from markdown frontmatter (REQUIRED)
+  fileSlug: string; // The file-based slug for internal use
   title: string;
   description: string;
   date: string;
@@ -52,14 +52,19 @@ export function getAllPosts(): PostMeta[] {
     const { data, content } = matter(fileContents);
     const stats = readingTime(content);
     
-    // Create default slug based on file location
-    const defaultSlug = subdir 
+    // Check if slug is defined in frontmatter
+    if (!data.slug) {
+      throw new Error(`Blog post ${filePath} is missing required 'slug' field in frontmatter`);
+    }
+    
+    // Create file-based slug for internal use
+    const fileSlug = subdir 
       ? `${subdir}/${fileName.replace(/\.mdx?$/, '')}`
       : fileName.replace(/\.mdx?$/, '');
 
     return {
-      slug: defaultSlug,
-      customSlug: data.slug, // This is the custom slug from frontmatter
+      slug: data.slug, // The URL slug from frontmatter (REQUIRED)
+      fileSlug: fileSlug, // The file-based slug for internal use
       title: data.title || fileName.replace(/\.mdx?$/, ''),
       description: data.description || '',
       date: data.date || new Date().toISOString(),
@@ -144,11 +149,11 @@ export function getPostBySlug(slug: string) {
   const stats = readingTime(content);
 
   return {
-    slug: realSlug,
+    slug: data.slug || realSlug, // Use frontmatter slug if available
     content,
     meta: {
-      slug: realSlug,
-      customSlug: data.slug,
+      slug: data.slug || realSlug, // The URL slug
+      fileSlug: realSlug, // The file-based slug
       title: data.title || realSlug,
       description: data.description || '',
       date: data.date || new Date().toISOString(),
@@ -168,13 +173,13 @@ export function getAllPostsWithCustomSlugs(): PostMeta[] {
 export function getPostByCustomSlug(customSlug: string) {
   const allPosts = getAllPosts();
   
-  // Find the post with matching custom slug
-  const postMeta = allPosts.find(post => post.customSlug === customSlug);
+  // Find the post with matching slug from frontmatter
+  const postMeta = allPosts.find(post => post.slug === customSlug);
   
   if (!postMeta) {
     return null;
   }
   
   // Now get the full post content using the file-based slug
-  return getPostBySlug(postMeta.slug);
+  return getPostBySlug(postMeta.fileSlug);
 }

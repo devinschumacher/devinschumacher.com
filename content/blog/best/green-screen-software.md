@@ -28,7 +28,6 @@ In today's article, we'll go over the most popular and best professional green s
 
 ### [Adobe Premiere Pro CC](https://serp.ly/adobe-premiere-pro/)
 
-![Adobe Premiere Pro CC Homepage](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Adobe-Premiere-Pro-CC-Homepage-1024x488.png)
 
 A green screen editor must have plenty of features, as well as the chroma key functionality, in order to be worthwhile. That's exactly where [Adobe Premiere Pro CC](https://serp.ly/adobe-premiere-pro/) excels - loads of features and a powerful chroma key feature.
 
@@ -163,7 +162,6 @@ Nonetheless, iMovie is a free green screen software - something that cannot be o
 
 ### [Adobe After Effects](https://serp.ly/adobe-after-effects/)
 
-![Adobe After Effects homepage](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Adobe-After-Effects-homepage-1024x430.png)
 
 The thing about Adobe software is that, you usually don't want to use only one (except in isolated circumstances where others are not needed). **[Adobe After Effects](https://serp.ly/adobe-after-effects/) works great with [Adobe Premier Pro](https://serp.ly/adobe-premiere-pro/) and as such, it can get expensive very quickly**.
 

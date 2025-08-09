@@ -32,7 +32,7 @@ export default async function HomePage() {
     excerpt: post.description,
     date: post.date,
     readTime: post.readingTime,
-    slug: post.customSlug ? `/${post.customSlug}/` : `/${post.slug}/`,
+    slug: post.slug, // Now always uses the required slug from frontmatter
     category: post.category
   }));
 

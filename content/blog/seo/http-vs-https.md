@@ -26,20 +26,17 @@ To get a grasp of what the **difference between HTTP and HTTPS is**, you must be
 
 ### What Is HTTP?
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/http.png)
 
 **HTTP stands for _Hypertext Transfer Protocol_**. This is the protocol used to data to a browser from a server. This is the most basic form that allows users to view web pages. Early websites used this protocol back in the days.
 
 ### So, What Is HTTPS about?
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/https.png)
 
 **HTTP stands for _Hypertext Transfer Protocol_**. The main issue that sets HTTP apart form HTTPS is the fact that the flow of information can be stolen since it is not encrypted. Through the use of an
 **SSL (secure sockets layer) certificate**, HTTPS solves this by creating an encrypted connection between server and browser. In this way, any sensitive information being shared by the server and browser is protected and cannot be easily stolen.
 
 ### The Main Difference Between HTTP and HTTPS
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/difference-between-http-https.png)
 
 The **SSL (secure sockets layer) certificate** is then the main difference between HTTP and HTTPS. This extra layer of security is of vital importance, especially for those sites that collect sensitive information from their users such as _passwords and credit card information_. So, you can think of HTTPS as an HTTP with extra security.
 
@@ -57,13 +54,11 @@ But you have not considered that security is not the only benefit of HTTPS. **Ma
 
 ### Improve Your Rankings
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/increase-website-ranking.png)
 
 **HTTPS has an impact on SEO!** Google itself announced that they will be giving a small nudge in rankings to those sites that switch to HTTPS. But switching to HTTPS can also help **boost your rankings over time**. Visitors are more likely to visit sites they know are safe.
 
 ### Keep Data From Your Referrals
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/preserve-data-referrer.png)
 
 **Google Analytics is more effective on sites with HTTPS protocol**. The reason for this is that the website referring you is saved when using HTTPS. It does not happen with HTTP sites, where referral sources show up simply as "direct traffic". This fact alone gives HTTPS a huge SEO advantage to your site.
 
@@ -101,7 +96,6 @@ In order for you to see your ranking go up again, you must have Google crawl you
 
 ## 4) Process Of Changing From HTTP To HTTPS
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/http-to-https.png)
 
 ### Steps to switch to HTTPS
 

@@ -119,7 +119,7 @@ export default async function ComparisonPostPage({ params }: PageProps) {
               </div>
 
               {/* Tags */}
-              {post.meta.tags && post.meta.tags.length > 0 && (
+              {post.meta.tags && Array.isArray(post.meta.tags) && post.meta.tags.length > 0 && (
                 <div className="mt-6 flex flex-wrap gap-2">
                   {post.meta.tags.map((tag: string) => (
                     <Badge key={tag} variant="outline">

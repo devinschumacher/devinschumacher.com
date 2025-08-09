@@ -38,7 +38,7 @@ export async function generateStaticParams() {
     .filter(post => post.category === 'SEO' || post.category === 'Seo')
     .filter(post => !post.slug.includes('/')) // Only single-segment slugs
     .map(post => ({
-      slug: post.customSlug ? post.customSlug.replace(/^\/|\/$/g, '') : post.slug
+      slug: post.slug.replace(/^\/|\/$/g, '') // Remove leading/trailing slashes
     }));
   
   // Combine and deduplicate
@@ -139,7 +139,7 @@ export default async function SingleSlugPage({ params }: PageProps) {
               </div>
 
               {/* Tags */}
-              {post.meta.tags && post.meta.tags.length > 0 && (
+              {post.meta.tags && Array.isArray(post.meta.tags) && post.meta.tags.length > 0 && (
                 <div className="mt-6 flex flex-wrap gap-2">
                   {post.meta.tags.map((tag: string) => (
                     <Badge key={tag} variant="outline">

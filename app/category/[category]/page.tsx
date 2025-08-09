@@ -1,5 +1,4 @@
 import { getAllPosts } from '@/lib/blog';
-import { urlMappings } from '@/lib/url-mappings';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -102,28 +101,13 @@ export default async function CategoryPage({ params }: PageProps) {
               <>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                   {categoryPosts.map((post) => {
-                    // Use the frontmatter slug directly if it exists
-                    let postUrl;
-                    
-                    if (post.customSlug) {
-                      // Use the custom slug from frontmatter directly
-                      postUrl = post.customSlug.startsWith('/') ? post.customSlug : `/${post.customSlug}`;
-                      if (!postUrl.endsWith('/')) {
-                        postUrl += '/';
-                      }
-                    } else {
-                      // Check if this post's content path has a direct URL mapping
-                      const contentPath = post.slug;
-                      const directUrl = Object.keys(urlMappings).find(url => 
-                        urlMappings[url] === contentPath
-                      );
-                      
-                      if (directUrl) {
-                        postUrl = directUrl;
-                      } else {
-                        // Use the default blog route
-                        postUrl = `/blog/${post.slug}/`;
-                      }
+                    // Use the slug from frontmatter (now required)
+                    let postUrl = post.slug;
+                    if (!postUrl.startsWith('/')) {
+                      postUrl = `/${postUrl}`;
+                    }
+                    if (!postUrl.endsWith('/')) {
+                      postUrl += '/';
                     }
                     
                     return (

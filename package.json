@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3005",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-links": "find content -name '*.md' -exec npx markdown-link-check {} \\;",
+    "check-links-fast": "find content -name '*.md' -print0 | xargs -0 -P 4 -I {} npx markdown-link-check {}",
+    "check-external-links": "./check-external-links.sh"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

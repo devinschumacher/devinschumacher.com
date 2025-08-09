@@ -1,6 +1,6 @@
 ---
 slug: /how-to-read-csv-w-the-python-csv-module-csv-reader-csv-dictreader/
-title: "How to read CSV w/ the Python csv module: csv.reader() &amp; csv.DictReader()"
+title: "How to read CSV w/ the Python csv module: csv.reader() & csv.DictReader()"
 date: "2023-02-07"
 categories:
   - "programming"

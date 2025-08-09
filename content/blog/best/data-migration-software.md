@@ -33,7 +33,6 @@ With this software, you can transfer your data in three different ways. 
 - Transfer locally - Migrating your applications among local disks with the same computer. 
 - Transfer via Image Files - Create images of your files, programs, and account and automatically export them to your new PC or drive. 
 
-![Screen shot of PC Trans by EaseUS Dashboard](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/PC-Trans-by-EaseUS.jpg)
 
 **Pros** - One of the pros that come with using PC Trans is that if your computer is non-bootable or broken, you can still transfer your files to the new working PC. You don’t need to download or purchase any other tools besides downloading PC Trans.
 
@@ -61,7 +60,6 @@ This program will allow you to resize a hard drive, move files around on your co
 
 Along with doing all of these other things, MiniTool Partition Wizard is also a management program which means it can help manage your disk better. It can test disk performance, check and repair disk problems along with resizing partitions. 
 
-![Screenshot of MiniTool Partition Wizard Dashboard](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/MiniTool-Partition-Wizard.png)
 
 It can also manage volume, make bootable media, recover deleted files or recover data from lost or formatted disks. 
 
@@ -89,7 +87,6 @@ This program will allow you to move both personal and business information seaml
 
 [Acronis True Image](https://serp.ly/acronis-true-image/) restores the previously captured image to another disk, replicating the structure and contents. It also clones the disk and resizes the partition so you can add the data to your new disk even if it has a different capacity. 
 
-![Screenshot of Acronis True Image Dashboard](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Acronis-True-Image.jpg)
 
 If you choose True Image though, you are getting a lot more than just a data migration tool. You’re getting an All-in-One Cyber Protection System. You can create a full image backup in two clicks, easily restore your system to the same or new hardware, sync and share files, and more. 
 
@@ -121,7 +118,6 @@ In just three easy steps, Laplink’s PCmover will move everything from your old
 2. Transfer the data by clicking through the easy-to-use wizard to select which type of transfer works best for you. 
 3. Press start and walk away. PCmover does the rest for you. After it's done, your new PC or drive will be exactly like the old one. 
 
-![Screenshot of Laplink Dashboard](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Laplink.jpg)
 
 **Pros** - If something happens with the migration process and transferring files, LapLink PCmover gives you the option to undo the transfer. PCmover’s interface also helps walk you through every step of the process making it easy for beginners. 
 
@@ -149,7 +145,6 @@ Data migration is the process of transferring data from one system or device to 
 
 Data can be transferred between two servers, a database, and an application, or even just moving files from your desktop computer to backup drives.
 
-![Interpretation of Data Migration](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Data-Migration.jpg)
 
 Data migration should only be undertaken when necessary because it often causes large amounts of downtime for users who are not expecting it.
 
@@ -159,7 +154,6 @@ When it comes down to it, data migration can be seen as difficult or risky based
 
 There are three main types of data migration.
 
-![Screenshot of the Types of Data Migration](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Types-of-Data-Migration-1024x576.png)
 
 Storage migration is when data is moved from one storage device to another, such as moving your email and contacts to a new phone. When you perform this type of migration, you can usually see a huge increase in performance.
 
@@ -175,7 +169,6 @@ There are many benefits to performing data migrations. Data migration can help w
 
 \- Data Reduction - Data reduction software is used to remove unnecessary information and details from a database or file, which can help with data storage costs.
 
-![Screenshot of the One of the Benefits of Data Migration](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Benefits-of-Data-Migration-1024x684.jpg)
 
 \- Data Protection - Data protection software allows you to monitor the status of your network in order to detect intrusions as well as unauthorized access to data. Data migration can also help with this process by ensuring that your backup copies of files are protected from unwanted changes and deletions.
 
@@ -191,7 +184,6 @@ Samsung and Intel both have their own versions of data migration software that i
 
 Samsung Data Migration is the software to use when you buy a new Samsung SSD and want to quickly, easily, and safely migrate all of your data. It is designed to be able to move over your current operating system, application software, and user data. 
 
-![Screenshot of Samsung Data Migration Software](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Samsung-Data-Migration.png)
 
 Intel Data Migration Software has the same effect as the Samsung Data Migration Software but, of course, only works for new Intel products. The Intel software will transfer all contents from one drive to another and can also make a Windows bootable on your new drive. 
 

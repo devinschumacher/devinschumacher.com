@@ -151,7 +151,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     .filter(p => {
       // Match by category or tags
       const hasMatchingCategory = p.category === post.meta.category;
-      const hasMatchingTags = p.tags.some(tag => post.meta.tags.includes(tag));
+      const hasMatchingTags = Array.isArray(p.tags) && Array.isArray(post.meta.tags) 
+        ? p.tags.some(tag => post.meta.tags.includes(tag))
+        : false;
       return hasMatchingCategory || hasMatchingTags;
     })
     .slice(0, 3); // Limit to 3 related posts
@@ -245,7 +247,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </div>
 
             {/* Tags */}
-            {post.meta.tags.length > 0 && (
+            {post.meta.tags && Array.isArray(post.meta.tags) && post.meta.tags.length > 0 && (
               <div className="mt-4 flex flex-wrap gap-2">
                 {post.meta.tags.map((tag: string) => (
                   <Badge key={tag} variant="secondary">
@@ -281,7 +283,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 {relatedPosts.map((relatedPost) => (
                   <Link
                     key={relatedPost.slug}
-                    href={relatedPost.customSlug ? `/${relatedPost.customSlug}/` : `/blog/${relatedPost.slug}`}
+                    href={relatedPost.slug}
                     className="group"
                   >
                     <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">

@@ -67,4 +67,3 @@ check it out!
 
 in case you don't know how to count to 4, python can do it for you:
 
-![python lists 1024x415 1](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/python-lists-1024x415.png)

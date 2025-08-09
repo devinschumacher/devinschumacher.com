@@ -45,7 +45,6 @@ The best part?
 
 You’ll save money when you purchase a subscription because prices are set at a monthly rate instead of per minute.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/PhoneBurner-interface-best-auto-dialer-software.webp)
 
 **Features**
 
@@ -96,7 +95,6 @@ Snag your quote for [PhoneBurner](https://serp.ly/phoneburner/).
 
 [RingCentral Engage Voice](https://serp.ly/ringcentral-engage-voice/) is an autodialer system that connects callers to the best destination for them based on their needs. RingCentral Engage Voice uses artificial intelligence and natural language processing to create a customized experience for each caller, so they are connected with what they need as quickly as possible.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/elavate-experience-png-rendition.webp)
 
 RingCentral Engage Voice also has flexible integrations which can be used in conjunction with other systems to provide different features such as text messaging, video conferencing, or mobile apps.
 
@@ -108,7 +106,6 @@ One of their standout features is its advanced predictive dialer. This feature a
 
 This predictive dialer feature is designed to place the optimal number of calls for the staff that is available to field those calls. The number of calls can be either higher or lower depending on who is available to take the call. This process is best illustrated by this graphic:
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/RingCentral.png)
 
 **Features**
 
@@ -151,7 +148,6 @@ Once this has been done, all you have to do is press play and Voicent auto diale
 
 For best results, the Voicent auto dialer needs to be used in conjunction with a pre-recorded message. You can record your own using the best quality telephone recorder (which is included in the package) or you can choose from several professionally recorded messages available on the Internet.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/auto-dialer-personalize-message.png)
 
 **Features**
 
@@ -283,7 +279,6 @@ Snag your quote for [NICE CXone](https://serp.ly/nice-cxone/).
 
 If you've ever been called by a political party or political candidate seeking your vote and donation, it's quite likely that the call was placed using [CallHub](https://serp.ly/callhub/).
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/automated-dashboard-redesign.png)
 
 CallHub auto dialer is best for organizations that want more contacts so they can reach out to more potential customers, donors, and volunteers. One of the best parts about CallHub is that not only will it warm up your prospects, but it will also send out follow-up messages to them after the call.
 
@@ -323,7 +318,6 @@ These plans are actually good in that the subscription fees are not for a single
 
 If you are a call center, here is the pricing breakdown of inbound and outbound calls.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/569deda6-8d00-43e0-8c7c-4c141cfaa942.png)
 
 Snag your quote for [CallHub](https://serp.ly/callhub/).
 

@@ -136,7 +136,6 @@ PicMonkey is a great ally if you want to edit photos online instead of download
 
 One big plus about PicMonkey is that it has a mobile version. Not all editors can offer mobile solutions that are pretty much as efficient as their desktop counterparts.
 
-![picmonkey-alt](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/picmonkey.png)
 
 Its drag-and-drop interface is pretty straightforward. All the tools are visible at first glance, and you can access them from the toolbar on the left. It reminds me a bit of good old Paint and how easy it was to choose the colors and shapes.
 

@@ -86,7 +86,6 @@ Some graphic design projects will often require collaboration between different 
 
 Figma isn't just a graphic design tool, but it can be used as one.  It acts more like an online cloud storage system with easy-to-access files for collaboration between multiple people.  
 
-![screenshot of Figma dashboard](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/figma-1024x604.png)
 
 This makes Figma ideal for designers that work with multiple artists and even across multiple teams.  It's also a great tool for personal graphic design projects as well.
 
@@ -198,7 +197,6 @@ You'll get access to unlimited downloads per month if you go with either of thei
 
 Design Wizard is another free graphic design software. It offers you the best [web design](https://devinschumacher.com/web-design-software/) templates for your small business with unlimited layouts, themes, and professional features that are all easy to use, so even an amateur can produce amazing websites without breaking a sweat.
 
-![screenshot of the design wizard photo editing tool](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/design-wizard-1024x518.jpeg)
 
 Design Wizard allows you to edit images and videos, and the process to edit both is simple enough to do in a few minutes.
 
@@ -250,7 +248,6 @@ Their Pro plan offers excellent value at $9.99 per month, but you can also proce
 
 While it's not as robust and comprehensive as Adobe Illustrator, it still does a great job at producing vector graphics and is free to use!
 
-![screenshot of the vectr photo editing software dashboard](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Vectr-Photo-Editor-1024x580.png)
 
 It provides an easy-to-use, vector-based editor with built-in benefits such as scalable objects and paths, which permit you to resize designs without quality loss. The website's editable shapes make it easy to integrate custom images or icons into your designs, and the templates provided allow you to professionally promote your small business - all without a learning curve!
 
@@ -294,7 +291,6 @@ Vectr is a free tool for designers to use...right now. Their website does say th
 
 [Pixlr](https://serp.ly/pixlr/) is a photo editor best known for its flexible and robust batch editing tools that can rival the features offered in Adobe Photoshop for a fraction of its price.
 
-![screenshot of the pixlr photo editing tool](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/pixlr-1024x576.jpeg)
 
 Pixlr enables users to edit more than one picture at the same time, either individually or en masse. The program has great compatibility with a wide variety of image formats, including BMP, GIF, JPEG, PNG, and TIFF - perfect for business owners who want to maintain an archive of their marketing materials or experiment with the latest in web design trends!
 

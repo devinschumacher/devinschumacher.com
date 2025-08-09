@@ -22,7 +22,6 @@ Every Scrum needs a master who assumes the role of the team leader for the durat
 
 Like other agile development tools, Scrum aids in boosting productivity and ensuring that the end customer continuously enjoys a superior product. In addition, there are other secondary benefits associated with the Scrum framework.
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/scrum.gif)
 
 ## Our Top Picks For Scrum Tools
 
@@ -64,7 +63,6 @@ Each of these tools offers a slightly different product development experience u
 
 ### [Jira](https://serp.ly/jira/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Jira-1024x570.png)
 
 Source: [Atlassian](https://www.atlassian.com/software/jira)
 
@@ -76,7 +74,6 @@ Snag your quote for [Jira](https://serp.ly/jira/).
 
 ### [NTask](https://serp.ly/ntask/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/NTask.png)
 
 Source: [NTask](https://www.ntaskmanager.com/product/)
 
@@ -104,7 +101,6 @@ Snag your quote for [Quickscrum](https://serp.ly/quickscrum/).
 
 ### [ScrumDo](https://serp.ly/scrumdo/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/ScrumDo-1024x588.png)
 
 Source: [Scrumdo](https://www.scrumdo.com/scrumdo-for-safe/)
 
@@ -118,7 +114,6 @@ Snag your quote for [ScrumDo](https://serp.ly/scrumdo/).
 
 ### [VivifyScrum](https://serp.ly/vivifyscrum/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/VivifyScrum-1024x588.png)
 
 Source: [VivifyScrum](https://www.vivifyscrum.com/how-it-works/boards/scrum-and-kanban-events)
 
@@ -132,7 +127,6 @@ Snag your quote for [VivifyScrum](https://serp.ly/vivifyscrum/).
 
 ### [Target Process](https://serp.ly/target-process/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/TargetProcess-1024x588.png)
 
 Source: [Target Process](https://www.targetprocess.com/)
 
@@ -146,7 +140,6 @@ Snag your quote for [Target Process](https://serp.ly/target-process/).
 
 ### [Scrumwise](https://serp.ly/scrumwise/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Scrumwise-1024x631.png)
 
 Source: [Scrumwise](https://support.scrumwise.com/article/191-what-is-kanban)
 
@@ -160,7 +153,6 @@ Snag your quote for Scrumwise.
 
 ### [Eylean](https://serp.ly/eylean/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Eylean-1024x569.png)
 
 Source: [Eylean](https://www.eylean.com/blog/2019/04/eylean-board-an-all-around-project-management-solution/)
 
@@ -174,7 +166,6 @@ Snag your quote for [Eylean](https://serp.ly/eylean/).
 
 ### [Monday.com](https://serp.ly/monday/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Monday-1024x536.png)
 
 Source: [Monday.com](https://monday.com/)
 
@@ -188,7 +179,6 @@ Snag your quote for [Monday.com](https://serp.ly/monday/).
 
 ### [Zoho Sprints](https://serp.ly/sprints/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Sprints.png)
 
 Source: [Sprints](https://www.visual-paradigm.com/scrum/what-is-sprint-in-scrum/)
 
@@ -202,7 +192,6 @@ Snag your quote for [Zoho Sprints](https://serp.ly/sprints/).
 
 ### [Visual Paradigm](https://serp.ly/visual-paradigm/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Process.jpeg)
 
 Source: [Visual Paradigm](https://www.visual-paradigm.com/)
 
@@ -216,7 +205,6 @@ Snag your quote for [Visual Paradigm](https://serp.ly/visual-paradigm/).
 
 ### [ClickUp](https://serp.ly/clickup/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/ClickUp-1024x696.png)
 
 Source: [ClickUp](https://clickup.com/)
 
@@ -230,7 +218,6 @@ Snag your quote for [ClickUp](https://serp.ly/clickup/).
 
 ### [Planview LeanKit](https://serp.ly/leankit/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/LeanKit-1024x569.png)
 
 [LeanKit](https://serp.ly/leankit/) is a project management tool that leans toward high-level visualization and product delivery. 
 
@@ -244,7 +231,6 @@ Snag your quote for [LeanKit](https://serp.ly/leankit/).
 
 ### [Yodiz](https://serp.ly/yodiz/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Yodiz-1024x569.png)
 
 Source: [Yodiz](https://www.yodiz.com/)
 
@@ -260,7 +246,6 @@ Snag your quote for [Yodiz](https://serp.ly/yodiz/).
 
 ### [Axosoft](https://serp.ly/axosoft/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Axosoft-1024x569.png)
 
 Source: [Axosoft](https://www.axosoft.com/scrum-bug-tracking)
 
@@ -276,7 +261,6 @@ Snag your quote for [Axosoft](https://serp.ly/axosoft/).
 
 ### [ActiveCollab](https://serp.ly/activecollab/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/ActiveCollab-1024x578.png)
 
 Source: [ActiveCollab](https://activecollab.com/blog/product/new-activecollab-is-here)
 
@@ -290,7 +274,6 @@ Snag your quote for [ActiveCollab](https://serp.ly/activecollab/).
 
 ### [Pivotal Tracker](https://serp.ly/pivotal-tracker/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Serenity-1024x635.png)
 
 Source: [Pivotal Tracker](https://www.pivotaltracker.com/blog/customizing-your-tracker-experience)
 
@@ -308,7 +291,6 @@ Snag your quote for [Pivotal Tracker](https://serp.ly/pivotal-tracker/).
 
 ### [Zepel](https://serp.ly/zepel/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Zepel-1024x569.png)
 
 Source: [Zepel](https://zepel.io/)
 
@@ -324,7 +306,6 @@ Snag your quote for [Zepel](https://serp.ly/zepel/).
 
 ### [Trello](https://serp.ly/trello/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Trello-1024x718.png)
 
 Source: [Trello](https://trello.com/)
 
@@ -340,7 +321,6 @@ Snag your quote for [Trello](https://serp.ly/trello/).
 
 ### [Sprint.ly](https://serp.ly/sprint-ly/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Sprintly-1024x569.png)
 
 Source: [Sprint.ly](https://sprint.ly/)
 
@@ -356,7 +336,6 @@ Snag your quote for [Sprint.ly](https://serp.ly/sprint-ly/).
 
 ### [VersionOne](https://serp.ly/versionone/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/Versionone-1024x569.png)
 
 Source: [VersionOne](https://www.collab.net/products/versionone) 
 
@@ -372,7 +351,6 @@ Snag your quote for [VersionOne](https://serp.ly/versionone/).
 
 ### [Asana](https://serp.ly/asana/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/asana-1024x569.png)
 
 Source: [Asana](https://asana.com/product)
 
@@ -386,7 +364,6 @@ Snag your quote for [Asana](https://serp.ly/asana/).
 
 ### [Wrike](https://serp.ly/wrike/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/wrike-1024x569.png)
 
 Source: [Wrike](https://www.wrike.com/)
 
@@ -398,7 +375,6 @@ Snag your quote for [Wrike](https://serp.ly/wrike/).
 
 ### [Favro](https://serp.ly/favro/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/favro-1024x569.png)
 
 Source: [Favro](https://www.favro.com/)
 
@@ -412,7 +388,6 @@ Snag your quote for [Favro](https://serp.ly/favro/).
 
 ### [Assembla](https://serp.ly/assembla/) 
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/assembla-1024x594.png)
 
 Source: [Assembla](https://www.assembla.com/projects)
 

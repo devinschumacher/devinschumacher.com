@@ -37,7 +37,6 @@ Let us help you decide!
 
 ### [Podia](https://serp.ly/podia/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/6cfe4286-0b3a-46cf-9f95-2e7d87de6381.png)
 
 This is a site built for sharing online courses and helping others learn and grow in their education.
 
@@ -57,7 +56,6 @@ Start Kajabi's free trial [here](https://serp.ly/kajabi/).
 
 ### [Intellum](https://serp.ly/intellum/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/8e0449b8-bc50-4c0f-b58e-0761913b1c92.png)
 
 This is great for those who are already or want to become involved in eLearning.
 
@@ -67,7 +65,6 @@ Click [here](https://serp.ly/intellum/) to know more about Intellum.
 
 ### [WordPress](https://serp.ly/wordpress/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/a39e09f2-1321-4974-8f51-d8a7f38080ca.png)
 
 Known as a great site for blogging, WordPress is used by personal artists, professional companies, and eCommerce sites all looking to share a bit more information about their brands. WordPress websites are clean and user-friendly while supporting multiple digital tools for site optimization.
 
@@ -100,7 +97,6 @@ Sign up with [Teachable](https://serp.ly/teachable/) and share what you know!
 
 ### [Uscreen](https://serp.ly/uscreen/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/a7c74bfa-1a26-4b20-a619-820963fb9768.png)
 
 If you are looking for a site to build video monetization in a more professional capacity, Uscreen can help you do so. This would be a great option for fitness instructors, for example.
 
@@ -124,7 +120,6 @@ Building the site itself is the next best step you can take after choosing the m
 
 ## For Creators
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/1d004aab-274a-45b4-869a-b643ee0d417c.png)
 
 ### Building a Membership Site Platform
 
@@ -164,7 +159,6 @@ If you are not sure what to charge for your services, you can crowdsource friend
 
 ### [Email Marketing](https://devinschumacher.com/)
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/5ec0dffa-0122-4b81-bbce-e63c223e4354.png)
 
 If you are concerned about outreach, consider implementing [email marketing](https://devinschumacher.com/) tools. Email marketing campaigns can help extend your audience and provide direct information to interested candidates.
 
@@ -188,7 +182,6 @@ Focusing on emails to build a core audience and then reaching out further with a
 
 ### Running Events
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/88c9105a-eaa7-4974-a72b-52e25913af70.png)
 
 If your service includes many online course builder membership content, you might consider offering some hybrid opportunities.
 
@@ -198,7 +191,6 @@ For example, rather than just having your audience take advantage of your online
 
 **Widen Your Audience**
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/9aff417b-86f6-49d0-8bc6-b1aa61a16ecd.png)
 
 When you create events for your membership services, you can automatically widen your audience. Perhaps you offer a live lecture series, or a live fundraiser, or a live session to showcase the service that you are offering. Even hosting a Q&A for your company is a good way to establish engagement.
 

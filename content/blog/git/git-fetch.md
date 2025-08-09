@@ -45,7 +45,6 @@ example:
 git fetch origin
 `
 
-![the result of a git fetch origin command on in the shell](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/screen-shot-2022-08-06-at-08.53.22.png)
 
 here we ran a `git fetch origin` to fetch the repo origin.
 
@@ -63,7 +62,6 @@ like:
 git fetch origin test-branch
 `
 
-![the result of a git fetch command at the command line](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/screen-shot-2022-08-06-at-08.59.36-1024x151.png)
 
 there was no test-branch in this repository, but you can see the command was successfully executed.
 

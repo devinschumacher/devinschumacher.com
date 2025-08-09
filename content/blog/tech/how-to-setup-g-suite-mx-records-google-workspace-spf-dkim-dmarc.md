@@ -1,6 +1,6 @@
 ---
 slug: /how-to-setup-g-suite-mx-records-google-workspace-spf-dkim-dmarc/
-title: 'How to Setup G Suite MX Records (Google Workspace) +SPF, DKIM &amp; DMARC'
+title: 'How to Setup G Suite MX Records (Google Workspace) +SPF, DKIM & DMARC'
 date: '2023-02-08'
 categories:
   - email-marketing

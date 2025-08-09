@@ -327,7 +327,6 @@ If your business listing is already on Google My Business, great! However, if yo
 
 Let's also not forget that local SEO software not only helps you with your local business listings online but they also help track your progress. With this software, you can monitor the performance of your local SEO efforts by tracking the clicks, page visits, and conversions that come from the channels in your [local SEO strategy](https://devinschumacher.com/local-seo/).
 
-![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/analytics.jpg)
 
 **Getting to Know Your Customers**
 

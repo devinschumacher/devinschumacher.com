@@ -32,7 +32,8 @@
       "Bash(gh run view:*)",
       "Bash(npx tsc:*)",
       "Bash(git fetch:*)",
-      "Bash(git ls-tree:*)"
+      "Bash(git ls-tree:*)",
+      "Bash(curl:*)"
     ],
     "deny": []
   }

@@ -1,6 +1,6 @@
 ---
 slug: /how-to-completely-delete-applications-on-mac-full-uninstallation/
-title: "How to Completely Uninstall &amp; Delete Mac Apps (Without Using Extra Software or Tools)"
+title: "How to Completely Uninstall & Delete Mac Apps (Without Using Extra Software or Tools)"
 date: "2023-02-27"
 categories:
   - "computer-skills"
@@ -70,4 +70,3 @@ What you're probably looking for is bypassing are changing your permission level
 
 13. Delete the app
 
-![Changing file permissions, so that you can delete applications](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/file-permissions-794x1024.webp)
