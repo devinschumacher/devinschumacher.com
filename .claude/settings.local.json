@@ -33,7 +33,9 @@
       "Bash(npx tsc:*)",
       "Bash(git fetch:*)",
       "Bash(git ls-tree:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(true)"
     ],
     "deny": []
   }

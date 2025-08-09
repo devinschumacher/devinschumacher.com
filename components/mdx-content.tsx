@@ -1,4 +1,5 @@
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import remarkGfm from 'remark-gfm';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ImageLightbox } from './image-lightbox';
@@ -113,7 +114,15 @@ const components = {
 export function MDXContent({ source }: { source: string }) {
   return (
     <div className="mx-auto max-w-none">
-      <MDXRemote source={source} components={components} />
+      <MDXRemote 
+        source={source} 
+        components={components}
+        options={{
+          mdxOptions: {
+            remarkPlugins: [remarkGfm],
+          },
+        }}
+      />
     </div>
   );
 }
