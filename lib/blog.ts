@@ -19,7 +19,28 @@ export interface PostMeta {
 }
 
 export function getAllPosts(): PostMeta[] {
+  console.log('getAllPosts: Current working directory:', process.cwd());
+  console.log('getAllPosts: Posts directory path:', postsDirectory);
+  console.log('getAllPosts: Posts directory exists:', fs.existsSync(postsDirectory));
+  
   if (!fs.existsSync(postsDirectory)) {
+    console.warn('getAllPosts: Posts directory does not exist, returning empty array');
+    
+    // Let's also check what directories do exist
+    try {
+      const contentDir = path.join(process.cwd(), 'content');
+      console.log('getAllPosts: Content directory exists:', fs.existsSync(contentDir));
+      if (fs.existsSync(contentDir)) {
+        const contentItems = fs.readdirSync(contentDir);
+        console.log('getAllPosts: Content directory contents:', contentItems);
+      }
+      
+      const rootItems = fs.readdirSync(process.cwd());
+      console.log('getAllPosts: Root directory contents:', rootItems.filter(item => !item.startsWith('.')));
+    } catch (error) {
+      console.error('getAllPosts: Error checking directory contents:', error);
+    }
+    
     return [];
   }
 
