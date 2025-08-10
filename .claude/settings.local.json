@@ -36,7 +36,8 @@
       "Bash(curl:*)",
       "Bash(pkill:*)",
       "Bash(true)",
-      "Bash(npm run check-links:*)"
+      "Bash(npm run check-links:*)",
+      "Bash(gh run watch:*)"
     ],
     "deny": []
   }
