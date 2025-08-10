@@ -105,7 +105,8 @@ export default async function SingleSlugPage({ params }: PageProps) {
         (p.category && post.meta.category && 
          p.category.toLowerCase() === post.meta.category.toLowerCase()) ||
         // Or share at least one tag
-        (p.tags && post.meta.tags && 
+        (p.tags && Array.isArray(p.tags) && 
+         post.meta.tags && Array.isArray(post.meta.tags) && 
          p.tags.some(tag => post.meta.tags?.includes(tag)))
       )
     )
