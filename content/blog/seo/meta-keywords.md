@@ -11,9 +11,18 @@ To understand what meta keywords are, you must first know what a "meta tag" in H
 
 "Google supports both page-level meta-tags as well as inline directives to help control how your site's pages will appear in Search. Page-level meta tags are a great way for webmasters to provide search engines with information about their sites. Meta tags can be used to provide information to all sorts of clients, and each system processes only the meta tags they understand and ignores the rest. Meta tags are added to the `<head>` section of your HTML page and generally look like this"
 
-`
-&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;head&gt;    &lt;meta charset="utf-8" /&gt;    &lt;meta name="Description" CONTENT="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages" /&gt;    &lt;meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/&gt;    &lt;title&gt;Example Books - high-quality used books for children&lt;/title&gt;    &lt;meta name="robots" content="noindex,nofollow" /&gt;
-`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Description" CONTENT="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages" />
+    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34"/>
+    <title>Example Books - high-quality used books for children</title>
+    <meta name="robots" content="noindex,nofollow" />
+  </head>
+</html>
+```
 
 (Source: [Google](https://support.google.com/webmasters/answer/79812?hl=en))
 
@@ -45,9 +54,9 @@ If we were to add Meta Keywords to this page we would add a line of HTML code to
 
 ### Meta Keywords Tag Example:
 
-`
+```html
 <meta name="keywords" content="meta keywords, meta keyword tags in seo, how to use meta keywords, meta keyword importance" />
-`
+```
 
 In reality, we do not use Meta Keywords.
 

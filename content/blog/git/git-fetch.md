@@ -21,15 +21,15 @@ it also grabs a record of all remote repository changes, so you can see any up
 
 ## git fetch options
 
-`
+```bash
 git fetch <options> <remote-name> <branch-name />
-`
+```
 
 for a list of all the options available with `git fetch` run the following command in the shell:
 
-`
+```bash
 git fetch --help
-`
+```
 
 ## workflow
 
@@ -41,9 +41,9 @@ this makes `git fetch` a great way to avoid merge conflicts while collaborating 
 
 example:
 
-`
+```bash
 git fetch origin
-`
+```
 
 
 here we ran a `git fetch origin` to fetch the repo origin.
@@ -52,15 +52,15 @@ a simple `git fetch` would have done the same thing, as it default to the origin
 
 to fetch a specific branch, run:
 
-`
+```bash
 git fetch <remote-name> <branch-name />
-`
+```
 
 like:
 
-`
+```bash
 git fetch origin test-branch
-`
+```
 
 
 there was no test-branch in this repository, but you can see the command was successfully executed.

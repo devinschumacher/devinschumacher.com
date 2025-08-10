@@ -42,15 +42,15 @@ that last value is pi (π) to the 1000th place. and also a floating point number
 
 ## python float syntax
 
-`
+```python
 float(value)
-`
+```
 
 ### syntax for floating inside of a print statement
 
-`
+```python
 print(float(x))
-`
+```
 
 ## python float() parameters
 
@@ -70,17 +70,17 @@ print(float(x))
 
 1\. number = 10
 
-`
+```python
 float(10)
-`
+```
 
 python would output this as `10.0` - _notice how_ python only adds 1 decimal place for the zero value when floating a round number.
 
 2\. number = 10.000
 
-`
+```python
 float(10.000)
-`
+```
 
 python would output this as `10,00` - _notice how python removes any extra decimal places down to 2 places if the additional integers are zeros._
 
@@ -88,35 +88,35 @@ python would output this as `10,00` - _notice how python removes any extra decim
 
 1\. string = "10"
 
-`
+```python
 float("10")
-`
+```
 
 2, string = "10.00"
 
-`
+```python
 float("10.000")
-`
+```
 
 3, string = "10.0343"
 
-`
+```python
 float("10.0343")
-`
+```
 
 ### bonus: floating values inside of a `print()` statement with multiple parameters
 
 you can float a value inside of a larger statement by wrapping it with `float()` like we mentioned earlier:
 
-`
+```python
 print(float(x))
-`
+```
 
 but what if you had a program that was teaching people about floating point numbers, and you wanted to float the number values inside of a larger statement to print something like: _"the floating point number of 10.25000 is 10.25"_
 
-`
+```python
 print("the floating point number of 10.2500 is: ", float(10.2500))
-`
+```
 
 simply wrap the value you want to float with the `float()`, and be sure to us a comma `,` to separate the parameters!
 
