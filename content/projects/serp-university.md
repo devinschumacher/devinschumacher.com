@@ -4,7 +4,6 @@ description: "Free SEO education platform and community for digital marketers"
 logo: "/images/brands/serp-university.png"
 url: "https://serp.ly/@serp/community"
 category: "education"
-featured: true
 order: 6
 ---
 

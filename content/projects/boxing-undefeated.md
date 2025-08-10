@@ -4,7 +4,6 @@ description: "Your comprehensive guide to the sweet science"
 logo: "/images/brands/boxing-undefeated.png"
 url: "https://boxingundefeated.com"
 category: "boxing"
-featured: true
 order: 3
 ---
 

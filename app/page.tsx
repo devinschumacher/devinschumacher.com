@@ -65,7 +65,6 @@ export default async function HomePage() {
       name: "SERP",
       description: "Business services directory and AI tools marketplace platform",
       category: "software",
-      featured: true,
       url: "https://serp.co",
       content: "SERP is a comprehensive directory platform that connects businesses with various services and AI-powered tools. The platform serves as a marketplace for discovering and accessing business solutions across multiple industries."
     },
@@ -73,7 +72,6 @@ export default async function HomePage() {
       name: "SERP AI",
       description: "AI-powered tools and services aggregator platform",
       category: "artificial-intelligence",
-      featured: true,
       url: "https://serp.ai",
       content: "SERP AI showcases cutting-edge AI-powered tools and services across diverse industries. From protein engineering to content creation and legal services automation, the platform curates innovative AI solutions."
     },
@@ -81,7 +79,6 @@ export default async function HomePage() {
       name: "Boxing Undefeated",
       description: "Your comprehensive guide to the sweet science",
       category: "boxing",
-      featured: true,
       url: "https://boxingundefeated.com",
       content: "Boxing Undefeated is the definitive online resource for boxing enthusiasts, featuring an extensive database of professional boxer profiles, detailed fight records, and career statistics."
     },
@@ -89,7 +86,6 @@ export default async function HomePage() {
       name: "DAFT FM",
       description: "All things audio - music discovery and audio content platform",
       category: "music",
-      featured: true,
       url: "https://daft.fm",
       content: "DAFT FM is an audio-focused platform dedicated to music discovery and audio content curation. Featuring song collections, ratings, and audio equipment reviews."
     },
@@ -97,7 +93,6 @@ export default async function HomePage() {
       name: "@devingoessnowboarding",
       description: "Snowboarding content creator sharing mountain adventures",
       category: "snowboarding",
-      featured: true,
       url: "https://youtube.com/@devingoessnowboarding",
       content: "Devin Goes Snowboarding is a snowboarding-focused social media brand documenting mountain adventures, riding sessions, and the snowboarding lifestyle."
     },
@@ -105,7 +100,6 @@ export default async function HomePage() {
       name: "SERP University",
       description: "Learn SEO, digital marketing, programming while building a brand online and making money on your own terms.",
       category: "education",
-      featured: true,
       url: "https://serp.ly/@serp/community",
       content: "SERP University is a comprehensive SEO education platform providing free courses, tutorials, and resources for digital marketers and business owners."
     }

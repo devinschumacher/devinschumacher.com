@@ -4,7 +4,6 @@ description: "AI-powered tools and services aggregator platform"
 logo: "/images/brands/serp-ai.png"
 url: "https://serp.ai"
 category: "artificial-intelligence"
-featured: true
 order: 2
 ---
 

@@ -9,7 +9,6 @@ export interface Project {
   content: string;
   url: string;
   category: string;
-  featured?: boolean;
 }
 
 interface ProjectCardProps {
@@ -32,18 +31,13 @@ export function ProjectCard({
   const cardContent = (
     <Card className="group relative overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer h-full">
       <CardHeader>
-        <div className={`${showDescription ? 'flex items-start justify-between' : ''} mb-2`}>
+        <div className="mb-2">
           <Badge 
             className={`${categoryColors[project.category] || 'bg-gray-500/10 text-gray-700 dark:text-gray-400'}`}
             variant="secondary"
           >
             {project.category.replace('-', ' ')}
           </Badge>
-          {project.featured && (
-            <Badge variant="default" className="bg-primary">
-              Featured
-            </Badge>
-          )}
         </div>
         <CardTitle className="text-2xl">{project.name}</CardTitle>
         {showDescription && (

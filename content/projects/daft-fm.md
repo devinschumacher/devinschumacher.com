@@ -4,7 +4,6 @@ description: "All things audio - music discovery and audio content platform"
 logo: "/images/brands/daft-fm.png"
 url: "https://daft.fm"
 category: "music"
-featured: true
 order: 4
 ---
 

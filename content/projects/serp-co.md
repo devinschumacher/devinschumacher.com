@@ -4,7 +4,6 @@ description: "Business services directory and AI tools marketplace platform"
 logo: "/images/brands/serp-co.png"
 url: "https://serp.co"
 category: "software"
-featured: true
 order: 1
 ---
 

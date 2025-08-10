@@ -4,7 +4,6 @@ description: "Snowboarding content creator sharing mountain adventures and ridin
 logo: "/images/brands/devin-goes-snowboarding.png"
 url: "https://instagram.com/devingoessnowboarding"
 category: "snowboarding"
-featured: true
 order: 5
 ---
 
