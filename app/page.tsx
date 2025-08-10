@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard, type Project } from "@/components/project-card";
+import { VideoCard, type Video } from "@/components/video-card";
 import Link from "next/link";
 import Image from "next/image";
 import { 
@@ -314,60 +315,30 @@ export default async function HomePage() {
             <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  title: "How to Start with SEO in 2024",
-                  url: "https://www.youtube.com/watch?v=ak2JiS2Ntyw",
-                  thumbnail: "https://img.youtube.com/vi/ak2JiS2Ntyw/maxresdefault.jpg",
-                  platform: "youtube"
-                },
-                {
-                  title: "AI Tools That Actually Save Time",
-                  url: "https://www.youtube.com/watch?v=jhdNMmI3ZOA", 
-                  thumbnail: "https://img.youtube.com/vi/jhdNMmI3ZOA/maxresdefault.jpg",
-                  platform: "youtube"
-                },
-                {
-                  title: "Building Your First SaaS Product",
+                  title: "",
                   url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
                   thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
-                  platform: "youtube"
+                  platform: "youtube" as const
+                },
+                {
+                  title: "",
+                  url: "https://www.youtube.com/watch?v=GTaOBy7mxF0", 
+                  thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
+                  platform: "youtube" as const
+                },
+                {
+                  title: "",
+                  url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
+                  thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
+                  platform: "youtube" as const
                 }
               ].map((video, index) => (
-                <Link
+                <VideoCard
                   key={index}
-                  href={video.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-                    <div className="relative aspect-video overflow-hidden">
-                      <Image 
-                        src={video.thumbnail} 
-                        alt={video.title}
-                        width={480}
-                        height={270}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all flex items-center justify-center">
-                        <svg className="h-12 w-12 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <circle cx="12" cy="12" r="10"/>
-                          <polygon points="10,8 16,12 10,16"/>
-                        </svg>
-                      </div>
-                    </div>
-                    
-                    <CardHeader>
-                      <div className="flex items-start justify-between gap-2">
-                        <CardTitle className="text-base line-clamp-2 group-hover:text-primary transition-colors">
-                          {video.title}
-                        </CardTitle>
-                        <svg className="h-4 w-4 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                      </div>
-                    </CardHeader>
-                  </Card>
-                </Link>
+                  video={video}
+                  showDescription={false}
+                  showMetadata={false}
+                />
               ))}
             </div>
             

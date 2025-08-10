@@ -37,7 +37,8 @@
       "Bash(pkill:*)",
       "Bash(true)",
       "Bash(npm run check-links:*)",
-      "Bash(gh run watch:*)"
+      "Bash(gh run watch:*)",
+      "WebFetch(domain:www.youtube.com)"
     ],
     "deny": []
   }

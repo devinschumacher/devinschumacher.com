@@ -1,142 +1,40 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { VideoCard, type Video } from "@/components/video-card";
 import Link from "next/link";
-import { PlayCircle, ArrowLeft, ExternalLink, Clock, Eye } from "lucide-react";
-import Image from "next/image";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-interface Video {
-  title: string;
-  description: string;
-  thumbnail?: string;
-  url: string;
-  platform: 'youtube' | 'tiktok' | 'instagram';
-  duration?: string;
-  views?: string;
-  category: string;
-  featured?: boolean;
-  publishedAt?: string;
-}
 
 const videos: Video[] = [
   {
-    title: "How to Start with SEO in 2024",
-    description: "Complete beginner's guide to search engine optimization",
-    thumbnail: "https://img.youtube.com/vi/ak2JiS2Ntyw/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=ak2JiS2Ntyw",
-    platform: "youtube",
-    category: "seo",
-    featured: true,
-    publishedAt: "2024-03-15"
-  },
-  {
-    title: "AI Tools That Actually Save Time", 
-    description: "My top AI tools for productivity and business automation",
-    thumbnail: "https://img.youtube.com/vi/jhdNMmI3ZOA/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=jhdNMmI3ZOA",
-    platform: "youtube",
-    category: "ai",
-    featured: true,
-    publishedAt: "2024-03-10"
-  },
-  {
-    title: "Building Your First SaaS Product",
-    description: "Step-by-step guide to launching a software as a service business",
+    title: "",
     thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
-    platform: "youtube", 
-    category: "programming",
-    featured: true,
-    publishedAt: "2024-03-05"
+    platform: "youtube"
   },
   {
-    title: "Scaling Your Business with SEO",
-    description: "Advanced SEO strategies for business growth",
-    thumbnail: "https://img.youtube.com/vi/ST-MXvPVypY/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=ST-MXvPVypY",
-    platform: "youtube",
-    category: "entrepreneurship", 
-    featured: true,
-    publishedAt: "2024-03-01"
-  },
-  {
-    title: "Content Marketing That Converts",
-    description: "Creating content that drives real business results",
+    title: "",
     thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=GTaOBy7mxF0",
-    platform: "youtube",
-    category: "marketing",
-    featured: true,
-    publishedAt: "2024-02-28"
+    platform: "youtube"
   },
   {
-    title: "The Complete TypeScript Tutorial",
-    description: "Master TypeScript from basics to advanced concepts",
-    thumbnail: "https://img.youtube.com/vi/d56mG7DezGs/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=d56mG7DezGs",
-    platform: "youtube",
-    duration: "15:20",
-    views: "28K",
-    category: "programming",
-    publishedAt: "2024-02-25"
+    title: "",
+    thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
+    platform: "youtube"
   },
   {
-    title: "Quick SEO Tip: Title Tags",
-    description: "60-second tip on optimizing your title tags for better rankings",
-    thumbnail: "https://img.youtube.com/vi/RBTBEfd7z_Y/maxresdefault.jpg",
-    url: "https://tiktok.com/@dvnschmchr",
-    platform: "tiktok",
-    duration: "0:58",
-    views: "120K",
-    category: "seo",
-    publishedAt: "2024-03-12"
+    title: "",
+    thumbnail: "https://img.youtube.com/vi/GPyYrxMUeRE/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=GPyYrxMUeRE",
+    platform: "youtube"
   },
   {
-    title: "Day in the Life: Tech Entrepreneur",
-    description: "Follow my typical work day running multiple tech companies",
-    thumbnail: "https://img.youtube.com/vi/rG7fTee3WNo/maxresdefault.jpg",
-    url: "https://instagram.com/dvnschmchr",
-    platform: "instagram",
-    duration: "1:00",
-    views: "15K",
-    category: "lifestyle",
-    publishedAt: "2024-03-08"
-  },
-  {
-    title: "Python vs JavaScript for Beginners",
-    description: "Which programming language should you learn first? Complete comparison",
-    thumbnail: "https://img.youtube.com/vi/QpdhBUYk7Kk/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=QpdhBUYk7Kk",
-    platform: "youtube",
-    duration: "10:15",
-    views: "52K",
-    category: "programming",
-    featured: true,
-    publishedAt: "2024-02-28"
-  },
-  {
-    title: "Marketing Mistakes That Kill Startups",
-    description: "5 common marketing mistakes and how to avoid them",
-    thumbnail: "https://img.youtube.com/vi/dMf9_3Ji1qo/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=dMf9_3Ji1qo",
-    platform: "youtube",
-    duration: "9:30",
-    views: "38K",
-    category: "marketing",
-    publishedAt: "2024-02-20"
-  },
-  {
-    title: "AI Changed My Business",
-    description: "Real examples of how we use AI at SERP to scale operations",
-    thumbnail: "https://img.youtube.com/vi/hYrDbGzZVUQ/maxresdefault.jpg",
-    url: "https://tiktok.com/@dvnschmchr",
-    platform: "tiktok",
-    duration: "0:45",
-    views: "95K",
-    category: "ai",
-    publishedAt: "2024-03-01"
+    title: "",
+    thumbnail: "https://img.youtube.com/vi/JQtS5dHpMjU/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=JQtS5dHpMjU",
+    platform: "youtube"
   }
 ];
 
@@ -168,7 +66,6 @@ const platformIcons = {
 };
 
 export default function VideosPage() {
-  const featuredVideos = videos.filter(v => v.featured);
   const allVideos = videos;
 
   return (
@@ -195,7 +92,7 @@ export default function VideosPage() {
               {/* Platform Links */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://youtube.com/@devinschumacher" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://youtube.com/@serp-co" target="_blank" rel="noopener noreferrer">
                     {platformIcons.youtube}
                     <span className="ml-2">youtube</span>
                     <ExternalLink className="ml-2 h-3 w-3" />
@@ -220,143 +117,18 @@ export default function VideosPage() {
           </div>
         </section>
 
-        {/* Featured Videos */}
-        {featuredVideos.length > 0 && (
-          <section className="container py-12 md:py-20">
-            <div className="mx-auto max-w-6xl">
-              <h2 className="mb-8 text-2xl font-bold">featured</h2>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {featuredVideos.map((video, index) => (
-                  <Link
-                    key={index}
-                    href={video.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group"
-                  >
-                    <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-                      {/* Thumbnail */}
-                      <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                        {video.thumbnail ? (
-                          <Image 
-                            src={video.thumbnail} 
-                            alt={video.title}
-                            width={480}
-                            height={270}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          <PlayCircle className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform" />
-                        )}
-                        {video.duration && (
-                          <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
-                            {video.duration}
-                          </span>
-                        )}
-                      </div>
-                      
-                      <CardHeader className="pb-3">
-                        <div className="flex items-start justify-between mb-2">
-                          <Badge 
-                            className={`${categoryColors[video.category] || 'bg-gray-500/10 text-gray-700 dark:text-gray-400'}`}
-                            variant="secondary"
-                          >
-                            {video.category}
-                          </Badge>
-                          <div className="flex items-center gap-1">
-                            {platformIcons[video.platform]}
-                          </div>
-                        </div>
-                        <CardTitle className="line-clamp-2 text-lg group-hover:text-primary transition-colors">
-                          {video.title}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <CardDescription className="line-clamp-2 mb-3">
-                          {video.description}
-                        </CardDescription>
-                        {video.views && (
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                            <span className="flex items-center gap-1">
-                              <Eye className="h-3 w-3" />
-                              {video.views} views
-                            </span>
-                          </div>
-                        )}
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
         {/* All Videos */}
-        <section className="container py-12 md:py-20 border-t">
+        <section className="container py-12 md:py-20">
           <div className="mx-auto max-w-6xl">
-            <h2 className="mb-8 text-2xl font-bold">all videos</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {allVideos.map((video, index) => (
-                <Link
+                <VideoCard
                   key={index}
-                  href={video.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-                    {/* Thumbnail */}
-                    <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                      {video.thumbnail ? (
-                        <Image 
-                          src={video.thumbnail} 
-                          alt={video.title}
-                          width={480}
-                          height={270}
-                          className="w-full h-full object-cover"
-                        />
-                      ) : (
-                        <PlayCircle className="h-12 w-12 text-primary/50 group-hover:scale-110 transition-transform" />
-                      )}
-                      {video.duration && (
-                        <span className="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
-                          {video.duration}
-                        </span>
-                      )}
-                    </div>
-                    
-                    <CardHeader className="pb-3">
-                      <div className="flex items-start justify-between mb-2">
-                        <Badge 
-                          className={`${categoryColors[video.category] || 'bg-gray-500/10 text-gray-700 dark:text-gray-400'}`}
-                          variant="secondary"
-                        >
-                          {video.category}
-                        </Badge>
-                        <div className="flex items-center gap-1">
-                          {platformIcons[video.platform]}
-                        </div>
-                      </div>
-                      <CardTitle className="line-clamp-2 text-lg group-hover:text-primary transition-colors">
-                        {video.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="line-clamp-2 mb-3">
-                        {video.description}
-                      </CardDescription>
-                      {video.views && (
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                          <span className="flex items-center gap-1">
-                            <Eye className="h-3 w-3" />
-                            {video.views} views
-                          </span>
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
-                </Link>
+                  video={video}
+                  showDescription={true}
+                  showMetadata={true}
+                  categoryColors={categoryColors}
+                />
               ))}
             </div>
           </div>
