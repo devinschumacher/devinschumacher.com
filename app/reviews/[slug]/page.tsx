@@ -1,11 +1,12 @@
 import { notFound } from 'next/navigation';
-import { getPostBySlug } from '@/lib/blog';
+import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import { getContentPath, getAllUrlPaths } from '@/lib/url-mappings';
 import { MDXContent } from '@/components/mdx-content';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Clock, User, Tag } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Calendar, Clock, User, Tag, ArrowRight } from 'lucide-react';
 import { format } from 'date-fns';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -75,6 +76,23 @@ export default async function ReviewPostPage({ params }: PageProps) {
   if (!post) {
     notFound();
   }
+
+  // Get related posts
+  const allPosts = getAllPosts();
+  const relatedPosts = allPosts
+    .filter(p => 
+      p.slug !== post.slug && // Not the current post
+      (
+        // Same category
+        (p.category && post.meta.category && 
+         p.category.toLowerCase() === post.meta.category.toLowerCase()) ||
+        // Or share at least one tag
+        (p.tags && Array.isArray(p.tags) && 
+         post.meta.tags && Array.isArray(post.meta.tags) && 
+         p.tags.some(tag => post.meta.tags?.includes(tag)))
+      )
+    )
+    .slice(0, 3); // Get max 3 related posts
 
   return (
     <>
@@ -148,6 +166,46 @@ export default async function ReviewPostPage({ params }: PageProps) {
             {/* Article Content */}
             <MDXContent source={post.content} />
           </div>
+
+          {/* Related Posts */}
+          {relatedPosts.length > 0 && (
+            <section className="mt-20 border-t pt-12">
+              <div className="mx-auto max-w-4xl">
+                <h2 className="mb-8 text-3xl font-bold">Related Posts</h2>
+                <div className="grid gap-6 md:grid-cols-3">
+                  {relatedPosts.map((relatedPost) => (
+                    <Link
+                      key={relatedPost.slug}
+                      href={relatedPost.slug}
+                      className="group"
+                    >
+                      <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1">
+                        <CardHeader>
+                          {relatedPost.category && (
+                            <Badge variant="secondary" className="mb-2 w-fit">
+                              {relatedPost.category}
+                            </Badge>
+                          )}
+                          <CardTitle className="line-clamp-2 text-lg group-hover:text-primary transition-colors">
+                            {relatedPost.title}
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <CardDescription className="line-clamp-3 mb-4">
+                            {relatedPost.description}
+                          </CardDescription>
+                          <div className="flex items-center justify-between text-sm text-muted-foreground">
+                            <span>{relatedPost.readingTime}</span>
+                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
         </article>
         
         <Footer />
