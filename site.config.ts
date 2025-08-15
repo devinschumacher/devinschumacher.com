@@ -9,7 +9,7 @@ export const siteConfig = {
   },
   social: {
     youtube: "https://www.youtube.com/@devinschumacher?sub_confirmation=1",
-    twitter: "https://x.com/@dvnschmchr",
+    twitter: "https://serp.ly/@devin/twitter",
   },
   categories: [
     "SEO",

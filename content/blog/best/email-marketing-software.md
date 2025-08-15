@@ -200,7 +200,7 @@ Users will like the simple reporting that allows them to evaluate what is and is
 
 ![Mailerlite](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/mailerlite.png)
 
-Because of its drag-and-drop interface, MailerLite is the simplest [email marketing](https://devinschumacher.com/free-email-marketing-tools/) program to use and enables you to easily create the design you want. The company's mission is centered on simplicity, so the software has a streamlined and clean appearance.
+Because of its drag-and-drop interface, MailerLite is the simplest [email marketing](https://devinschumacher.com/free-email-marketing-software/) program to use and enables you to easily create the design you want. The company's mission is centered on simplicity, so the software has a streamlined and clean appearance.
 
 ### Pros
 

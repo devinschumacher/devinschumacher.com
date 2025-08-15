@@ -168,7 +168,7 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://x.com/devinschumacher" 
+                  href="https://serp.ly/@devin/twitter" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"

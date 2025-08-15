@@ -7,7 +7,7 @@ categories:
 category: Marketing
 ---
 
-[**Email marketing**](https://devinschumacher.com/what-is-email-marketing/) is one of the most powerful digital marketing channels we have access to in 2021. It’s intensely personal, resulting in extreme levels of engagement, and ultimately ROI.
+**Email marketing** is one of the most powerful digital marketing channels we have access to in 2021. It’s intensely personal, resulting in extreme levels of engagement, and ultimately ROI.
 
 But it’s hard to do, which is why we’re here to help you.
 
@@ -87,7 +87,7 @@ Numbers are also powerful as a tool of proof. Statistics can validate a claim, b
 
 ### 4\. Test All Your Subject Lines Before Sending Them
 
-There are a number of different free [email subject line testing tools](https://devinschumacher.com/email-marketing-tools/) available to you online. These help improve them by identifying any potential spam triggers, as well as offering grading scores and suggestions for improvement.
+There are a number of different free [email subject line testing tools](https://devinschumacher.com/best/email-marketing-software/) available to you online. These help improve them by identifying any potential spam triggers, as well as offering grading scores and suggestions for improvement.
 
 Here are the best options available:
 

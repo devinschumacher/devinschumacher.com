@@ -19,7 +19,7 @@ export default function ContactPage() {
             <CardContent className="pt-6 space-y-4">
               <div className="grid gap-4">
                 <Link 
-                  href="https://x.com/devinschumacher" 
+                  href="https://serp.ly/@devin/twitter" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
