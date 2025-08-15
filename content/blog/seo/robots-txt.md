@@ -79,13 +79,13 @@ You can see a full breakdown of all the different rules with [Google's Useful ro
 
 **We should cover specific aspects of robots.txt more extensively.**
 
-- [User-agent](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#user-agent)"
-- [Disallow](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#disallow-robots)"
-- [Allow](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#allow-robots)"
-- [Sitemap](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#sitemap-robots)"
-- [Crawl-delay](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#crawl-delay)"
-- [Comments](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#robots-comments)"
-- [Formatting](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#robots-formatting)"
+- [User-agent](#user-agent)"
+- [Disallow](#disallow-robots)"
+- [Allow](#allow-robots)"
+- [Sitemap](#sitemap-robots)"
+- [Crawl-delay](#crawl-delay)"
+- [Comments](#robots-comments)"
+- [Formatting](#robots-formatting)"
 
 ### User-agent
 

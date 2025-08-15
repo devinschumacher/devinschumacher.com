@@ -213,7 +213,7 @@ You will see page title anchor texts pop up frequently on those "recommended rea
 **Recommended Additional Reading:**
 
 - [SEO Keywords: What Are Keywords for SEO & How to Choose The Good Ones](https://devinschumacher.com-keywords/)
-- [Digital Marketing for Dummies: Everything You Need to Know to Get Started](https://devinschumacher.com/wp-admin/post.php?post="3166&action=edit)"
+
 
 Those would be examples of using a page title as the anchor text. Totally rad!
 
