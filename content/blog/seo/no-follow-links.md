@@ -131,7 +131,7 @@ SEOs are pretty creative, I will admit that. So, when this information started t
 
 Since we know that PageRank (aka trust, power, link juice, authority, etc.) is passed via links from one page to another and that the more trust a page has the easier it will rank, SEOs began to use this knowledge to their advantage.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">DYK that after 18 years we're still using PageRank (and 100s of other signals) in ranking?<br /><br />Wanna know how it works?<a href="https://t.co/CfOlxGauGF">https://t.co/CfOlxGauGF</a> <a href="https://t.co/3YJeNbXLml">pic.twitter.com/3YJeNbXLml</a></p>— Gary "鯨理" Illyes (@methode) <a href="https://twitter.com/methode/status/829755916895535104?ref_src=twsrc%5Etfw">February 9, 2017</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">DYK that after 18 years we're still using PageRank (and 100s of other signals) in ranking?<br /><br />Wanna know how it works?<a href="https://t.co/CfOlxGauGF">https://t.co/CfOlxGauGF</a> <a href="https://t.co/3YJeNbXLml">pic.twitter.com/3YJeNbXLml</a></p>— Gary "鯨理" Illyes (@methode) <a href="https://x.com/methode/status/829755916895535104?ref_src=twsrc%5Etfw">February 9, 2017</a></blockquote>
 
 #### PageRank Sculpting: Pre 2009
 

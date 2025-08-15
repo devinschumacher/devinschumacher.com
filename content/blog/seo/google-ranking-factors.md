@@ -457,7 +457,7 @@ An example of tabbed content
 
 - **Website Freshness**: How often (or not often) your website is updated, or how recently it has been updated, is believed to show Google that the site is being actively cared for and helps with the freshness. This has been denied by Google.
 
-https://twitter.com/JohnMu/status/971098008644407297
+https://x.com/JohnMu/status/971098008644407297
 
 - **Website Structure**: Your website's structure (architecture) shows how organized you are to Google, and can give Googlebot an easier time crawling, indexing & understanding your website.
 

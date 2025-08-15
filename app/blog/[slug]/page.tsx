@@ -353,7 +353,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               </Link>
               <div className="flex gap-4">
                 <Link
-                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                  href={`https://x.com/intent/tweet?text=${encodeURIComponent(
                     post.meta.title
                   )}&url=${encodeURIComponent(
                     `${siteConfig.url}/blog/${post.meta.slug}`

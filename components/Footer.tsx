@@ -146,7 +146,7 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://linkedin.com/in/devinschumacher" 
+                  href="https://www.linkedin.com/in/devinschumacher" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"
@@ -168,7 +168,7 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://twitter.com/devinschumacher" 
+                  href="https://x.com/devinschumacher" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"

@@ -415,7 +415,7 @@ Google begrudgingly supported it for a long time, even when they said not to use
 
 Bing is the same — apparently they never supported noindex, according to Frédéric Dubut (Bing Senior Program Manager Lead)
 
-https://twitter.com/CoperniX/status/1146085846845554688?ref\_src="twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1146085846845554688&ref\_url=https%3A%2F%2Fwww.contentkingapp.com%2Facademy%2Frobotstxt%2F"
+https://x.com/CoperniX/status/1146085846845554688?ref\_src="twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1146085846845554688&ref\_url=https%3A%2F%2Fwww.contentkingapp.com%2Facademy%2Frobotstxt%2F"
 
 Leave noindex for meta tags.
 

@@ -40,7 +40,7 @@ Below is an overview of several platforms and tools capable of assisting you in 
 
 ## 1. [Agency Assassin](https://serp.ly/agencyassassin.com)
 
-[![ctr](https://github-production-user-asset-6210df.s3.amazonaws.com/45643901/438836727-9baed08a-44dc-431b-824a-cae3182a3dbf.jpg?X-Amz-Algorithm="AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250501%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250501T231831Z&X-Amz-Expires=300&X-Amz-Signature=b5397d64a39b5780f20fd0e95bf46fd72c9bb7a724a31d6ab7a0f700394c8e66&X-Amz-SignedHeaders=host)]((https://serp.ly/agencyassassin.com))"
+[![ctr](https://gist.github.com/user-attachments/assets/9baed08a-44dc-431b-824a-cae3182a3dbf)]((https://serp.ly/agencyassassin.com))
 
 *   **Summary:** Agency Assassin is presented as a specialized utility for influencing CTR, purpose-built to elevate rankings in Google Maps. Its function involves mimicking genuine user engagement with Google Business Profiles (GBPs) to convey relevance and credibility signals to Google's ranking system. The tool is predominantly intended for marketing agencies and companies overseeing numerous business sites.
 *   **Core Capabilities:**

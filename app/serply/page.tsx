@@ -43,7 +43,7 @@ export default function SerplyPage() {
               </Link>
 
               <Link 
-                href="https://linkedin.com/in/devinschumacher" 
+                href="https://www.linkedin.com/in/devinschumacher" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
@@ -69,7 +69,7 @@ export default function SerplyPage() {
               </Link>
 
               <Link 
-                href="https://twitter.com/dvnschmchr" 
+                href="https://x.com/dvnschmchr" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
