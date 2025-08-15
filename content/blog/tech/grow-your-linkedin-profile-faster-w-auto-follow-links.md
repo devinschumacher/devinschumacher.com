@@ -53,7 +53,7 @@ First ill show you how to get it from the Linkedin GUI, then I’ll break down h
 
 ### Method 1: Get it from the Linkedin GUI
 
-https://www.youtube.com/watch?v="vJX1GvAhDio"
+https://www.youtube.com/watch?v=vJX1GvAhDio
 
 ### Method 2: Build the URL path
 

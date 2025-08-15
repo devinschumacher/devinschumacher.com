@@ -82,7 +82,7 @@ Do you even want an AI writer? Or do you want a paraphraser?
 
 Have a look through this video on [Quillbot](https://serp.ly/quillbot) - the World's best paraphrasing tool - and then answer that question.
 
-https://www.youtube.com/watch?v="YF8AZsWmR7g&ab\_channel=devinschumacher"
+https://www.youtube.com/watch?v=YF8AZsWmR7g
 
 ### Plagiarism Checking
 

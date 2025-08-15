@@ -13,7 +13,7 @@ Simple as that.
 
 Put another way, the Google Dance is when Google is beginning to notice your page & gives it a chance in the [SERPs](https://devinschumacher.com/serp/) (SERP = Search Engine Results Page).
 
-I like to think of it like Google coming up to me and saying (in its best [Captain Falcon impression](https://www.youtube.com/watch?v="KlTFADCkNe8))" "Show me your moves!"
+I like to think of it like Google coming up to me and saying (in its best [Captain Falcon impression](https://www.youtube.com/watch?v=KlTFADCkNe8)) "Show me your moves!"
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/show-me-your-moves-google-dance-1024x576-1.jpg)
 

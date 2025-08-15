@@ -43,7 +43,7 @@ If you run into any problems - we even created a free tool that you can try.
 
 So follow along, and start combining!
 
-https://www.youtube.com/watch?v="Yoglg9pNRc8&ab\_channel=devinschumacher"
+https://www.youtube.com/watch?v=Yoglg9pNRc8
 
 Update: Back in the day I shot a video about how to do this manually on a mac, and it still works. But since then we've had a lot of people ask about doing it on a PC.
 

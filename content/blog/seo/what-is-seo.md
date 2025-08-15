@@ -154,7 +154,7 @@ I want to keep this article at a beginner level, so I'm actually not going to go
 
 But the gist of it is that Google has a very complex [algorithm](https://en.wikipedia.org/wiki/Algorithm) that us SEOs spend all of our time "trying to please".
 
-Once we figure out "What A Google Wants" (insert [Christina Aguilera](https://www.youtube.com/watch?v="hpspGHeLOPE)" joke) then Google rewards us by putting our website on the top of their search engine & sending us their searches to do with what we please.
+Once we figure out "What A Google Wants" (insert [Christina Aguilera](https://www.youtube.com/watch?v=hpspGHeLOPE) joke) then Google rewards us by putting our website on the top of their search engine & sending us their searches to do with what we please.
 
 **Inside SERP University we cover this extensively, but for all you newbies here are the 3 most important things you can do for your SEO:**
 

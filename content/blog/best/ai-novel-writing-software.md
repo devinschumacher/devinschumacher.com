@@ -146,4 +146,4 @@ The main benefit of using AI novel writing software is that it frees up your tim
 
 But make sure you [use a tool like Originality AI to make sure your content isn't reading like it was written by AI.](https://devinschumacher.com/reviews/originality-ai/)
 
-https://www.youtube.com/watch?v="hiIhOt5SVdk&ab\_channel=devinschumacher"
+https://www.youtube.com/watch?v=hiIhOt5SVdk&ab_channel=devinschumacher

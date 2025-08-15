@@ -217,7 +217,7 @@ So, as the algorithm grows & as we continue to uncover additional ranking factor
 
 - **Domain History**: Domain history is huge. Check the history of domains before you buy them. If a domain was previously penalized it can easily carry a penalty over to you (this has actually happened to us before).
 
-https://www.youtube.com/watch?v="C-EdhaMDXho"
+https://www.youtube.com/watch?v=C-EdhaMDXho
 
 - **Domain Registration Length**: According to [Google Patent Application #60507617](http://appft1.uspto.gov/netacgi/nph-Parser?Sect1="PTO1&Sect2=HITOFF&d=PG01&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.html&r=1&f=G&l=50&s1=%2220050071741%22.PGNR.&OS=DN/20050071741&RS=DN/20050071741)" states the following:
 
@@ -653,7 +653,7 @@ https://twitter.com/JohnMu/status/971098008644407297
 
 - **Cloaking**: Cloaking is when you show a user one thing, but show a search engine another thing. This is intentionally and obviously deceptive. If you get caught by Google you will be penalized/de-indexed.
 
-https://www.youtube.com/watch?v="QHtnfOgp65Q"
+https://www.youtube.com/watch?v=QHtnfOgp65Q
 
 - **Doorway Pages**: Doorway pages are looked on as a kind of [black hat seo](https://devinschumacher.com/black-hat-seo/) trick, and Google does not like them. Full article [here](https://support.google.com/webmasters/answer/2721311?hl="en)."
 
