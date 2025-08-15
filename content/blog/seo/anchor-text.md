@@ -247,7 +247,7 @@ And, if you have done your URL structure right they will include keywords within
 
 Muy Bien??
 
-https://www.youtube.com/watch?v="uOpjYE-iPnY"
+https://www.youtube.com/watch?v=uOpjYE-iPnY
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/screen-shot-2019-10-18-at-2.51.26-pm.png)
 

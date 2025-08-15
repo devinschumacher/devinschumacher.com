@@ -122,7 +122,7 @@ simply wrap the value you want to float with the `float()`, and be sure to us a 
 
 * * *
 
-alright you modest mouse, it's time for you to go forth and get your [float() on](https://www.youtube.com/watch?v="CTAud5O7Qqk)"
+alright you modest mouse, it's time for you to go forth and get your [float() on](https://www.youtube.com/watch?v=CTAud5O7Qqk)
 
 **Recommended Reading:**
 

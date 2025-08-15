@@ -186,4 +186,4 @@ We won’t solve the ethical issues of language models simply by making them bet
 
 Here's a sneak peek:
 
-https://www.youtube.com/watch?v="RPuWi7yEbtc&ab\_channel=devinschumacher"
+https://www.youtube.com/watch?v=RPuWi7yEbtc
