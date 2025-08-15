@@ -79,13 +79,13 @@ You can see a full breakdown of all the different rules with [Google's Useful ro
 
 **We should cover specific aspects of robots.txt more extensively.**
 
-- [User-agent](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#user-agent)"
-- [Disallow](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#disallow-robots)"
-- [Allow](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#allow-robots)"
-- [Sitemap](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#sitemap-robots)"
-- [Crawl-delay](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#crawl-delay)"
-- [Comments](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#robots-comments)"
-- [Formatting](https://devinschumacher.com/wp-admin/post.php?post="9364&action=edit#robots-formatting)"
+- [User-agent](#user-agent)"
+- [Disallow](#disallow-robots)"
+- [Allow](#allow-robots)"
+- [Sitemap](#sitemap-robots)"
+- [Crawl-delay](#crawl-delay)"
+- [Comments](#robots-comments)"
+- [Formatting](#robots-formatting)"
 
 ### User-agent
 
@@ -415,7 +415,7 @@ Google begrudgingly supported it for a long time, even when they said not to use
 
 Bing is the same — apparently they never supported noindex, according to Frédéric Dubut (Bing Senior Program Manager Lead)
 
-https://twitter.com/CoperniX/status/1146085846845554688?ref\_src="twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1146085846845554688&ref\_url=https%3A%2F%2Fwww.contentkingapp.com%2Facademy%2Frobotstxt%2F"
+https://x.com/CoperniX/status/1146085846845554688?ref\_src="twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1146085846845554688&ref\_url=https%3A%2F%2Fwww.contentkingapp.com%2Facademy%2Frobotstxt%2F"
 
 Leave noindex for meta tags.
 

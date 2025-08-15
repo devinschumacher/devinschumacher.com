@@ -108,7 +108,7 @@ Besides, perhaps, face-to-face contact, video is still an unmatched communicatio
 
 15. Best budget-friendly video editor - [Nero Video](https://serp.ly/nero-video/)
 
-Like shooting photos & videos? Check out our latest post on [the most popular 3 point slingers for your camera](https://devinschumacher.com/shop/3-point-slinger-for-camera/).
+
 
 ## Things You Need To Know Before You Start Editing Videos
 

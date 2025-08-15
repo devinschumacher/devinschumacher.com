@@ -43,3 +43,11 @@ next-env.d.ts
 # Claude
 .claude
 .claude/
+
+# Coders in Flow
+.venv
+.codex
+out
+dist
+*.vsix
+CLAUDE.md

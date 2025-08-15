@@ -159,7 +159,7 @@ In fact, Google recommends the use of hyphens in URLs.
 
 They even mention specifically not to use underscores (\_). In fact Google straight out ignores them as a URL separator.
 
-The hyphen is the universal URL separator [according to Google's Matt Cutts](https://www.youtube.com/watch?v="Q3SFVfDIS5k)."
+The hyphen is the universal URL separator [according to Google's Matt Cutts](https://www.youtube.com/watch?v=Q3SFVfDIS5k).
 
 **GOOD ✔** devinschumacher.com/google-ranking-factors
 

@@ -70,9 +70,9 @@ These are still very legitimate [SEO ranking factors](https://devinschumacher.co
 
 Google representatives had said on multiple occasions that they do nothing. They will not help, nor will they hurt your website's SEO Rankings.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/methode?ref_src=twsrc%5Etfw">@methode</a> is the meta name="keywords" tag considered spam?</p>— Anthony Rome Jr. (@TheRealTRome) <a href="https://twitter.com/TheRealTRome/status/1009510997130928132?ref_src=twsrc%5Etfw">June 20, 2018</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://x.com/methode?ref_src=twsrc%5Etfw">@methode</a> is the meta name="keywords" tag considered spam?</p>— Anthony Rome Jr. (@TheRealTRome) <a href="https://x.com/TheRealTRome/status/1009510997130928132?ref_src=twsrc%5Etfw">June 20, 2018</a></blockquote>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/methode?ref_src=twsrc%5Etfw">@methode</a> We're discussing the meta keywords tag here and we think abuse should be a spam signal. How does Google treat wrong use?</p>— Letterzaken - Nathan Veenstra (@Letterzaken) <a href="https://twitter.com/Letterzaken/status/886641082922135552?ref_src=twsrc%5Etfw">July 16, 2017</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://x.com/methode?ref_src=twsrc%5Etfw">@methode</a> We're discussing the meta keywords tag here and we think abuse should be a spam signal. How does Google treat wrong use?</p>— Letterzaken - Nathan Veenstra (@Letterzaken) <a href="https://x.com/Letterzaken/status/886641082922135552?ref_src=twsrc%5Etfw">July 16, 2017</a></blockquote>
 
 However, I wouldn't roll the dice.
 

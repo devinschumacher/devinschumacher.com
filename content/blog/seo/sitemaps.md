@@ -19,7 +19,7 @@ Let's start by defining sitemap.
 
 More technically speaking, "sitemap" refers to an internet protocol (set of rules governing the format of data sent over the internet).
 
-https://www.youtube.com/watch?v="TxahHF\_MD2Q"
+https://www.youtube.com/watch?v=TxahHF_MD2Q
 
 ## Why do you need a sitemap?
 

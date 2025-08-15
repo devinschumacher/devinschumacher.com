@@ -9,7 +9,7 @@ Anchor text is one of the most powerful (and underutilized) areas of SEO if you 
 
 Anchor text provides a great deal of context to search engines regarding the topic of a hyperlink's destination.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/JohnMu?ref_src=twsrc%5Etfw">@JohnMu</a> <a href="https://twitter.com/methode?ref_src=twsrc%5Etfw">@methode</a> Is a link <a href="..."></a> without text or IMG as anchor (img displayed via CSS) good for Google ? Thx</p>— O.Andrieu Abondance (@abondance_com) <a href="https://twitter.com/abondance_com/status/864092490118422529?ref_src=twsrc%5Etfw">May 15, 2017</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://x.com/JohnMu?ref_src=twsrc%5Etfw">@JohnMu</a> <a href="https://x.com/methode?ref_src=twsrc%5Etfw">@methode</a> Is a link <a href="..."></a> without text or IMG as anchor (img displayed via CSS) good for Google ? Thx</p>— O.Andrieu Abondance (@abondance_com) <a href="https://x.com/abondance_com/status/864092490118422529?ref_src=twsrc%5Etfw">May 15, 2017</a></blockquote>
 
 In this article, we (quickly) cover what anchor text is, and then (meticulously) cover how to use it for maximum SEO impact.
 
@@ -39,9 +39,7 @@ From the perspective of us lovely humans, it is the part of a hyperlink that we 
 
 From the perspective of a bot, like a search engine that reads HTML (among other things), it would look like this:
 
-`
-<a href="https://devinschumacher.com">SERP Co</a>
-`
+`<a href="https://devinschumacher.com">SERP Co</a>`
 
 Let's break this down real quick by looking at the full hyperlink structure in the example above.
 
@@ -59,9 +57,7 @@ We will illustrate this example:
 
 The first part of this hyperlink in HTML is the "anchor" tags. They look like this:
 
-`
-<a> </a>
-`
+`<a> </a>`
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/2.png)
 
@@ -73,15 +69,11 @@ We do this by putting a URL in between the anchor tags.
 
 The HTML to say "let's take someone to this URL" is denoted with:
 
-`
-href=""
-`
+`href=""`
 
 We put the actual URL of the link destination in between the quotation marks.
 
-`
-href="https://devinschumacher.com"
-`
+`href="https://devinschumacher.com"`
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/3.png)
 
@@ -221,7 +213,7 @@ You will see page title anchor texts pop up frequently on those "recommended rea
 **Recommended Additional Reading:**
 
 - [SEO Keywords: What Are Keywords for SEO & How to Choose The Good Ones](https://devinschumacher.com-keywords/)
-- [Digital Marketing for Dummies: Everything You Need to Know to Get Started](https://devinschumacher.com/wp-admin/post.php?post="3166&action=edit)"
+
 
 Those would be examples of using a page title as the anchor text. Totally rad!
 
@@ -247,7 +239,7 @@ And, if you have done your URL structure right they will include keywords within
 
 Muy Bien??
 
-https://www.youtube.com/watch?v="uOpjYE-iPnY"
+https://www.youtube.com/watch?v=uOpjYE-iPnY
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/screen-shot-2019-10-18-at-2.51.26-pm.png)
 

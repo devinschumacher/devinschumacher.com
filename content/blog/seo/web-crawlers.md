@@ -55,7 +55,7 @@ Google isn't the only one though – other search engine companies (like Yahoo,
 
 The primary goal of a web crawler is to create an index (more in this later) and to learn what every web page on the internet is about, so the information can be retrieved by [search engines](https://devinschumacher.com/search-engines/) and provided to you (the searcher) extremely quickly, and with great accuracy – meaning providing you results that answer the [search intent](https://devinschumacher.com/search-intent/) of whatever it is you typed (or spoke) into the search engine.
 
-https://www.youtube.com/watch?v="OHRy6jTf5II&ab\_channel=devinschumacher"
+https://www.youtube.com/watch?v=OHRy6jTf5II&ab_channel=devinschumacher
 
 The internet is like a continuously growing library with billions of books (websites), but no official/central filing system. So, search engine companies use internet-based software known as web crawlers to discover _publicly available webpages_ - like your website.
 

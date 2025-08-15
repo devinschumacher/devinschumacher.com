@@ -24,7 +24,7 @@ Sound good?
 
 ## Let's Uninstall Crap!
 
-https://www.youtube.com/watch?v="ak2JiS2Ntyw"
+https://www.youtube.com/watch?v=ak2JiS2Ntyw
 
 ## How to delete apps on mac that won't delete
 
