@@ -39,9 +39,7 @@ From the perspective of us lovely humans, it is the part of a hyperlink that we 
 
 From the perspective of a bot, like a search engine that reads HTML (among other things), it would look like this:
 
-`
-<a href="https://devinschumacher.com">SERP Co</a>
-`
+`<a href="https://devinschumacher.com">SERP Co</a>`
 
 Let's break this down real quick by looking at the full hyperlink structure in the example above.
 
@@ -59,9 +57,7 @@ We will illustrate this example:
 
 The first part of this hyperlink in HTML is the "anchor" tags. They look like this:
 
-`
-<a> </a>
-`
+`<a> </a>`
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/2.png)
 
@@ -73,15 +69,11 @@ We do this by putting a URL in between the anchor tags.
 
 The HTML to say "let's take someone to this URL" is denoted with:
 
-`
-href=""
-`
+`href=""`
 
 We put the actual URL of the link destination in between the quotation marks.
 
-`
-href="https://devinschumacher.com"
-`
+`href="https://devinschumacher.com"`
 
 ![](https://raw.githubusercontent.com/devinschumacher/uploads/main/images/3.png)
 
