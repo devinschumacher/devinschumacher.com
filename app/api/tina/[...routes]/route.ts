@@ -2,10 +2,17 @@ import { NextRequest } from 'next/server';
 
 const TINA_PUBLIC_SERVER = 'https://content.tinajs.io';
 
+type Params = {
+  params: Promise<{
+    routes: string[];
+  }>;
+};
+
 export async function GET(
   request: NextRequest,
-  { params }: { params: { routes: string[] } }
+  context: Params
 ) {
+  const params = await context.params;
   const path = params.routes ? params.routes.join('/') : '';
   const url = `${TINA_PUBLIC_SERVER}/${path}${request.nextUrl.search}`;
   
@@ -27,8 +34,9 @@ export async function GET(
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { routes: string[] } }
+  context: Params
 ) {
+  const params = await context.params;
   const path = params.routes ? params.routes.join('/') : '';
   const url = `${TINA_PUBLIC_SERVER}/${path}${request.nextUrl.search}`;
   
