@@ -229,13 +229,13 @@ export default function AboutPage() {
                 <Link href="https://instagram.com/dvnschmchr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-8 w-8" />
                 </Link>
-                <Link href="https://linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Linkedin className="h-8 w-8" />
                 </Link>
                 <Link href="https://github.com/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Github className="h-8 w-8" />
                 </Link>
-                <Link href="https://twitter.com/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://serp.ly/@devin/twitter" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Twitter className="h-8 w-8" />
                 </Link>
               </div>

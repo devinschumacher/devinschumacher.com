@@ -10,7 +10,7 @@ tags:
 
 ## AI Image Generation
 
-What ever happened to the days of strappin on some hiking boots, heading out with your [Canon strung around your next neck on a 3 point slinger](https://devinschumacher.com/shop/3-point-slinger-for-camera/)?
+What ever happened to the days of strappin on some hiking boots, heading out with your Canon strung around your next neck on a 3 point slinger?
 
 Well, who gives a shit. Let's do some AI image generation.
 

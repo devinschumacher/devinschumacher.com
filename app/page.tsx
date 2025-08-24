@@ -246,7 +246,7 @@ export default async function HomePage() {
                 <Link href="https://instagram.com/dvnschmchr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-6 w-6" />
                 </Link>
-                <Link href="https://linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </Link>
                 <Link href="https://github.com/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
@@ -425,7 +425,7 @@ export default async function HomePage() {
               <Link href="https://github.com/devinschumacher" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </Link>
-              <Link href="https://linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Link href="https://www.linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </Link>
             </div>

@@ -17,7 +17,7 @@ This article will cover high-level concepts about link building, while dropping 
 
 This topic is a beast, so before we get into it - let's kick off with a joke to keep the mood fun:
 
-https://twitter.com/dvnschmchr/status/1578437979386675202?s="20&t=GOpncyUpQy9si\_xvcwWWjQ"
+https://x.com/dvnschmchr/status/1578437979386675202?s="20&t=GOpncyUpQy9si\_xvcwWWjQ"
 
 ## What is Link Building?
 

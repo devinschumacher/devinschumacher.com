@@ -9,7 +9,7 @@ Anchor text is one of the most powerful (and underutilized) areas of SEO if you 
 
 Anchor text provides a great deal of context to search engines regarding the topic of a hyperlink's destination.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/JohnMu?ref_src=twsrc%5Etfw">@JohnMu</a> <a href="https://twitter.com/methode?ref_src=twsrc%5Etfw">@methode</a> Is a link <a href="..."></a> without text or IMG as anchor (img displayed via CSS) good for Google ? Thx</p>— O.Andrieu Abondance (@abondance_com) <a href="https://twitter.com/abondance_com/status/864092490118422529?ref_src=twsrc%5Etfw">May 15, 2017</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://x.com/JohnMu?ref_src=twsrc%5Etfw">@JohnMu</a> <a href="https://x.com/methode?ref_src=twsrc%5Etfw">@methode</a> Is a link <a href="..."></a> without text or IMG as anchor (img displayed via CSS) good for Google ? Thx</p>— O.Andrieu Abondance (@abondance_com) <a href="https://x.com/abondance_com/status/864092490118422529?ref_src=twsrc%5Etfw">May 15, 2017</a></blockquote>
 
 In this article, we (quickly) cover what anchor text is, and then (meticulously) cover how to use it for maximum SEO impact.
 

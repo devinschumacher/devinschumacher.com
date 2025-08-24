@@ -40,7 +40,7 @@ It is no wonder Adobe Photoshop started feeling rather limited, don’t you thin
 
 If you asked me about the best photo editing tool a few years ago, I would have probably said, hands down, Adobe Photoshop.
 
-In fact, not too long ago, we started using ‘photoshop’ as a verb. Just like we ‘google’ things, we could ‘photoshop’ pictures. Just like when you'd strut out of the house with your [3 point slinger round yer neck ready to take some photos of birds](https://devinschumacher.com/shop/3-point-slinger-for-camera/)... or whatever it is you do.
+In fact, not too long ago, we started using ‘photoshop’ as a verb. Just like we ‘google’ things, we could ‘photoshop’ pictures. Just like when you'd strut out of the house with your ... or whatever it is you do.
 
 And let’s not forget about those ‘Photoshop fails’ compilations that would go viral now and then. Celebrities and magazines would abuse Photoshop all the time, often with catastrophic results.
 

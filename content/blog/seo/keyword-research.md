@@ -21,7 +21,7 @@ We are going to draw on all the previous lessons in the SERP University Keywords
 
 In this article, we are going to cover this extraordinarily important part of SEO step-by-step and show you exactly how we approach keyword research that has helped us to bring in millions of visitors a month for ourselves and our clients.
 
-If you are looking for additional / out-of-the-box ways to do keyword research be sure to check out our other posts in the [Keywords Module of SERP University](https://devinschumacher.com/keywords/).
+If you are looking for additional / out-of-the-box ways to do keyword research be sure to check out our other posts in the [Keywords Module of SERP University](https://devinschumacher.com/seo-keywords/).
 
 **Related Reading:**
 

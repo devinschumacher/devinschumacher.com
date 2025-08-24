@@ -17,5 +17,10 @@
       "source": "/admin/:path*",
       "destination": "/admin/:path*"
     }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": false
+    }
+  }
 }

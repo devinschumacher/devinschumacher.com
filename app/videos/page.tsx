@@ -92,7 +92,7 @@ export default function VideosPage() {
               {/* Platform Links */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://youtube.com/@serp-co" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://youtube.com/@devinschumacher" target="_blank" rel="noopener noreferrer">
                     {platformIcons.youtube}
                     <span className="ml-2">youtube</span>
                     <ExternalLink className="ml-2 h-3 w-3" />

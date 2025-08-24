@@ -1,5 +1,5 @@
 ---
-slug: /pr-seo/
+slug: "/pr-seo/"
 title: "PR & SEO"
 date: "2022-08-25T12:00:00.000Z"
 categories:

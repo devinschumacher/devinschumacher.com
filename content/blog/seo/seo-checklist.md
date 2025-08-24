@@ -133,8 +133,8 @@ Okay, let's get to the **checklist of SEO Best Practices**
 
 - Link to your website from all your social media profiles.
 
-- Make sure your business Name, Address & Phone Number (aka "NAP") is consistent everywhere on the internet - [you can do that here](https://www.optimizelocation.com/partner/serpco/diagnostic.html).
-
+- Make sure your business Name, Address & Phone Number (aka "NAP") is consistent everywhere on the internet.
+  
 - Include your address in the footer of your website (single location websites).
 
 - Include your address on a /locations/ page of your website (multi location websites).
