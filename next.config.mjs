@@ -2,8 +2,7 @@ import createMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Temporarily disable static export for TinaCMS development
-  // output: 'export',
+  output: 'export',
   basePath: '',
   trailingSlash: true,
   images: {
