@@ -3,9 +3,9 @@ import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ProjectCard, type Project } from "@/components/project-card";
 import { VideoCard, type Video } from "@/components/video-card";
+import { BlogArticles } from "@/components/BlogArticles";
 import Link from "next/link";
 import Image from "next/image";
 import { 
@@ -354,59 +354,7 @@ export default async function HomePage() {
         </section>
 
         {/* Recent Blog Posts Section */}
-        <section className="border-t">
-          <div className="container py-20 md:py-28">
-            <div className="mx-auto max-w-4xl text-center mb-12">
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                latest posts
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                insights on seo, ai, programming, and entrepreneurship
-              </p>
-            </div>
-            <div className="mx-auto max-w-4xl space-y-4">
-              {recentPosts.map((post, index) => (
-                <div key={index} className="group relative">
-                  <div className="flex items-start gap-6 p-6 rounded-lg border bg-card hover:bg-accent/5 transition-all hover:shadow-md cursor-pointer">
-                    <Link href={post.slug} className="absolute inset-0 z-0">
-                      <span className="sr-only">Read {post.title}</span>
-                    </Link>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 mb-2">
-                        {post.category && (
-                          <Link 
-                            href={`/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="relative z-10"
-                          >
-                            <Badge className="hover:bg-secondary/80 transition-colors" variant="secondary">
-                              {post.category}
-                            </Badge>
-                          </Link>
-                        )}
-                      </div>
-                      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                        {post.title}
-                      </h3>
-                      <p className="text-muted-foreground line-clamp-2">
-                        {post.excerpt}
-                      </p>
-                    </div>
-                    <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/blog">
-                  Blog
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+        <BlogArticles posts={recentPosts} />
 
         {/* Film Credits Section */}
         <section className="border-t">

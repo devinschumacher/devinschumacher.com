@@ -1,4 +1,23 @@
 {
+  "buildCommand": "npx tinacms build && npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "functions": {
+    "app/admin/[[...index]]/route.ts": {
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/admin",
+      "destination": "/admin/index.html"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "/admin/:path*"
+    }
+  ],
   "git": {
     "deploymentEnabled": {
       "main": false
