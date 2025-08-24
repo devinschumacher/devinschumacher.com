@@ -39,7 +39,8 @@
       "Bash(npm run check-links:*)",
       "Bash(gh run watch:*)",
       "WebFetch(domain:www.youtube.com)",
-      "Bash(npx shadcn@latest add:*)"
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
