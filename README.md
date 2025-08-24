@@ -3,13 +3,13 @@
 ## Blogging with TinaCMS
 
 ### Admin URL
-**CMS Admin Panel**: https://devinschumacher-com-git-tinacms-serpcompany.vercel.app/admin/
+**🚀 Live CMS Admin Panel**: https://devinschumacher-com-git-tinacms-serpcompany.vercel.app/admin
 
 > **Tip**: Bookmark this URL or save it to your password manager for easy access!
 
 ### How to Create a New Blog Post
 
-1. **Go to the admin panel**: https://devinschumacher-com-git-tinacms-serpcompany.vercel.app/admin/
+1. **Go to the admin panel**: https://devinschumacher-com-git-tinacms-serpcompany.vercel.app/admin
 2. **Log in** with your Tina Cloud account
 3. **Click "Posts"** in the sidebar
 4. **Click "Create New"** button
@@ -22,7 +22,7 @@ Your post will be automatically saved to GitHub and deployed to the live site.
 
 ### Editing Existing Posts
 
-1. Go to https://devinschumacher-com-git-tinacms-serpcompany.vercel.app/admin/
+1. Go to https://devinschumacher-com-git-tinacms-serpcompany.vercel.app/admin
 2. Click on "Posts"
 3. Select the post you want to edit
 4. Make your changes
