@@ -11,9 +11,12 @@ export default defineConfig({
   branch,
 
   // Get this from tina.io
-  clientId: "30d75a00-7011-4bd8-8407-5e69e6a03379",
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "30d75a00-7011-4bd8-8407-5e69e6a03379",
   // Get this from tina.io  
-  token: "484fa5aad0565f5ce72ab8e23c3c2fce1dac96c7",
+  token: process.env.TINA_TOKEN || "484fa5aad0565f5ce72ab8e23c3c2fce1dac96c7",
+  
+  // Add your production URL here
+  contentApiUrlOverride: process.env.NEXT_PUBLIC_TINA_PUBLIC_API_URL,
 
   build: {
     outputFolder: "admin",
