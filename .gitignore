@@ -51,3 +51,9 @@ out
 dist
 *.vsix
 CLAUDE.md
+
+# TinaCMS
+.tina/__generated__
+admin/
+
+node_modules
