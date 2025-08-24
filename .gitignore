@@ -57,3 +57,11 @@ CLAUDE.md
 admin/
 
 node_modules
+.git
+*.log
+*.tmp
+__pycache__
+*.pyc
+.env.local
+.next
+.github
