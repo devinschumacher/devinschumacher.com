@@ -125,7 +125,7 @@ export function BlogArticles({ posts }: BlogArticlesProps) {
               <span className="text-sm text-muted-foreground">Active filters:</span>
               {searchQuery && (
                 <Badge variant="secondary" className="flex items-center gap-1">
-                  Search: "{searchQuery}"
+                  Search: &quot;{searchQuery}&quot;
                   <button
                     onClick={() => setSearchQuery("")}
                     className="ml-1 hover:text-destructive"
