@@ -9,6 +9,7 @@ This module handles all payment processing through Stripe, including checkout se
 ## Related Files
 - `app/api/checkout/route.ts` - Main checkout API
 - `app/api/test-checkout/route.ts` - Test mode checkout
+- `app/api/checkout-by-price/route.ts` - Checkout using an existing Stripe Price ID (incl. GHL-created)
 - `data/products.ts` - Product catalog with Stripe IDs
 - `app/success/page.tsx` - Payment success handler
 - `app/test-stripe/page.tsx` - Stripe testing interface

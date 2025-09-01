@@ -34,18 +34,31 @@ export async function POST(request: Request) {
     });
 
     let ghlResponse;
-    const contactData = {
+    // Build optional custom fields mapping based on provided env IDs in .env
+    const customFields: Array<{ id: string; value: string }> = [];
+    const pushCF = (envKey: string, value?: string | number | null) => {
+      const id = process.env[envKey];
+      if (id && value !== undefined && value !== null && String(value).length > 0) {
+        customFields.push({ id, value: String(value) });
+      }
+    };
+
+    // Map commonly wanted purchase fields into GHL custom fields if IDs provided
+    pushCF('GHL_CF_STRIPE_CUSTOMER_ID', (session.customer as string) || '');
+    pushCF('GHL_CF_STRIPE_SESSION_ID', sessionId);
+    pushCF('GHL_CF_LAST_PURCHASE_AMOUNT', amountInDollars);
+    pushCF('GHL_CF_LAST_PURCHASE_DATE', new Date().toISOString());
+    pushCF('GHL_CF_PRODUCTS_PURCHASED', productNames);
+    pushCF('GHL_CF_PAYMENT_METHOD_TYPES', (session.payment_method_types || []).join(', '));
+    pushCF('GHL_CF_CURRENCY', session.currency || '');
+    pushCF('GHL_CF_ITEM_COUNT', itemCount);
+
+    const contactData: any = {
       locationId: process.env.GHL_LOCATION_ID,
       firstName: customerName.split(' ')[0] || '',
       lastName: customerName.split(' ').slice(1).join(' ') || '',
       email: customerEmail,
       phone: session.customer_details?.phone || '',
-      // Address fields
-      address1: session.customer_details?.address?.line1 || '',
-      city: session.customer_details?.address?.city || '',
-      state: session.customer_details?.address?.state || '',
-      postalCode: session.customer_details?.address?.postal_code || '',
-      country: session.customer_details?.address?.country || '',
       // Comprehensive tags for segmentation
       tags: [
         'stripe-purchase',
@@ -57,22 +70,22 @@ export async function POST(request: Request) {
         `items-${itemCount}`,
         new Date().toISOString().split('T')[0], // date tag YYYY-MM-DD
         // Add product-specific tag for GHL automation trigger
+        ...(session.metadata?.ghlTag ? [String(session.metadata.ghlTag)] : []),
+        // Backward compat for hardcoded product mapping
         ...(session.metadata?.product === 'skool-video-downloader' ? ['purchase-skool-video-downloader-stripe'] : []),
       ],
       source: `Stripe ${session.livemode ? 'Live' : 'Test'}`,
-      // Custom fields for detailed tracking
-      customFields: [
-        // Note: You'll need to create these custom fields in GHL and get their IDs
-        // Then uncomment and add the actual field IDs:
-        // { id: 'stripe_customer_id', value: session.customer as string },
-        // { id: 'stripe_session_id', value: sessionId },
-        // { id: 'last_purchase_amount', value: amountInDollars },
-        // { id: 'last_purchase_date', value: new Date().toISOString() },
-        // { id: 'products_purchased', value: productNames },
-        // { id: 'payment_method', value: session.payment_method_types?.join(', ') || 'card' },
-        // { id: 'invoice_url', value: session.invoice || '' },
-      ],
+      // Custom fields for detailed tracking (only included if env IDs are provided)
+      customFields,
     };
+
+    // Conditionally include address fields only when present; normalize country to uppercase ISO
+    const addr = session.customer_details?.address;
+    if (addr?.line1) contactData.address1 = addr.line1;
+    if (addr?.city) contactData.city = addr.city;
+    if (addr?.state) contactData.state = addr.state;
+    if (addr?.postal_code) contactData.postalCode = addr.postal_code;
+    if (addr?.country) contactData.country = String(addr.country).toUpperCase();
 
     // Remove locationId for updates
     const { locationId, ...updateData } = contactData;
@@ -107,7 +120,7 @@ export async function POST(request: Request) {
     } else {
       // If search fails, just try to create
       console.log('Search failed, attempting to create new contact');
-      ghlResponse = await fetch(`${process.env.GHL_API_BASE_URL}/contacts/`, {
+      const createResponse = await fetch(`${process.env.GHL_API_BASE_URL}/contacts/`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${process.env.GHL_PAT_LOCATION}`,
@@ -116,13 +129,17 @@ export async function POST(request: Request) {
         },
         body: JSON.stringify(contactData),
       });
-      
-      // If creation fails due to duplicate, try to update using the ID from error
-      if (!ghlResponse.ok) {
-        const errorData = await ghlResponse.json();
-        if (errorData.meta?.contactId) {
+
+      if (!createResponse.ok) {
+        // Try to parse JSON body once
+        let errorBodyText = '';
+        try { errorBodyText = await createResponse.text(); } catch {}
+        let errorData: any = errorBodyText;
+        try { errorData = JSON.parse(errorBodyText); } catch {}
+
+        if (errorData?.meta?.contactId) {
           console.log('Duplicate found, updating contact:', errorData.meta.contactId);
-          ghlResponse = await fetch(`${process.env.GHL_API_BASE_URL}/contacts/${errorData.meta.contactId}`, {
+          const updateResp = await fetch(`${process.env.GHL_API_BASE_URL}/contacts/${errorData.meta.contactId}`, {
             method: 'PUT',
             headers: {
               'Authorization': `Bearer ${process.env.GHL_PAT_LOCATION}`,
@@ -131,7 +148,13 @@ export async function POST(request: Request) {
             },
             body: JSON.stringify(updateData), // Use updateData without locationId
           });
+          ghlResponse = updateResp;
+        } else {
+          console.error('GHL Create Error:', errorData);
+          return NextResponse.json({ success: false, error: errorData }, { status: createResponse.status || 400 });
         }
+      } else {
+        ghlResponse = createResponse;
       }
     }
 
