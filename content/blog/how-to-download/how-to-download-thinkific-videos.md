@@ -1,4 +1,9 @@
-# How to Download Thinkific Videos for Free
+---
+title: How to Download Thinkific Videos for Free
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-thinkific-videos
+category: How to Download
+---
 
 In this article, I will show you walkthrough example of download videos from Thinkific. 
 

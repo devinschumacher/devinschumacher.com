@@ -74,6 +74,11 @@ export function Footer() {
             <h4 className="mb-4 text-sm font-semibold">products</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
+                <Link href="/products" className="hover:text-primary">
+                  products
+                </Link>
+              </li>
+              <li>
                 <a 
                   href="https://serp.ly/@serp/community" 
                   target="_blank" 

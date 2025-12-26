@@ -1,9 +1,14 @@
-# How to Download Onlyfans Profile's Videos & Images for FREE (yt-dlp tutorial)
+---
+title: How to Download Onlyfans Profile's Videos & Images for FREE (yt-dlp tutorial)
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-onlyfans-videos
+category: How to Download
+---
 
 ## Follow along with the video 👇
 
 <a href="https://www.youtube.com/watch?v=hToCX2VST_A" target="_blank">
-<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-onlyfans-profile-images-and-videos-for-free-yt-dlp-method.jpg" width="700px">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-onlyfans-profile-images-and-videos-for-free-yt-dlp-method.jpg" width="700px" />
 </a>
 
 

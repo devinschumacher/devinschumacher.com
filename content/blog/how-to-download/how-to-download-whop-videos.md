@@ -1,4 +1,9 @@
-# 🎥 How to Download Videos from Whop (Mux Streams) with yt-dlp
+---
+title: 🎥 How to Download Videos from Whop (Mux Streams) with yt-dlp
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-whop-videos
+category: How to Download
+---
 
 Whop.com hosts its videos using **Mux**, which serves them over **HLS streaming** (`.m3u8` playlists with short-lived tokens). 
 
@@ -10,7 +15,7 @@ If you want to save these videos locally as clean `.mp4` files, you can do it re
 # Click the image below to watch the video 👇
 
 <a href="https://www.youtube.com/watch?v=oWmu4MOS2HE" target="_blank">
-<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-whop-videos-for-free-step-by-step-guide-to-downloading-videos-from-whopcom.jpg" width="700px">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-whop-videos-for-free-step-by-step-guide-to-downloading-videos-from-whopcom.jpg" width="700px" />
 </a>
 
 ---

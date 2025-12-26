@@ -1,4 +1,9 @@
-# Sprout Video Download Research: Technical Analysis of Stream Patterns, CDNs, and Download Methods
+---
+title: 'Sprout Video Download Research: Technical Analysis of Stream Patterns, CDNs, and Download Methods'
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-sprout-videos
+category: How to Download
+---
 
 *A comprehensive research document analyzing Sprout Video's video infrastructure, embed patterns, stream formats, and optimal download strategies using modern tools*
 
@@ -6,7 +11,7 @@
 # Click the image below to watch the video 👇
 
 <a href="https://www.youtube.com/watch?v=We_IjAvPsBQ" target="_blank">
-<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/sprout-video-downloader-extension-demo-download-sprout-videos-any-type-from-any-site.jpg" width="700px">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/sprout-video-downloader-extension-demo-download-sprout-videos-any-type-from-any-site.jpg" width="700px" />
 </a>
 ---
 

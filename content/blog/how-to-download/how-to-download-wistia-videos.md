@@ -1,4 +1,9 @@
-# 🎥 How to Download Wistia Videos Using Network Requests
+---
+title: 🎥 How to Download Wistia Videos Using Network Requests
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-wistia-videos
+category: How to Download
+---
 
 When Wistia hosts a video, it’s not a single `.mp4` file — it’s delivered through **HLS streaming**. That means the video is broken into many small `.ts` chunks, described by a playlist (`.m3u8`). If you want to save the whole video, you need the **playlist URL**.
 

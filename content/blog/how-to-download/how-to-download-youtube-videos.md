@@ -1,5 +1,9 @@
-# 📥 How to Download YouTube Videos for Free with yt-dlp
-
+---
+title: 📥 How to Download YouTube Videos for Free with yt-dlp
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-youtube-videos
+category: How to Download
+---
 
 ---
 

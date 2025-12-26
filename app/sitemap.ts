@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { siteConfig } from '@/site.config';
 import { getAllPosts } from '@/lib/blog';
+import { getAllProducts } from '@/lib/products';
+import { getAllVideos } from '@/lib/videos';
 
 // Force static generation for sitemap with static export
 export const dynamic = 'force-static';
@@ -8,6 +10,8 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
   const posts = getAllPosts();
+  const products = getAllProducts();
+  const videos = getAllVideos();
 
   // Static pages
   const staticPages = [
@@ -22,6 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/products`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/tools/character-counter`,
@@ -63,5 +73,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...blogPosts];
+  const productPages = products.map((product) => ({
+    url: `${baseUrl}/products/${product.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.5,
+  }));
+
+  const videoPages = videos.map((video) => ({
+    url: `${baseUrl}/videos/${video.slug}`,
+    lastModified: new Date(video.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.5,
+  }));
+
+  return [...staticPages, ...blogPosts, ...productPages, ...videoPages];
 }

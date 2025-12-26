@@ -1,11 +1,16 @@
-# How to Download Circle.so Videos for Free (HLS m3u8 Streams) - using yt-dlp
+---
+title: How to Download Circle.so Videos for Free (HLS m3u8 Streams) - using yt-dlp
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-circle-videos
+category: How to Download
+---
 
 Circle.so hosts course videos using **HLS streaming**, where video data is split into `.ts` segments and controlled by a `.m3u8` playlist file.
 
 This guide shows you how to **download**, **optimize**, and **auto-name** Circle Academy videos with a single command on macOS.
 
 <a href="https://www.youtube.com/watch?v=_8XKKHj0eLs" target="_blank">
-<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-circle-so-videos-for-free-hls-m3u8-streams.jpg" width="700px">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-circle-so-videos-for-free-hls-m3u8-streams.jpg" width="700px" />
 </a>
 
 

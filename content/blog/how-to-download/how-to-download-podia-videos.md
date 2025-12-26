@@ -1,4 +1,9 @@
-# How to Download Podia Videos (Cloudflare Stream Videos)
+---
+title: How to Download Podia Videos (Cloudflare Stream Videos)
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-podia-videos
+category: How to Download
+---
 
 Cloudflare Stream delivers video using signed, time-limited URLs containing JSON Web Tokens (JWTs).  
 These URLs point to either:

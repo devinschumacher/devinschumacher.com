@@ -1,4 +1,9 @@
-# How to Download Kajabi Videos (Wistia Embed Method)
+---
+title: How to Download Kajabi Videos (Wistia Embed Method)
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-kajabi-videos
+category: How to Download
+---
 
 Wistia usually hides its video streams behind embed scripts, but every Wistia video ultimately loads an **HLS playlist** ending in `.m3u8`. 
 

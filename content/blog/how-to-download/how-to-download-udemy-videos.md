@@ -1,4 +1,9 @@
-# 📥 How to Download Udemy Videos
+---
+title: 📥 How to Download Udemy Videos
+date: '2025-12-26T04:02:03Z'
+slug: how-to-download-udemy-videos
+category: How to Download
+---
 
 Udemy hosts its lectures behind login-protected APIs, so you can’t just grab a `.m3u8` or `.mpd` URL from the Network tab. 
 
