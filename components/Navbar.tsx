@@ -29,6 +29,12 @@ export function Navbar() {
               blog
             </Link>
             <Link
+              href="/products"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              products
+            </Link>
+            <Link
               href="/projects"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
@@ -64,6 +70,13 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 blog
+              </Link>
+              <Link
+                href="/products"
+                className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                products
               </Link>
               <Link
                 href="/projects"

@@ -9,7 +9,7 @@ export interface VideoMeta {
   title: string;
   description: string;
   date: string;
-  platform: 'youtube' | 'vimeo' | 'other';
+  platform: 'youtube' | 'tiktok' | 'instagram' | 'vimeo' | 'other';
   videoId?: string;
   url: string;
   thumbnail?: string;

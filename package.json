@@ -8,6 +8,7 @@
     "build:tina": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint",
+    "update:video-metadata": "node scripts/update-video-metadata.mjs",
     "check-links": "find content -name '*.md' -exec npx markdown-link-check {} \\;",
     "check-links-fast": "find content -name '*.md' -print0 | xargs -0 -P 4 -I {} npx markdown-link-check {}",
     "check-external-links": "./check-external-links.sh"

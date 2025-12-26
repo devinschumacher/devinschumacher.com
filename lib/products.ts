@@ -8,7 +8,7 @@ export interface ProductMeta {
   slug: string;
   title: string;
   description: string;
-  category: 'course' | 'ebook' | 'template' | 'service' | 'other';
+  category: 'course' | 'ebook' | 'template' | 'service' | 'tool' | 'other';
   price?: string;
   originalPrice?: string;
   currency?: string;

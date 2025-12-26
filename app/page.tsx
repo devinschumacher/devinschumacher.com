@@ -4,7 +4,7 @@ import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProjectCard, type Project } from "@/components/project-card";
-import { VideoCard, type Video } from "@/components/video-card";
+import { VideoCard } from "@/components/video-card";
 import { BlogArticles } from "@/components/BlogArticles";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/site.config";
 import { getAllPosts } from "@/lib/blog";
+import { getFeaturedVideos } from "@/lib/videos";
 
 export default async function HomePage() {
   // Get all posts and take the 6 most recent ones
@@ -105,6 +106,8 @@ export default async function HomePage() {
       content: "SERP University is a comprehensive SEO education platform providing free courses, tutorials, and resources for digital marketers and business owners."
     }
   ];
+
+  const featuredVideos = getFeaturedVideos(3);
   
   const categoryColors: Record<string, string> = {
     'software': 'bg-blue-500/10 text-blue-700 dark:text-blue-400',
@@ -313,26 +316,28 @@ export default async function HomePage() {
             </div>
 
             <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
-                  thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
-                  platform: "youtube" as const
-                },
-                {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=GTaOBy7mxF0", 
-                  thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
-                  platform: "youtube" as const
-                },
-                {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
-                  thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
-                  platform: "youtube" as const
-                }
-              ].map((video, index) => (
+              {(featuredVideos.length > 0
+                ? featuredVideos
+                : [
+                    {
+                      title: "",
+                      url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
+                      thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
+                      platform: "youtube" as const,
+                    },
+                    {
+                      title: "",
+                      url: "https://www.youtube.com/watch?v=GTaOBy7mxF0",
+                      thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
+                      platform: "youtube" as const,
+                    },
+                    {
+                      title: "",
+                      url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
+                      thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
+                      platform: "youtube" as const,
+                    },
+                  ]).map((video, index) => (
                 <VideoCard
                   key={index}
                   video={video}

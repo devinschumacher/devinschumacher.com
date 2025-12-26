@@ -5,11 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export interface Video {
+  slug?: string;
   title: string;
   description?: string;
   thumbnail?: string;
   url: string;
-  platform: 'youtube' | 'tiktok' | 'instagram';
+  platform: 'youtube' | 'tiktok' | 'instagram' | 'vimeo' | 'other';
   duration?: string;
   views?: string;
   category?: string;
@@ -39,6 +40,14 @@ const platformIcons = {
     <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
     </svg>
+  ),
+  vimeo: (
+    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M23.977 6.416c-.105 2.338-1.74 5.54-4.905 9.604-3.274 4.25-6.045 6.373-8.312 6.373-1.404 0-2.59-1.295-3.557-3.885-.647-2.372-1.295-4.744-1.943-7.116-.72-2.59-1.49-3.885-2.316-3.885-.18 0-.807.376-1.882 1.127L0 6.202c1.187-1.043 2.36-2.087 3.52-3.13 1.587-1.376 2.78-2.105 3.58-2.19 1.88-.18 3.04 1.105 3.48 3.855.47 2.97.8 4.82.99 5.55.55 2.5 1.16 3.75 1.83 3.75.52 0 1.3-.82 2.34-2.46 1.04-1.64 1.6-2.89 1.68-3.75.15-1.42-.41-2.13-1.68-2.13-.6 0-1.22.14-1.86.41 1.24-4.06 3.61-6.03 7.1-5.91 2.59.07 3.82 1.76 3.71 5.06z"/>
+    </svg>
+  ),
+  other: (
+    <PlayCircle className="h-4 w-4" />
   )
 };
 
@@ -48,11 +57,13 @@ export function VideoCard({
   showMetadata = false,
   categoryColors = {}
 }: VideoCardProps) {
+  const href = video.slug ? `/videos/${video.slug}` : video.url;
+  const isExternal = !video.slug && href.startsWith("http");
+
   return (
     <Link
-      href={video.url}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={href}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className="group"
     >
       <Card className="h-full overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
