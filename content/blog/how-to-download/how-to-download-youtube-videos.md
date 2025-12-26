@@ -7,7 +7,7 @@ category: How to Download
 
 ---
 
-👉 Get the [Youbtube Video Downloader](https://serp.ly/youtube-downloader)
+👉 Get the [YouTube Video Downloader](https://serp.ly/youtube-downloader)
 
 ---
 
