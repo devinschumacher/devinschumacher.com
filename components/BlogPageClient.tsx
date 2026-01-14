@@ -19,6 +19,7 @@ import Image from 'next/image';
 
 interface BlogPost {
   slug: string;
+  url: string;
   title: string;
   description?: string;
   date: string;
@@ -168,18 +169,8 @@ export function BlogPageClient({ posts }: BlogPageClientProps) {
           </div>
         ) : (
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {filteredPosts.map((post) => {
-              // Use the slug from frontmatter (now required)
-              let postUrl = post.slug;
-              if (!postUrl.startsWith('/')) {
-                postUrl = `/${postUrl}`;
-              }
-              if (!postUrl.endsWith('/')) {
-                postUrl += '/';
-              }
-              
-              return (
-                <Link key={post.slug} href={postUrl}>
+            {filteredPosts.map((post) => (
+              <Link key={post.slug} href={post.url}>
                   <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 overflow-hidden">
                     {post.image ? (
                       <div className="aspect-video w-full overflow-hidden relative">
@@ -250,8 +241,7 @@ export function BlogPageClient({ posts }: BlogPageClientProps) {
                     </CardContent>
                   </Card>
                 </Link>
-              );
-            })}
+            ))}
           </div>
         )}
       </div>

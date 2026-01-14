@@ -2,12 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import readingTime from 'reading-time';
+import { getPostUrl } from '@/lib/url-mappings';
 
 const postsDirectory = path.join(process.cwd(), 'content/blog');
 
 export interface PostMeta {
   slug: string; // The URL slug from markdown frontmatter (REQUIRED)
   fileSlug: string; // The file-based slug for internal use
+  url: string;
   title: string;
   description: string;
   date: string;
@@ -65,6 +67,7 @@ export function getAllPosts(): PostMeta[] {
     return {
       slug: data.slug, // The URL slug from frontmatter (REQUIRED)
       fileSlug: fileSlug, // The file-based slug for internal use
+      url: getPostUrl(data.slug, fileSlug),
       title: data.title || fileName.replace(/\.mdx?$/, ''),
       description: data.description || '',
       date: data.date || new Date().toISOString(),
@@ -154,6 +157,7 @@ export function getPostBySlug(slug: string) {
     meta: {
       slug: data.slug || realSlug, // The URL slug
       fileSlug: realSlug, // The file-based slug
+      url: getPostUrl(data.slug || realSlug, realSlug),
       title: data.title || realSlug,
       description: data.description || '',
       date: data.date || new Date().toISOString(),

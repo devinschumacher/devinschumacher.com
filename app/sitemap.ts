@@ -56,12 +56,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Blog posts
-  const blogPosts = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
+  const blogPosts = posts.map((post) => {
+    const postPath = post.url ?? `/blog/${post.slug.replace(/^\/|\/$/g, '')}/`;
+    const normalizedPath = postPath.startsWith('/') ? postPath : `/${postPath}`;
+
+    return {
+      url: `${baseUrl}${normalizedPath}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    };
+  });
 
   return [...staticPages, ...blogPosts];
 }
