@@ -15,11 +15,12 @@ tags:
   - hls
   - yt-dlp
 category: How to Download
+ctaSlug: skool-video-downloader
 ---
 
 # How to Download Skool Videos from .m3u8 Token Streams (HLS Guide)
 
-Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-downloader).
+Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-video-downloader).
 
 
 1. Get the `.m3u8?token=` URL from the network requests

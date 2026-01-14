@@ -11,6 +11,7 @@ tags:
   - streamlink
   - ffmpeg
   - vimeo
+ctaSlug: vimeo-video-downloader
 ---
 # How to download Vimeo Videos (streaming via HLS / streamlink)
 

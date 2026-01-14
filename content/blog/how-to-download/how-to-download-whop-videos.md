@@ -11,6 +11,7 @@ seoDescription: >-
 date: '2025-10-22T18:59:36.629000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: whop-video-downloader
 ---
 
 # 🎥 How to Download Videos from Whop (Mux Streams) with yt-dlp

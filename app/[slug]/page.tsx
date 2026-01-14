@@ -12,6 +12,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/site.config';
 import { Metadata } from 'next';
+import { DownloadCtaBar } from '@/components/DownloadCtaBar';
+import { cn } from '@/lib/utils';
 
 interface PageProps {
   params: Promise<{
@@ -94,6 +96,7 @@ export default async function SingleSlugPage({ params }: PageProps) {
   if (!post) {
     notFound();
   }
+  const hasCta = Boolean(post.meta.ctaSlug);
 
   // Get related posts
   const allPosts = getAllPosts();
@@ -116,7 +119,12 @@ export default async function SingleSlugPage({ params }: PageProps) {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        <article className="container py-12 md:py-20">
+        <article
+          className={cn(
+            'container py-12 md:py-20',
+            hasCta && 'pb-28 md:pb-24'
+          )}
+        >
           <div className="mx-auto max-w-4xl">
             {/* Article Header */}
             <header className="mb-12">
@@ -227,7 +235,14 @@ export default async function SingleSlugPage({ params }: PageProps) {
             </section>
           )}
         </article>
-        
+
+        {hasCta && (
+          <DownloadCtaBar
+            slug={post.meta.ctaSlug as string}
+            label={post.meta.ctaLabel}
+          />
+        )}
+
         <Footer />
       </main>
     </>

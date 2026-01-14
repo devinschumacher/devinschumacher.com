@@ -11,6 +11,7 @@ seoDescription: >-
 date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: vimeo-video-downloader
 ---
 
 # How to download password protected Vimeo videos - not embedded, stream

@@ -13,6 +13,7 @@ seoDescription: >-
 date: '2025-10-22T18:59:36.626000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: vimeo-video-downloader
 ---
 
 # Method 2: `yt-dlp` at the m3u8 stream

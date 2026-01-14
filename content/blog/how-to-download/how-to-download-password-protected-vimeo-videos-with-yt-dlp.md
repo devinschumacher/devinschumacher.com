@@ -7,6 +7,7 @@ seoDescription: 'Vimeo can serve video in a few different ways:'
 date: '2025-10-22T18:59:36.625000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: vimeo-video-downloader
 ---
 
 # How to Download Password-Protected Vimeo Videos with yt-dlp

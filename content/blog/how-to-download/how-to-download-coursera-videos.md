@@ -17,6 +17,7 @@ tags:
   - hls
   - download
 category: How to Download
+ctaSlug: coursera-downloader
 ---
 
 # How to Download Coursera Videos for FREE (yt-dlp tutorial)
