@@ -1,6 +1,14 @@
 import { NextRequest } from 'next/server';
 
 const TINA_PUBLIC_SERVER = 'https://content.tinajs.io';
+const isStaticExport =
+  process.env.GITHUB_ACTIONS === 'true' || process.env.NEXT_OUTPUT === 'export';
+
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+  return [{ routes: ['__placeholder__'] }];
+}
 
 type Params = {
   params: Promise<{
@@ -12,6 +20,11 @@ export async function GET(
   request: NextRequest,
   context: Params
 ) {
+  if (isStaticExport) {
+    // Tina proxy routes are not available in static exports.
+    return new Response('Not available in static export', { status: 404 });
+  }
+
   const params = await context.params;
   const path = params.routes ? params.routes.join('/') : '';
   const url = `${TINA_PUBLIC_SERVER}/${path}${request.nextUrl.search}`;
@@ -36,6 +49,11 @@ export async function POST(
   request: NextRequest,
   context: Params
 ) {
+  if (isStaticExport) {
+    // Tina proxy routes are not available in static exports.
+    return new Response('Not available in static export', { status: 404 });
+  }
+
   const params = await context.params;
   const path = params.routes ? params.routes.join('/') : '';
   const url = `${TINA_PUBLIC_SERVER}/${path}${request.nextUrl.search}`;
