@@ -16,6 +16,7 @@ date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
 image: 'https://i.ytimg.com/vi/4MnyU0kPxlE/maxresdefault.jpg'
 category: How to Download
+ctaSlug: loom-video-downloader
 ---
 
 # How to Download Loom Videos: A Complete Step-by-Step Guide (With Real Examples & Command Cheatsheet)

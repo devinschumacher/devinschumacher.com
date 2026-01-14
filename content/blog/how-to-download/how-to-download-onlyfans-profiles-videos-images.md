@@ -18,6 +18,7 @@ tags:
   - mp4
   - download
 category: How to Download
+ctaSlug: onlyfans-downloader
 ---
 
 # How to Download Onlyfans Profile's Videos & Images for FREE (yt-dlp tutorial)

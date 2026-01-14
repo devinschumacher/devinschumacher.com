@@ -10,6 +10,8 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 import Image from 'next/image';
 import { siteConfig } from '@/site.config';
+import { DownloadCtaBar } from '@/components/DownloadCtaBar';
+import { cn } from '@/lib/utils';
 
 const components = {
   h1: ({ children }: any) => (
@@ -143,6 +145,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   if (!post) {
     notFound();
   }
+  const hasCta = Boolean(post.meta.ctaSlug);
 
   // Get related posts (same category or tags)
   const allPosts = getAllPosts();
@@ -162,7 +165,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
-        <article className="container max-w-4xl py-12 md:py-20">
+        <article
+          className={cn(
+            'container max-w-4xl py-12 md:py-20',
+            hasCta && 'pb-28 md:pb-24'
+          )}
+        >
           {/* Breadcrumb */}
           <nav className="mb-8">
             <ol className="flex items-center space-x-2 text-sm text-muted-foreground">
@@ -356,7 +364,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                   href={`https://x.com/intent/tweet?text=${encodeURIComponent(
                     post.meta.title
                   )}&url=${encodeURIComponent(
-                    `${siteConfig.url}/blog/${post.meta.slug}`
+                    `${siteConfig.url}${post.meta.url}`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -368,7 +376,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             </div>
           </footer>
         </article>
-        
+
+        {hasCta && (
+          <DownloadCtaBar
+            slug={post.meta.ctaSlug as string}
+            label={post.meta.ctaLabel}
+          />
+        )}
+
         <Footer />
       </main>
     </>

@@ -11,11 +11,12 @@ seoDescription: >-
 date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: skool-video-downloader
 ---
 
 # How to Download Skool Videos with yt-dlp
 
-Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-downloader).
+Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-video-downloader).
 
 
 Skool delivers videos over **HLS** (`.m3u8` playlists) with **short-lived signed tokens**. These tokens expire, so you must grab a fresh link from DevTools → Network when you want to download.

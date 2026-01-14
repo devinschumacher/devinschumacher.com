@@ -16,11 +16,12 @@ tags:
   - yt-dlp
   - video-download
 category: How to Download
+ctaSlug: youtube-downloader
 ---
 
 # How to Download YouTube Videos for Free with yt-dlp
 
-Want the easy way? Try the [YouTube Video Downloader](https://serp.ly/youtube-video-downloader).
+Want the easy way? Try the [YouTube Video Downloader](https://serp.ly/youtube-downloader).
 
 
 

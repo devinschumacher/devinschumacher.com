@@ -11,6 +11,7 @@ seoDescription: >-
 date: '2025-10-22T18:59:36.626000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: udemy-video-downloader
 ---
 
 # 📥 How to Download Udemy Videos

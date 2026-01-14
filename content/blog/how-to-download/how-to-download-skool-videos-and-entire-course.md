@@ -12,11 +12,12 @@ date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
 image: 'https://i.ytimg.com/vi/tgDmBdReTqA/maxresdefault.jpg'
 category: How to Download
+ctaSlug: skool-video-downloader
 ---
 
 # How to download skool.com videos (and the entire course)
 
-Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-downloader).
+Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-video-downloader).
 
 
 ## Version 1 - Comprehensive, More Difficult

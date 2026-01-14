@@ -15,6 +15,7 @@ seoDescription: >-
 date: '2025-10-22T18:59:36.626000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: wistia-video-downloader
 ---
 
 # 🎥 Download Wistia Videos via Browser Network Requests (HLS Playlist Guide)

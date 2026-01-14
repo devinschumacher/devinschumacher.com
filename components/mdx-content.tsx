@@ -107,20 +107,23 @@ const components = {
     );
   },
   
-  img: ({ src, alt, ...props }: any) => {
+  img: ({ src, alt, className, ...props }: any) => {
     if (!src) return null;
     
     // Handle all images consistently to avoid hydration mismatch
     return (
-      <div className="my-8 rounded-lg overflow-hidden shadow-lg border border-border/50">
-        <img 
-          src={src} 
-          alt={alt || ''} 
-          className="w-full h-auto"
-          loading="lazy"
-          {...props}
-        />
-      </div>
+      <img
+        src={src}
+        alt={alt || ''}
+        className={[
+          'my-8 block w-full h-auto rounded-lg border border-border/50 shadow-lg',
+          className,
+        ]
+          .filter(Boolean)
+          .join(' ')}
+        loading="lazy"
+        {...props}
+      />
     );
   },
   

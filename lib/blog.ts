@@ -17,6 +17,8 @@ export interface PostMeta {
   tags: string[];
   category?: string;
   image?: string;
+  ctaSlug?: string;
+  ctaLabel?: string;
   readingTime: string;
 }
 
@@ -75,6 +77,8 @@ export function getAllPosts(): PostMeta[] {
       tags: data.tags || [],
       category: data.category || (subdir ? subdir.charAt(0).toUpperCase() + subdir.slice(1) : undefined),
       image: data.image,
+      ctaSlug: data.ctaSlug,
+      ctaLabel: data.ctaLabel,
       readingTime: stats.text,
     };
   };
@@ -165,6 +169,8 @@ export function getPostBySlug(slug: string) {
       tags: data.tags || [],
       category: data.category,
       image: data.image,
+      ctaSlug: data.ctaSlug,
+      ctaLabel: data.ctaLabel,
       readingTime: stats.text,
     },
   };

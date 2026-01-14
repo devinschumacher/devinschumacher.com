@@ -18,6 +18,7 @@ tags:
   - m3u8
   - hls
 category: How to Download
+ctaSlug: circle-downloader
 ---
 
 # How to Download Circle.so Videos for Free (HLS m3u8 Streams) - using yt-dlp

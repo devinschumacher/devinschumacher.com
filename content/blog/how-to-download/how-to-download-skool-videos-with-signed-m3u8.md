@@ -11,11 +11,12 @@ seoDescription: >-
 date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
 category: How to Download
+ctaSlug: skool-video-downloader
 ---
 
 # 🛠️ How to Download Skool Videos Using `yt-dlp` and a Signed `.m3u8` URL
 
-Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-downloader).
+Want the easy way? Try the [Skool Downloader](https://serp.ly/skool-video-downloader).
 
 
 If you’ve ever tried downloading videos hosted on [Skool.com](https://www.skool.com), you’ve probably run into access errors or 403s. That’s because Skool streams video using tokenized `.m3u8` manifests over CDN infrastructure — specifically **Fastly** — with strict header and token checks.
