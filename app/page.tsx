@@ -35,6 +35,7 @@ export default async function HomePage() {
     date: post.date,
     readTime: post.readingTime,
     slug: post.slug, // Now always uses the required slug from frontmatter
+    url: post.url,
     category: post.category
   }));
 

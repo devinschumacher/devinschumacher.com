@@ -303,6 +303,15 @@ export const urlMappings: Record<string, string> = {
   '/what-is-lead-generation/': 'guides/what-is-lead-generation',
 };
 
+const contentPathToUrl = Object.entries(urlMappings).reduce<Record<string, string>>(
+  (acc, [url, contentPath]) => {
+    const normalizedContentPath = contentPath.replace(/^\/|\/$/g, '');
+    acc[normalizedContentPath] = url;
+    return acc;
+  },
+  {}
+);
+
 // Get all available URL paths
 export function getAllUrlPaths(): string[] {
   return Object.keys(urlMappings);
@@ -319,4 +328,30 @@ export function getContentPath(url: string): string | undefined {
 export function isUrlMapped(url: string): boolean {
   const normalizedUrl = url.endsWith('/') ? url : `${url}/`;
   return normalizedUrl in urlMappings;
+}
+
+export function getUrlForContentPath(contentPath: string): string | undefined {
+  const normalizedContentPath = contentPath.replace(/^\/|\/$/g, '');
+  return contentPathToUrl[normalizedContentPath];
+}
+
+export function getPostUrl(slug: string, fileSlug?: string): string {
+  const normalizedSlug = slug.replace(/^\/|\/$/g, '');
+  const fileSlugUrl = fileSlug ? getUrlForContentPath(fileSlug) : undefined;
+
+  if (fileSlugUrl) {
+    return fileSlugUrl;
+  }
+
+  const slugUrl = getUrlForContentPath(normalizedSlug);
+  if (slugUrl) {
+    return slugUrl;
+  }
+
+  const directUrl = `/${normalizedSlug}/`;
+  if (directUrl in urlMappings) {
+    return directUrl;
+  }
+
+  return `/blog/${normalizedSlug}/`;
 }

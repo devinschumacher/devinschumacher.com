@@ -20,6 +20,7 @@ interface BlogPost {
   date: string;
   readTime: string;
   slug: string;
+  url: string;
   category?: string;
 }
 
@@ -175,7 +176,7 @@ export function BlogArticles({ posts }: BlogArticlesProps) {
             filteredPosts.map((post, index) => (
               <div key={index} className="group relative">
                 <div className="flex items-start gap-6 p-6 rounded-lg border bg-card hover:bg-accent/5 transition-all hover:shadow-md cursor-pointer">
-                  <Link href={post.slug} className="absolute inset-0 z-0">
+                  <Link href={post.url} className="absolute inset-0 z-0">
                     <span className="sr-only">Read {post.title}</span>
                   </Link>
                   <div className="flex-1 min-w-0">

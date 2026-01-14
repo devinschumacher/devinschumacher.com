@@ -283,7 +283,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 {relatedPosts.map((relatedPost) => (
                   <Link
                     key={relatedPost.slug}
-                    href={relatedPost.slug}
+                    href={relatedPost.url}
                     className="group"
                   >
                     <Card className="h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">

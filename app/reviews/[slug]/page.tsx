@@ -176,7 +176,7 @@ export default async function ReviewPostPage({ params }: PageProps) {
                   {relatedPosts.map((relatedPost) => (
                     <Link
                       key={relatedPost.slug}
-                      href={relatedPost.slug}
+                      href={relatedPost.url}
                       className="group"
                     >
                       <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1">
