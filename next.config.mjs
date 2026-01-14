@@ -1,9 +1,11 @@
 import createMDX from '@next/mdx'
 
+const shouldExport =
+  process.env.GITHUB_ACTIONS === 'true' || process.env.NEXT_OUTPUT === 'export'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export for Vercel deployment with TinaCMS
-  // output: 'export',
+  ...(shouldExport ? { output: 'export' } : {}),
   basePath: '',
   trailingSlash: true,
   images: {
