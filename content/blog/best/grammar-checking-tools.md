@@ -44,7 +44,7 @@ Quillbot lets you correct all grammatical errors is one click. So nice.
 
 You can also paraphrase parts that you don't like and get a fresh take on the sentence / paragraph. And it's been getting noticeably better over the time I've used it (~2 years).
 
-https://www.youtube.com/watch?v=YF8AZsWmR7g
+https://www.youtube.com/@devinschumacher1/videos
 
 - Recommended Reading: [Quillbot Review](https://devinschumacher.com/review/quillbot/)
 

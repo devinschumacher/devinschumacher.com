@@ -353,7 +353,7 @@ You are probably familiar with this already.
 
 Although, these still need a bit of work... 😂
 
-https://youtube.com/shorts/k63mkPJprtY?feature="share"
+https://www.youtube.com/@devinschumacher1/videos
 
 ### Shopping Search Engines
 

@@ -10,7 +10,7 @@ seoDescription: >-
   or HLS/DASH stream URLs from the Network tab in DevTools.
 date: '2025-11-07T00:00:00.000Z'
 author: Devin Schumacher
-image: 'https://i.ytimg.com/vi/iuX_rUFVcWg/maxresdefault.jpg'
+image: 'https://i.ytimg.com/vi/AxJSxDGUMt0/maxresdefault.jpg'
 tags:
   - coursera
   - yt-dlp
@@ -24,7 +24,7 @@ ctaSlug: coursera-downloader
 
 ## Follow along with the video 👇
 
-<a href="https://www.youtube.com/watch?v=iuX_rUFVcWg" target="_blank">
+<a href="https://www.youtube.com/watch?v=AxJSxDGUMt0" target="_blank">
   <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-coursera-videos-for-free-yt-dlp-tutorial.jpg" width="700px" />
 </a>
 

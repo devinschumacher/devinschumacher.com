@@ -21,7 +21,7 @@ So here is my process, compiled from digging, reading, and banging my head again
 
 Let's get to it.
 
-https://youtu.be/-j6y-5t37os
+https://www.youtube.com/@devinschumacher1/videos
 
 
 * * *

@@ -111,7 +111,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a 
-                  href="https://youtube.com/@devinschumacher" 
+                  href="https://youtube.com/@devinschumacher1" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"

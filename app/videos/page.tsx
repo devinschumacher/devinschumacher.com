@@ -7,33 +7,33 @@ import { Button } from "@/components/ui/button";
 
 const videos: Video[] = [
   {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
+    title: "How to Download Whop Videos for Free (Chrome Extension Method)",
+    thumbnail: "https://img.youtube.com/vi/g7aEw_aHnoM/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=g7aEw_aHnoM",
     platform: "youtube"
   },
   {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=GTaOBy7mxF0",
+    title: "How to Download Thinkific Course Videos for Free (Chrome Extension Method)",
+    thumbnail: "https://img.youtube.com/vi/AxJSxDGUMt0/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=AxJSxDGUMt0",
     platform: "youtube"
   },
   {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
+    title: "How to Download GoKollab Course Videos for Free (Chrome Extension Method)",
+    thumbnail: "https://img.youtube.com/vi/e3Dlc87QDmA/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=e3Dlc87QDmA",
     platform: "youtube"
   },
   {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/GPyYrxMUeRE/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=GPyYrxMUeRE",
+    title: "How to Download GoHighLevel Videos for Free (Chrome Extension Method)",
+    thumbnail: "https://img.youtube.com/vi/1ktvV0BfBEI/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=1ktvV0BfBEI",
     platform: "youtube"
   },
   {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/JQtS5dHpMjU/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=JQtS5dHpMjU",
+    title: "How to Download Sprout Videos for Free (Chrome Extension Method)",
+    thumbnail: "https://img.youtube.com/vi/lwDK2jEYbA8/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=lwDK2jEYbA8",
     platform: "youtube"
   }
 ];
@@ -92,7 +92,7 @@ export default function VideosPage() {
               {/* Platform Links */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://youtube.com/@devinschumacher" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://youtube.com/@devinschumacher1" target="_blank" rel="noopener noreferrer">
                     {platformIcons.youtube}
                     <span className="ml-2">youtube</span>
                     <ExternalLink className="ml-2 h-3 w-3" />

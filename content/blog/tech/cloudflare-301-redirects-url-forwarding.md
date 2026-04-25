@@ -21,7 +21,7 @@ And since nobody likes reading documentation I figured that a true hero needed t
 
 So here I am, hero of the internet, come to make your life easier once again – with an article, video & SOP for you to save and use later!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NcZYnZHl4w8?si=JD-x0oKbR-1QG5Uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/@devinschumacher1/videos" target="_blank" rel="noopener noreferrer">Watch Devin Schumacher on YouTube</a></p>
 
 - [Cloudflare Redirects: How to Setup 301 Redirects (URL Forwarding) Using CloudFlare's DNS & Page Rules](#cloudflare-redirects-how-to-setup-301-redirects-url-forwarding-using-cloud-flares-dns-amp-page-rules)
     - [How to setup a CloudFlare 301 redirect using "page rules":](#how-to-setup-a-cloud-flare-301-redirect-using-page-rules)

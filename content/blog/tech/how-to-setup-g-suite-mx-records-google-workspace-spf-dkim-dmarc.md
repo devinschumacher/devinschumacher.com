@@ -20,7 +20,7 @@ You'll still prolly be bored to death, but at least there's a light at the end o
 
 Cheers & stay funky 🦩
 
-https://youtu.be/9V93EB7rEC8
+https://www.youtube.com/@devinschumacher1/videos
 
 👉 **Follow along w/ the FREE CHECKLIST**: [How to Setup G Suite MX Records Checklist](https://serp.ly/ps-gsuite-mx-records)
 

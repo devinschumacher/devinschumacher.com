@@ -223,7 +223,7 @@ export default function AboutPage() {
               
               {/* Social Links */}
               <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
-                <Link href="https://youtube.com/@devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://youtube.com/@devinschumacher1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Youtube className="h-8 w-8" />
                 </Link>
                 <Link href="https://instagram.com/dvnschmchr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

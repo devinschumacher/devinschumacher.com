@@ -28,7 +28,7 @@ Want the easy way? Try the [OnlyFans Downloader](https://serp.ly/onlyfans-downlo
 
 ## Follow along with the video 👇
 
-<a href="https://www.youtube.com/watch?v=hToCX2VST_A" target="_blank">
+<a href="https://www.youtube.com/@devinschumacher1/videos" target="_blank">
   <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-onlyfans-profile-images-and-videos-for-free-yt-dlp-method.jpg" width="700px" />
 </a>
 

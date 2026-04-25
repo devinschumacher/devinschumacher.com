@@ -316,21 +316,21 @@ export default async function HomePage() {
             <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
-                  thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
+                  title: "How to Download Whop Videos for Free (Chrome Extension Method)",
+                  url: "https://www.youtube.com/watch?v=g7aEw_aHnoM",
+                  thumbnail: "https://img.youtube.com/vi/g7aEw_aHnoM/maxresdefault.jpg",
                   platform: "youtube" as const
                 },
                 {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=GTaOBy7mxF0", 
-                  thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
+                  title: "How to Download Thinkific Course Videos for Free (Chrome Extension Method)",
+                  url: "https://www.youtube.com/watch?v=AxJSxDGUMt0",
+                  thumbnail: "https://img.youtube.com/vi/AxJSxDGUMt0/maxresdefault.jpg",
                   platform: "youtube" as const
                 },
                 {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
-                  thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
+                  title: "How to Download GoKollab Course Videos for Free (Chrome Extension Method)",
+                  url: "https://www.youtube.com/watch?v=e3Dlc87QDmA",
+                  thumbnail: "https://img.youtube.com/vi/e3Dlc87QDmA/maxresdefault.jpg",
                   platform: "youtube" as const
                 }
               ].map((video, index) => (
