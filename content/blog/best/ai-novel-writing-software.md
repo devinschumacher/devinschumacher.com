@@ -145,5 +145,3 @@ There is no true complete book authoring software, but there are many tools to a
 The main benefit of using AI novel writing software is that it frees up your time, allowing you to focus on other tasks while the software does all of the work for you.
 
 But make sure you [use a tool like Originality AI to make sure your content isn't reading like it was written by AI.](https://devinschumacher.com/reviews/originality-ai/)
-
-https://www.youtube.com/watch?v=hiIhOt5SVdk&ab_channel=devinschumacher

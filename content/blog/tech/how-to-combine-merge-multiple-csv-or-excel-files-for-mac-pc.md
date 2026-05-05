@@ -19,7 +19,6 @@ Here in the "we work on computers" industry, we're always dealing with CSVs - co
 
 So, allow me make it just one micron less painful for you - by show you **how to combine CSVs together in a matter of seconds**.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yoglg9pNRc8?si=1UqDY8Coj_H06E8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## How do i combine multiple files into one file?
 
@@ -37,13 +36,12 @@ But actually there's a few ways to do it:
 
 - Merge CSVs by smashing them together with hulk hands (not a real method)
 
-In this article (and video) I will show you **how to quickly & easily combine and merge multiple CSV files into one CSV file for free on a mac using the terminal** -- but it also works on PCs.
+In this article I will show you **how to quickly & easily combine and merge multiple CSV files into one CSV file for free on a mac using the terminal** -- but it also works on PCs.
 
 If you run into any problems - we even created a free tool that you can try.
 
 So follow along, and start combining!
 
-https://www.youtube.com/watch?v=Yoglg9pNRc8
 
 Update: Back in the day I shot a video about how to do this manually on a mac, and it still works. But since then we've had a lot of people ask about doing it on a PC.
 
@@ -53,7 +51,7 @@ And it's way faster than the manual method.
 
 And it's free.
 
-👉 Here's a link to the tool for all you lazies who don't wanna read or watch a video: [https://serp.co/tools/combine-csv-files/](https://serp.co/tools/combine-csv-files/)
+👉 Here's a link to the tool for all you lazies who don't wanna do this manually: [https://serp.co/tools/combine-csv-files/](https://serp.co/tools/combine-csv-files/)
 
 * * *
 
@@ -179,7 +177,7 @@ Just apply a filter to your entire sheet, and sort A-Z on column A and you shoul
 
 👉 Bookmark this FREE SOP (checklist) that you can run anytime you need to combine more CSVs: [serp.ly/csv-sop](https://serp.ly/csv-sop)
 
-If this was helpful for you - [subscribe to the yt channel](https://www.youtube.com/channel/UCnzb7gSRT1PgYJoK3TFnOTA?sub_confirmation="1)"
+If this was helpful for you - [subscribe to the yt channel](https://youtube.com/@devinschumacher1)
 
 I'm going to be making a lot more videos with tips that will help save you time, increase your productivity, and basically make you feel like a hacker... or Neo from the matrix. which is always a good thing.
 

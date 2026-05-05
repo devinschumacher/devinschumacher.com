@@ -47,26 +47,6 @@ export function Footer() {
                   boxing undefeated
                 </a>
               </li>
-              <li>
-                <a 
-                  href="https://daft.fm" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  daft fm
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://youtube.com/@devingoessnowboarding" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  @devingoessnowboarding
-                </a>
-              </li>
             </ul>
           </div>
           
@@ -84,18 +64,13 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://serpdownloaders.github.io" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  serp downloaders
-                </a>
-              </li>
-              <li>
                 <Link href="/blog" className="hover:text-primary">
                   blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/brands" className="hover:text-primary">
+                  brands
                 </Link>
               </li>
               <li>
@@ -111,7 +86,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a 
-                  href="https://youtube.com/@devinschumacher" 
+                  href="https://youtube.com/@devinschumacher1"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"

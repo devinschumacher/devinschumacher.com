@@ -21,7 +21,6 @@ They erroneously concluded that increasing the size of the model was the only wa
 
 ## DeepMind’s findings will define language model scaling in the future
 
-https://youtu.be/Mrwk8G5gzx8
 
 - [Chinchilla AI: The DeepMind ChatGPT Killer?](#chinchilla-ai-the-deepmind-chatgpt-killer)
   - [DeepMind’s findings will define language model scaling in the future](#deepminds-findings-will-define-language-model-scaling-in-the-future)
@@ -185,5 +184,3 @@ We won’t solve the ethical issues of language models simply by making them bet
 🎁 If you like LLM's, you'll probably love what we're doing with [AI + Audio Diffusion Models](https://serp.ly/github-audio-diffusion).
 
 Here's a sneak peek:
-
-https://www.youtube.com/watch?v=RPuWi7yEbtc

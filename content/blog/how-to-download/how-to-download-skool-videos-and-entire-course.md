@@ -10,7 +10,7 @@ seoDescription: >-
   custom scripts, and wget automation.
 date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
-image: 'https://i.ytimg.com/vi/tgDmBdReTqA/maxresdefault.jpg'
+image: 'https://i.ytimg.com/vi/ujWUiJxk614/maxresdefault.jpg'
 category: How to Download
 ctaSlug: skool-video-downloader
 ---
@@ -31,9 +31,9 @@ If you’re looking for a simpler solution or have any questions about this proc
 
 ## Watch the video
 
-<a href="https://www.youtube.com/watch?v=tgDmBdReTqA" target="_blank">
+<a href="https://www.youtube.com/watch?v=ujWUiJxk614" target="_blank">
     <img
-        src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-videos-from-skoolcom-2025-update-step-by-step-tutorial.jpg"
+        src="https://i.ytimg.com/vi/ujWUiJxk614/maxresdefault.jpg"
         width="700px"
         alt="How to Download Videos from Skool.com tutorial thumbnail"
     />
@@ -441,9 +441,9 @@ If you’re looking for a simpler solution or have any questions about this proc
 
 ## Watch the video
 
-<a href="https://www.youtube.com/watch?v=tgDmBdReTqA" target="_blank">
+<a href="https://www.youtube.com/watch?v=ujWUiJxk614" target="_blank">
     <img
-        src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-videos-from-skoolcom-2025-update-step-by-step-tutorial.jpg"
+        src="https://i.ytimg.com/vi/ujWUiJxk614/maxresdefault.jpg"
         width="700px"
         alt="How to Download Videos from Skool.com tutorial thumbnail"
     />

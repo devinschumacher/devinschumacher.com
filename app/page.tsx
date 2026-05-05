@@ -4,7 +4,7 @@ import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProjectCard, type Project } from "@/components/project-card";
-import { VideoCard, type Video } from "@/components/video-card";
+import { VideoCard } from "@/components/video-card";
 import { BlogArticles } from "@/components/BlogArticles";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/site.config";
 import { getAllPosts } from "@/lib/blog";
+import { devinYoutubeVideos } from "@/lib/youtube-videos";
 
 export default async function HomePage() {
   // Get all posts and take the 6 most recent ones
@@ -231,12 +232,6 @@ export default async function HomePage() {
                     Blog
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="px-8 py-6 text-base font-semibold" asChild>
-                  <Link href="https://serp.ly/@serp/community" target="_blank" rel="noopener noreferrer">
-                    <Users className="mr-2 h-5 w-5" />
-                    SERP University
-                  </Link>
-                </Button>
               </div>
 
               {/* Social Links */}
@@ -309,31 +304,12 @@ export default async function HomePage() {
                 videos
               </h2>
               <p className="mb-12 text-lg text-muted-foreground">
-                educational content on seo, ai, programming, and entrepreneurship
+                video downloader tutorials and walkthroughs
               </p>
             </div>
 
             <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
-                  thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
-                  platform: "youtube" as const
-                },
-                {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=GTaOBy7mxF0", 
-                  thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
-                  platform: "youtube" as const
-                },
-                {
-                  title: "",
-                  url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
-                  thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
-                  platform: "youtube" as const
-                }
-              ].map((video, index) => (
+              {devinYoutubeVideos.slice(0, 3).map((video, index) => (
                 <VideoCard
                   key={index}
                   video={video}
@@ -405,11 +381,6 @@ export default async function HomePage() {
         <section className="border-t container py-20 md:py-28" id="contact">
           <div className="mx-auto max-w-4xl text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="group px-8 py-6 text-base font-semibold" asChild>
-                <Link href="https://serp.ly/@serp/community">
-                  SERP University
-                </Link>
-              </Button>
               <Button size="lg" variant="outline" className="group px-8 py-6 text-base font-semibold" asChild>
                 <Link href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer">
                   <Youtube className="mr-2 h-5 w-5" />

@@ -14,7 +14,7 @@ seoDescription: >-
   separate streams, and ready-to-copy command cheat sheets.
 date: '2025-10-25T04:37:53.000Z'
 author: Devin Schumacher
-image: 'https://i.ytimg.com/vi/4MnyU0kPxlE/maxresdefault.jpg'
+image: 'https://i.ytimg.com/vi/flv3b3bGQDQ/maxresdefault.jpg'
 category: How to Download
 ctaSlug: loom-video-downloader
 ---
@@ -236,9 +236,9 @@ Here’s the full article again, now with a **compact command cheat sheet sectio
 
 # Click the image below to watch the video 👇
 
-<a href="https://www.youtube.com/watch?v=4MnyU0kPxlE" target="_blank">
+<a href="https://www.youtube.com/watch?v=flv3b3bGQDQ" target="_blank">
     <img
-        src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-loom-videos-for-free-dl-without-subscription-10-examples-mp4-hls-m3u8-1757463216973.jpg"
+        src="https://i.ytimg.com/vi/flv3b3bGQDQ/maxresdefault.jpg"
         width="700px"
         alt="How to Download Loom Videos tutorial thumbnail"
     />

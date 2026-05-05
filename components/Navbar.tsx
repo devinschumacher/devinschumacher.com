@@ -35,6 +35,12 @@ export function Navbar() {
               projects
             </Link>
             <Link
+              href="/brands"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              brands
+            </Link>
+            <Link
               href="/videos"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
@@ -71,6 +77,13 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 projects
+              </Link>
+              <Link
+                href="/brands"
+                className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                brands
               </Link>
               <Link
                 href="/videos"

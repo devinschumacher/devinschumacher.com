@@ -53,7 +53,6 @@ First ill show you how to get it from the Linkedin GUI, then I’ll break down h
 
 ### Method 1: Get it from the Linkedin GUI
 
-https://www.youtube.com/watch?v=vJX1GvAhDio
 
 ### Method 2: Build the URL path
 
@@ -108,4 +107,3 @@ Use a link shortener, like [serp.ly](https://serp.ly/)!
 🤔 and if it’s not open for sign-ups yet, you can get updated by subscribing to my email list or joining the SERP discord community!
 
 Cheers & stay funky my friends 🦩
-

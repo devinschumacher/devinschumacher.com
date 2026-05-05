@@ -26,14 +26,6 @@ ctaSlug: onlyfans-downloader
 Want the easy way? Try the [OnlyFans Downloader](https://serp.ly/onlyfans-downloader).
 
 
-## Follow along with the video 👇
-
-<a href="https://www.youtube.com/watch?v=hToCX2VST_A" target="_blank">
-  <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-onlyfans-profile-images-and-videos-for-free-yt-dlp-method.jpg" width="700px" />
-</a>
-
-
-
 ## Steps
 
 1. Visit the OnlyFans Profile media area
@@ -75,4 +67,3 @@ yt-dlp "https://cdn2.onlyfans.com/files/a/a0/a078f3ba245dd09b477df84023ab1108/0i
 
 
 ## Related 
-
