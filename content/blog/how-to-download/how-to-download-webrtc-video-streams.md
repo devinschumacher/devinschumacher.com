@@ -1134,10 +1134,6 @@ Many video conferencing and streaming platforms use WebRTC:
  - Course videos
 
 
-## YouTube Tutorial
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL5qY8HgSEm1dN9gY0Z6P4K1mCHdUvXFvH" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-
 ## Conclusion
 
 WebRTC represents the cutting edge of real-time communication technology. While it's primarily designed for live interaction rather than downloading, understanding how to capture and record WebRTC streams is essential for preserving video calls, online meetings, and live broadcasts. The tools and techniques covered in this guide will help you successfully record WebRTC content from various platforms.

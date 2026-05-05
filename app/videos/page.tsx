@@ -4,39 +4,7 @@ import { VideoCard, type Video } from "@/components/video-card";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const videos: Video[] = [
-  {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/NcZYnZHl4w8/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=NcZYnZHl4w8",
-    platform: "youtube"
-  },
-  {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/GTaOBy7mxF0/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=GTaOBy7mxF0",
-    platform: "youtube"
-  },
-  {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/2Wr5IqQogW8/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=2Wr5IqQogW8",
-    platform: "youtube"
-  },
-  {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/GPyYrxMUeRE/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=GPyYrxMUeRE",
-    platform: "youtube"
-  },
-  {
-    title: "",
-    thumbnail: "https://img.youtube.com/vi/JQtS5dHpMjU/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=JQtS5dHpMjU",
-    platform: "youtube"
-  }
-];
+import { DEVIN_YOUTUBE_CHANNEL_URL, devinYoutubeVideos } from "@/lib/youtube-videos";
 
 const categoryColors: Record<string, string> = {
   'seo': 'bg-green-500/10 text-green-700 dark:text-green-400',
@@ -66,7 +34,7 @@ const platformIcons = {
 };
 
 export default function VideosPage() {
-  const allVideos = videos;
+  const allVideos: Video[] = devinYoutubeVideos;
 
   return (
     <>
@@ -86,13 +54,13 @@ export default function VideosPage() {
                 videos
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">
-                educational content on seo, ai, programming, and entrepreneurship
+                video downloader tutorials and walkthroughs from the Devin Schumacher YouTube channel
               </p>
               
               {/* Platform Links */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://youtube.com/@devinschumacher" target="_blank" rel="noopener noreferrer">
+                  <Link href={DEVIN_YOUTUBE_CHANNEL_URL} target="_blank" rel="noopener noreferrer">
                     {platformIcons.youtube}
                     <span className="ml-2">youtube</span>
                     <ExternalLink className="ml-2 h-3 w-3" />

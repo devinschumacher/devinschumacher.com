@@ -15,7 +15,6 @@ The most noteworthy of these is the recently released Stable Diffusion model, bu
 
 In this study, we'll look at some of the technical underpinnings of diffusion models, first focusing on their history, then on their architecture, and finally on audio creation with the Harmonai colab. Let's just get started, shall we?
 
-https://youtu.be/RPuWi7yEbtc
 
 🎁 Free **Gift** \[Developers Only\]: [Audio diffusion repo for text-to-image stable diffusion with DreamBooth](https://serp.ly/github-dreambooth)
 
@@ -113,6 +112,5 @@ We will be releasing a free model for ya'll soon on that too and free GPU power 
 
 ## Keep Reading
 
-https://www.youtube.com/watch?v=Mrwk8G5gzx8
 
 👉 If you like audio diffusion, you should check out [Chinchilla AI](https://devinschumacher.com/chinchilla-ai/).

@@ -1,35 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ProjectCard, type Project as ProjectCardProject } from "@/components/project-card";
+import { ProjectCard } from "@/components/project-card";
 import Link from "next/link";
-import { ExternalLink, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-
-interface Project extends ProjectCardProject {
-  logo?: string;
-  order?: number;
-}
-
-async function getProjects(): Promise<Project[]> {
-  const projectsDirectory = path.join(process.cwd(), 'content', 'projects');
-  const fileNames = fs.readdirSync(projectsDirectory);
-  
-  const projects = fileNames.map((fileName) => {
-    const fullPath = path.join(projectsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const { data, content } = matter(fileContents);
-    
-    return {
-      ...data,
-      content
-    } as Project;
-  });
-  
-  return projects.sort((a, b) => (a.order || 999) - (b.order || 999));
-}
+import { getProjects } from "@/lib/projects";
 
 export default async function ProjectsPage() {
   const projects = await getProjects();

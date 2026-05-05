@@ -24,7 +24,6 @@ Sound good?
 
 ## Let's Uninstall Crap!
 
-https://www.youtube.com/watch?v=ak2JiS2Ntyw
 
 ## How to delete apps on mac that won't delete
 
@@ -69,4 +68,3 @@ What you're probably looking for is bypassing are changing your permission level
 11. Give yourself the keys to the Kingdom
 
 13. Delete the app
-

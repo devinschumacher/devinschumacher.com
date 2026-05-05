@@ -14,21 +14,20 @@ Everybody hates Google documentation...
 
 Let's face it - it's the fuckin worst.
 
-So, instead of wasting your prime adult years trying to figure out what an MX record is, how to setup SPF, DKIM & DMARC records and why nothing ever works... I filmed a quick video for you showing you all about it.
+So, instead of wasting your prime adult years trying to figure out what an MX record is, how to setup SPF, DKIM & DMARC records and why nothing ever works... here's a quick guide showing you all about it.
 
 You'll still prolly be bored to death, but at least there's a light at the end of the tunnel now.
 
 Cheers & stay funky 🦩
 
-https://youtu.be/9V93EB7rEC8
 
 👉 **Follow along w/ the FREE CHECKLIST**: [How to Setup G Suite MX Records Checklist](https://serp.ly/ps-gsuite-mx-records)
 
 ## Setting up MX Records for G-Suite
 
-> \*Note: I highly recommend [following the Free Checklist](http://serp.ly/ps-gsuite-mx-records) & the Video above... I tried to turn my transcription into an article with ChatGPT and it totally ruined it. So.. proceed with caution if you're reading, but proceed with no caution if you are using the resources above!
+> \*Note: I highly recommend [following the Free Checklist](http://serp.ly/ps-gsuite-mx-records). I tried to turn my transcription into an article with ChatGPT and it totally ruined it. So.. proceed with caution if you're reading, but proceed with no caution if you are using the resources above!
 
-In this video, we will learn how to set up MX records for a G-Suite account. MX records are used to determine the mail server responsible for accepting email messages on behalf of a recipient's domain. This guide is for adding a new domain to an already existing G-Suite account, but the process is the same for a fresh G-Suite account.
+In this guide, we will learn how to set up MX records for a G-Suite account. MX records are used to determine the mail server responsible for accepting email messages on behalf of a recipient's domain. This guide is for adding a new domain to an already existing G-Suite account, but the process is the same for a fresh G-Suite account.
 
 ### Step 1: Login to G-Suite
 

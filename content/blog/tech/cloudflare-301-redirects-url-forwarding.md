@@ -19,9 +19,8 @@ Unfortunately, setting up a 301 redirect at CloudFlare isn’t that self-explana
 
 And since nobody likes reading documentation I figured that a true hero needed to step up and make this easy on the rest of the world.
 
-So here I am, hero of the internet, come to make your life easier once again – with an article, video & SOP for you to save and use later!
+So here I am, hero of the internet, come to make your life easier once again - with an article & SOP for you to save and use later!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NcZYnZHl4w8?si=JD-x0oKbR-1QG5Uj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 - [Cloudflare Redirects: How to Setup 301 Redirects (URL Forwarding) Using CloudFlare's DNS & Page Rules](#cloudflare-redirects-how-to-setup-301-redirects-url-forwarding-using-cloud-flares-dns-amp-page-rules)
     - [How to setup a CloudFlare 301 redirect using "page rules":](#how-to-setup-a-cloud-flare-301-redirect-using-page-rules)

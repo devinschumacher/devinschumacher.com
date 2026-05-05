@@ -15,7 +15,7 @@ export default function SerplyPage() {
           <CardContent className="pt-6 space-y-4">
             <div className="grid gap-4">
               <Link 
-                href="https://youtube.com/@devinschumacher" 
+                href="https://youtube.com/@devinschumacher1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
@@ -25,7 +25,7 @@ export default function SerplyPage() {
                 </svg>
                 <div className="text-left">
                   <p className="font-medium">youtube</p>
-                  <p className="text-sm text-muted-foreground">@devinschumacher</p>
+                  <p className="text-sm text-muted-foreground">@devinschumacher1</p>
                 </div>
               </Link>
 

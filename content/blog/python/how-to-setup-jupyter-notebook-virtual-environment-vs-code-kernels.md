@@ -21,7 +21,6 @@ So here is my process, compiled from digging, reading, and banging my head again
 
 Let's get to it.
 
-https://youtu.be/-j6y-5t37os
 
 
 * * *
@@ -183,5 +182,4 @@ To access the notebook, open this file in a browser:
         http://localhost:8889/?token="f1ae910e56381c26a62cfb18f83241076bd11d84f7e8e36e"
      or https://127.0.0.1:8889/?token="f1ae910e56381c26a62cfb18f83241076bd11d84f7e8e36e"
 ```
-
 
