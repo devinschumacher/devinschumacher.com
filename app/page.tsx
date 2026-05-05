@@ -86,20 +86,6 @@ export default async function HomePage() {
       content: "Boxing Undefeated is the definitive online resource for boxing enthusiasts, featuring an extensive database of professional boxer profiles, detailed fight records, and career statistics."
     },
     {
-      name: "DAFT FM",
-      description: "All things audio - music discovery and audio content platform",
-      category: "music",
-      url: "https://daft.fm",
-      content: "DAFT FM is an audio-focused platform dedicated to music discovery and audio content curation. Featuring song collections, ratings, and audio equipment reviews."
-    },
-    {
-      name: "@devingoessnowboarding",
-      description: "Snowboarding content creator sharing mountain adventures",
-      category: "snowboarding",
-      url: "https://youtube.com/@devingoessnowboarding",
-      content: "Devin Goes Snowboarding is a snowboarding-focused social media brand documenting mountain adventures, riding sessions, and the snowboarding lifestyle."
-    },
-    {
       name: "SERP University",
       description: "Learn SEO, digital marketing, programming while building a brand online and making money on your own terms.",
       category: "education",
@@ -112,8 +98,6 @@ export default async function HomePage() {
     'software': 'bg-blue-500/10 text-blue-700 dark:text-blue-400',
     'artificial-intelligence': 'bg-purple-500/10 text-purple-700 dark:text-purple-400',
     'boxing': 'bg-green-500/10 text-green-700 dark:text-green-400',
-    'music': 'bg-orange-500/10 text-orange-700 dark:text-orange-400',
-    'snowboarding': 'bg-pink-500/10 text-pink-700 dark:text-pink-400',
     'education': 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400'
   };
 

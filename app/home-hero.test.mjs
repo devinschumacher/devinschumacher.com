@@ -24,3 +24,11 @@ test("home page does not render SERP University button CTAs", () => {
     /<Button\b[\s\S]*?SERP University[\s\S]*?<\/Button>/,
   );
 });
+
+test("home projects omit removed DAFT FM and snowboarding links", () => {
+  const homeSource = fs.readFileSync(homePagePath, "utf8");
+
+  assert.doesNotMatch(homeSource, /daft\.fm/i);
+  assert.doesNotMatch(homeSource, /DAFT FM/);
+  assert.doesNotMatch(homeSource, /devingoessnowboarding/i);
+});
