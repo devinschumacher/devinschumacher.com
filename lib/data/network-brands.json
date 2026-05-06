@@ -139,13 +139,18 @@
     "porn-video-downloaders": {
       "name": "Porn Video Downloaders",
       "url": "https://pornvideodownloaders.com"
-    },"porno-downloaders": {
+    },
+    "porno-downloaders": {
       "name": "Porno Downloaders",
       "url": "https://pornodownloaders.com"
     },
     "kajabivideodownloader": {
       "name": "Kajabi Video Downloader",
       "url": "https://kajabivideodownloader.com"
+    },
+    "skoolvideodownloader-app": {
+      "name": "Skool Video Downloader App",
+      "url": "https://skoolvideodownloader.app"
     }
   },
   "brandGroups": {
@@ -181,7 +186,8 @@
       "how-to-download-videos",
       "whop-video-downloader",
       "getlooma-com",
-      "kajabivideodownloader"
+      "kajabivideodownloader",
+      "skoolvideodownloader-app"
     ],
     "serpxxxGroup": [
       "serp-xxx",
