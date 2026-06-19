@@ -23,25 +23,25 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             <Link
-              href="/blog"
+              href="/blog/"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               blog
             </Link>
             <Link
-              href="/projects"
+              href="/projects/"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               projects
             </Link>
             <Link
-              href="/brands"
+              href="/brands/"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               brands
             </Link>
             <Link
-              href="/videos"
+              href="/videos/"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               videos
@@ -65,28 +65,28 @@ export function Navbar() {
             {/* Mobile Navigation */}
             <div className="space-y-1">
               <Link
-                href="/blog"
+                href="/blog/"
                 className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 blog
               </Link>
               <Link
-                href="/projects"
+                href="/projects/"
                 className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 projects
               </Link>
               <Link
-                href="/brands"
+                href="/brands/"
                 className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 brands
               </Link>
               <Link
-                href="/videos"
+                href="/videos/"
                 className="block px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -67,14 +67,14 @@ export default function VideosPage() {
                   </Link>
                 </Button>
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://tiktok.com/@dvnschmchr" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://serp.ly/@devinschumacher/tiktok" target="_blank" rel="noopener noreferrer">
                     {platformIcons.tiktok}
                     <span className="ml-2">tiktok</span>
                     <ExternalLink className="ml-2 h-3 w-3" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://instagram.com/dvnschmchr" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://serp.ly/@devinschumacher/instagram" target="_blank" rel="noopener noreferrer">
                     {platformIcons.instagram}
                     <span className="ml-2">instagram</span>
                     <ExternalLink className="ml-2 h-3 w-3" />

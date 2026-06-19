@@ -177,7 +177,7 @@ Just apply a filter to your entire sheet, and sort A-Z on column A and you shoul
 
 👉 Bookmark this FREE SOP (checklist) that you can run anytime you need to combine more CSVs: [serp.ly/csv-sop](https://serp.ly/csv-sop)
 
-If this was helpful for you - [subscribe to the yt channel](https://youtube.com/@devinschumacher1)
+If this was helpful for you - [subscribe to the yt channel](https://serp.ly/@devinschumacher/youtube)
 
 I'm going to be making a lot more videos with tips that will help save you time, increase your productivity, and basically make you feel like a hacker... or Neo from the matrix. which is always a good thing.
 

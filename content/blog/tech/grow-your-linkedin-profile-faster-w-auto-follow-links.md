@@ -25,7 +25,7 @@ And if you do, great — but you’re missing out on some _easy wins._
 
 Because you’re probably linking like this:
 
-👉 https://www.linkedin.com/in/devinschumacher
+👉 https://serp.ly/@devinschumacher/linkedin
 
 Do this instead: 👇
 
@@ -92,7 +92,7 @@ mynetwork/discovery-see-all/
 devinschumacher
 `
 
-So instead of this: [https://www.linkedin.com/in/devinschumacher](https://www.linkedin.com/in/devinschumacher)
+So instead of this: [https://serp.ly/@devinschumacher/linkedin](https://serp.ly/@devinschumacher/linkedin)
 
 **You get this:**
 

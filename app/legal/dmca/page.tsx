@@ -4,110 +4,127 @@ import { siteConfig } from "@/site.config";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: `DMCA Policy | ${siteConfig.name}`,
-  description: `DMCA Policy for ${siteConfig.name} - Copyright infringement notification procedures.`,
+  title: `DMCA Copyright Policy | ${siteConfig.name}`,
+  description: `DMCA Copyright Policy for ${siteConfig.name}.`,
 };
 
 export default function DMCAPage() {
+  const domain = "devinschumacher.com";
+
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container max-w-4xl py-12 md:py-20">
-          <h1 className="mb-8 text-4xl font-bold">DMCA Policy</h1>
+          <h1 className="mb-8 text-4xl font-bold">DMCA Copyright Policy</h1>
           
           <div className="prose prose-gray max-w-none dark:prose-invert">
             <p className="text-lg text-muted-foreground">
-              Last updated: January 8, 2025
+              Effective Date: June 5, 2026
             </p>
 
-            <h2>Digital Millennium Copyright Act Notice</h2>
             <p>
-              {siteConfig.name} respects the intellectual property rights of others and expects users of our Service to do the same. In accordance with the Digital Millennium Copyright Act of 1998 (&quot;DMCA&quot;), we will respond expeditiously to claims of copyright infringement committed using our Service.
+              {domain} (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects the intellectual property rights of others and expects users of our products and services to do the same. In accordance with the Digital Millennium Copyright Act of 1998 (&quot;DMCA&quot;), the text of which may be found on the U.S. Copyright Office website at{" "}
+              <a href="https://www.copyright.gov/legislation/dmca.pdf">
+                https://www.copyright.gov/legislation/dmca.pdf
+              </a>
+              , we will respond expeditiously to claims of copyright infringement committed using our products and services that are properly reported to our Designated Copyright Agent identified below.
             </p>
 
-            <h2>DMCA Compliance</h2>
+            <h2>1. Designated Copyright Agent</h2>
             <p>
-              If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible through our Service, please notify our copyright agent as set forth below.
-            </p>
-
-            <h2>Filing a DMCA Notice</h2>
-            <p>
-              To file a notification of alleged copyright infringement, you must provide a written communication that includes:
-            </p>
-            <ol>
-              <li>
-                A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed
-              </li>
-              <li>
-                Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works are covered by a single notification, a representative list of such works
-              </li>
-              <li>
-                Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us to locate the material
-              </li>
-              <li>
-                Information reasonably sufficient to permit us to contact the complaining party, such as an address, telephone number, and email address
-              </li>
-              <li>
-                A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law
-              </li>
-              <li>
-                A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed
-              </li>
-            </ol>
-
-            <h2>Counter-Notification</h2>
-            <p>
-              If you believe that your content was wrongfully removed due to a mistake or misidentification, you may submit a counter-notification containing:
-            </p>
-            <ol>
-              <li>Your physical or electronic signature</li>
-              <li>Identification of the material that has been removed or to which access has been disabled</li>
-              <li>A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification</li>
-              <li>Your name, address, telephone number, and email address</li>
-              <li>A statement that you consent to the jurisdiction of the Federal District Court for the judicial district in which your address is located</li>
-              <li>A statement that you will accept service of process from the person who provided the original DMCA notification</li>
-            </ol>
-
-            <h2>Designated Copyright Agent</h2>
-            <p>
-              Please send all DMCA notices and counter-notifications to:
+              If you are a copyright owner, or authorized to act on behalf of one, and you believe that material available through our products or services infringes your copyright, please submit a notification of claimed infringement to our Designated Agent:
             </p>
             <div className="bg-muted p-4 rounded-lg">
-              <p><strong>DMCA Agent</strong></p>
-              <p>{siteConfig.name}</p>
-              <p>Email: {siteConfig.author.email}</p>
-              <p>Subject Line: DMCA Notice</p>
+              <p>SERP</p>
+              <p>TSMC LLC</p>
+              <p>1095 Sugarview Drive STE 500</p>
+              <p>Sheridan, WY 82801</p>
+              <p>Phone: 3236288306</p>
+              <p>Email: dmca@{domain}</p>
             </div>
 
-            <h2>Repeat Infringers</h2>
+            <h2>2. Filing a Notice of Claimed Infringement</h2>
             <p>
-              In accordance with the DMCA and other applicable law, we have adopted a policy of terminating, in appropriate circumstances, users who are deemed to be repeat infringers. We may also, in our sole discretion, limit access to the Service and/or terminate the access of any users who infringe any intellectual property rights of others.
+              To be effective under the DMCA, your written notification (a &quot;Notice&quot;) must include substantially all of the following (see 17 U.S.C. § 512(c)(3)):
+            </p>
+            <ol>
+              <li>
+                A physical or electronic signature of the copyright owner or a person authorized to act on their behalf.
+              </li>
+              <li>
+                Identification of the copyrighted work claimed to have been infringed, or, if multiple works are covered by a single notification, a representative list of such works.
+              </li>
+              <li>
+                Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit us to locate the material (for example, the URL(s) where it appears).
+              </li>
+              <li>
+                Information reasonably sufficient to permit us to contact you, such as an address, telephone number, and, if available, an email address.
+              </li>
+              <li>
+                A statement that you have a good-faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.
+              </li>
+              <li>
+                A statement that the information in the notification is accurate, and <strong>under penalty of perjury</strong>, that you are the copyright owner or are authorized to act on behalf of the copyright owner.
+              </li>
+            </ol>
+
+            <p>
+              Please send completed Notices to the Designated Agent listed in Section 1.
             </p>
 
-            <h2>Disclaimer</h2>
+            <blockquote>
+              <p>
+                <strong>Note:</strong> Under Section 512(f) of the DMCA, any person who knowingly materially misrepresents that material or activity is infringing may be subject to liability for damages, including costs and attorneys&apos; fees. Please do not make false claims.
+              </p>
+            </blockquote>
+
+            <h2>3. Counter-Notification</h2>
             <p>
-              {siteConfig.name} is a tool that allows users to download publicly available videos. We do not host any copyrighted content on our servers. Users are responsible for ensuring they have the right to download and use any content accessed through our Service.
+              If you believe that material you posted was removed or disabled by mistake or misidentification, you may submit a written counter-notification to our Designated Agent. To be effective, your counter-notification must include substantially all of the following (see 17 U.S.C. § 512(g)(3)):
+            </p>
+            <ol>
+              <li>Your physical or electronic signature.</li>
+              <li>Identification of the material that has been removed or to which access has been disabled, and the location at which the material appeared before it was removed or disabled.</li>
+              <li>A statement <strong>under penalty of perjury</strong> that you have a good-faith belief that the material was removed or disabled as a result of mistake or misidentification.</li>
+              <li>Your name, address, and telephone number, and a statement that you consent to the jurisdiction of the Federal District Court for the judicial district in which your address is located (or, if your address is outside the United States, for any judicial district in which we may be found), and that you will accept service of process from the person who provided the original Notice or an agent of that person.</li>
+            </ol>
+
+            <p>
+              Upon receipt of a valid counter-notification, we may forward it to the original complaining party. If that party does not notify us within ten (10) business days that they have filed an action seeking a court order to restrain the allegedly infringing activity, we may, in our discretion, restore the removed material.
             </p>
 
-            <h2>Good Faith Belief</h2>
+            <h2>4. Repeat Infringer Policy</h2>
             <p>
-              Any person who knowingly materially misrepresents that material or activity is infringing, or that material or activity was removed or disabled by mistake or misidentification, may be subject to liability.
+              In accordance with the DMCA and other applicable law, we have adopted a policy of terminating, in appropriate circumstances and at our sole discretion, the accounts of users who are deemed to be repeat infringers. We may also, at our sole discretion, limit access to our products and services and/or terminate the accounts of any users who infringe the intellectual property rights of others, whether or not there is any repeat infringement.
             </p>
 
-            <h2>Modifications</h2>
+            <h2>5. No Inducement; Prohibited Use Disclaimer</h2>
             <p>
-              We reserve the right to modify this DMCA Policy at any time. Changes will be posted on this page with an updated revision date.
+              Our products and services are provided for lawful purposes only. <strong>We do not authorize, encourage, induce, or condone the use of our products or services to infringe any copyright or other intellectual property right.</strong>
             </p>
 
-            <h2>Contact Information</h2>
             <p>
-              For any questions regarding this DMCA Policy, please contact us at:
+              By accessing or using our products or services, you agree that you will not:
             </p>
             <ul>
-              <li>Email: {siteConfig.author.email}</li>
-              <li>Website: {siteConfig.url}/contact</li>
+              <li>Use the products or services to reproduce, distribute, publicly perform, publicly display, or create derivative works of any copyrighted material without authorization from the rights holder or as otherwise permitted by law;</li>
+              <li>Circumvent any technological measure that effectively controls access to a copyrighted work; or</li>
+              <li>Use the products or services in any manner that violates the intellectual property rights or other rights of any third party.</li>
             </ul>
+
+            <p>
+              Our products and services are designed and intended for substantial non-infringing uses. We expressly disclaim any intent to facilitate, promote, or profit from copyright infringement. Any use of our products or services to infringe the rights of others is strictly prohibited, is undertaken solely at the user&apos;s own risk, and may result in suspension or termination of access as well as civil and/or criminal liability for the user under applicable law.
+            </p>
+
+            <h2>6. Modifications</h2>
+            <p>
+              We reserve the right to modify, update, or change the terms of this DMCA Copyright Policy at any time and at our sole discretion. Changes will be effective upon posting to this page, and the &quot;Effective Date&quot; above will be updated accordingly.
+            </p>
+
+            <p>
+              <em>This document is a template provided for general informational purposes only and does not constitute legal advice. You should consult a qualified attorney to ensure this policy is appropriate for your specific circumstances and complies with current law, and to confirm your Designated Agent registration with the U.S. Copyright Office is current.</em>
+            </p>
           </div>
         </div>
         

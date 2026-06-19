@@ -224,7 +224,7 @@ Hate it or love it, bots are everywhere. Web crawlers make up almost half the in
 
 Want to learn more? Do this:
 
-- Subscribe here: [youtube.com/@devinschumacher1](https://youtube.com/@devinschumacher1)
+- Subscribe here: [youtube.com/@devinschumacher1](https://serp.ly/@devinschumacher/youtube)
 
 - Sign up here: [serp.ly/@devinschumacher/email](http://serp.ly/@devinschumacher/email)
 

@@ -15,7 +15,7 @@ export default function SerplyPage() {
           <CardContent className="pt-6 space-y-4">
             <div className="grid gap-4">
               <Link 
-                href="https://youtube.com/@devinschumacher1"
+                href="https://serp.ly/@devinschumacher/youtube"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
@@ -29,8 +29,8 @@ export default function SerplyPage() {
                 </div>
               </Link>
 
-              <Link 
-                href="https://instagram.com/dvnschmchr" 
+              <Link
+                href="https://serp.ly/@devinschumacher/instagram"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"
@@ -42,8 +42,8 @@ export default function SerplyPage() {
                 </div>
               </Link>
 
-              <Link 
-                href="https://www.linkedin.com/in/devinschumacher" 
+              <Link
+                href="https://serp.ly/@devinschumacher/linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg border hover:bg-accent transition-colors"

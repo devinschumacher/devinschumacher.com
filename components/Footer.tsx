@@ -54,27 +54,17 @@ export function Footer() {
             <h4 className="mb-4 text-sm font-semibold">products</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a 
-                  href="https://serp.ly/@serp/community" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  serp university
-                </a>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-primary">
+                <Link href="/blog/" className="hover:text-primary">
                   blog
                 </Link>
               </li>
               <li>
-                <Link href="/brands" className="hover:text-primary">
+                <Link href="/brands/" className="hover:text-primary">
                   brands
                 </Link>
               </li>
               <li>
-                <Link href="/videos" className="hover:text-primary">
+                <Link href="/videos/" className="hover:text-primary">
                   videos
                 </Link>
               </li>
@@ -86,7 +76,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a 
-                  href="https://youtube.com/@devinschumacher1"
+                  href="https://serp.ly/@devinschumacher/youtube"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"
@@ -96,10 +86,10 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://instagram.com/dvnschmchr" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://serp.ly/@devinschumacher/instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary flex items-center gap-2"
                 >
                   <Instagram className="h-4 w-4" />
@@ -107,10 +97,10 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://tiktok.com/@dvnschmchr" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://serp.ly/@devinschumacher/tiktok"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary flex items-center gap-2"
                 >
                   <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -120,10 +110,10 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href="https://www.linkedin.com/in/devinschumacher" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://serp.ly/@devinschumacher/linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-primary flex items-center gap-2"
                 >
                   <Linkedin className="h-4 w-4" />
@@ -158,10 +148,10 @@ export function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-semibold">legal</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/legal/privacy" className="hover:text-primary">privacy policy</Link></li>
-              <li><Link href="/legal/terms" className="hover:text-primary">terms of service</Link></li>
-              <li><Link href="/legal/dmca" className="hover:text-primary">dmca</Link></li>
-              <li><Link href="/contact" className="hover:text-primary">contact</Link></li>
+              <li><Link href="/legal/privacy/" className="hover:text-primary">privacy policy</Link></li>
+              <li><Link href="/legal/terms/" className="hover:text-primary">terms of service</Link></li>
+              <li><Link href="/legal/dmca/" className="hover:text-primary">dmca</Link></li>
+              <li><Link href="/contact/" className="hover:text-primary">contact</Link></li>
             </ul>
           </div>
         </div>

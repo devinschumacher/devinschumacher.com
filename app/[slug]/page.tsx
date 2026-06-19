@@ -21,33 +21,23 @@ interface PageProps {
   }>;
 }
 
-// Generate paths for single-segment URLs only (like /serp/, /anchor-text/, etc.)
+export const dynamicParams = false;
+
+// Root-level post URLs are legacy URLs now. Cloudflare redirects them to /blog/*.
 export async function generateStaticParams() {
-  const paths = getAllUrlPaths();
-  
-  // Filter for single-segment paths only
-  const singleSegmentPaths = paths
-    .filter(path => {
+  return getAllUrlPaths()
+    .filter((path) => {
       const segments = path.replace(/^\/|\/$/g, '').split('/').filter(Boolean);
-      return segments.length === 1;
+      if (segments.length !== 1) {
+        return false;
+      }
+
+      const contentPath = getContentPath(path);
+      return contentPath ? Boolean(getPostBySlug(contentPath)) : false;
     })
     .map((path) => ({
       slug: path.replace(/^\/|\/$/g, ''),
     }));
-  
-  // Also add direct SEO content paths that might not be in URL mappings
-  const posts = getAllPosts();
-  const seoPostSlugs = posts
-    .filter(post => post.category === 'SEO' || post.category === 'Seo')
-    .filter(post => !post.slug.includes('/')) // Only single-segment slugs
-    .map(post => ({
-      slug: post.slug.replace(/^\/|\/$/g, '') // Remove leading/trailing slashes
-    }));
-  
-  // Combine and deduplicate
-  const allSlugs = [...new Map([...singleSegmentPaths, ...seoPostSlugs].map(item => [item.slug, item])).values()];
-  
-  return allSlugs;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -129,7 +119,7 @@ export default async function SingleSlugPage({ params }: PageProps) {
             {/* Article Header */}
             <header className="mb-12">
               {post.meta.category && (
-                <Link href={`/category/${post.meta.category.toLowerCase().replace(/\s+/g, '-')}`}>
+                <Link href={`/category/${post.meta.category.toLowerCase().replace(/\s+/g, '-')}/`}>
                   <Badge className="mb-4 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
                     {post.meta.category}
                   </Badge>

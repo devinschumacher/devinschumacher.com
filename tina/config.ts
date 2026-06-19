@@ -7,13 +7,16 @@ const branch =
   process.env.HEAD ||
   "tinacms";
 
+const clientId = process.env.NEXT_PUBLIC_TINA_CLIENT_ID ?? "";
+const token = process.env.TINA_TOKEN ?? "";
+
 export default defineConfig({
   branch,
 
   // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "30d75a00-7011-4bd8-8407-5e69e6a03379",
+  clientId,
   // Get this from tina.io  
-  token: process.env.TINA_TOKEN || "484fa5aad0565f5ce72ab8e23c3c2fce1dac96c7",
+  token,
   
   // Add your production URL here
   contentApiUrlOverride: process.env.NEXT_PUBLIC_TINA_PUBLIC_API_URL,

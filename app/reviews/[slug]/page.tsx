@@ -102,7 +102,7 @@ export default async function ReviewPostPage({ params }: PageProps) {
           <div className="mx-auto max-w-4xl">
             {/* Article Header */}
             <header className="mb-12">
-              <Link href="/category/reviews">
+              <Link href="/category/reviews/">
                 <Badge className="mb-4 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
                   Review
                 </Badge>
