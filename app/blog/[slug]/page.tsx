@@ -96,9 +96,11 @@ export async function generateStaticParams() {
       return [];
     }
     
-    const params = posts.map((post) => ({
-      slug: post.slug,
-    }));
+    const params = posts
+      .filter((post) => post.url.startsWith('/blog/'))
+      .map((post) => ({
+        slug: post.url.replace(/^\/blog\/|\/$/g, ''),
+      }));
     
     console.log(`Generated ${params.length} static params:`, params.slice(0, 5));
     return params;
@@ -181,7 +183,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               </li>
               <li>/</li>
               <li>
-                <Link href="/blog" className="hover:text-primary">
+                <Link href="/blog/" className="hover:text-primary">
                   Blog
                 </Link>
               </li>
@@ -221,7 +223,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           {/* Post Header */}
           <header className="mb-12">
             {post.meta.category && (
-              <Link href={`/category/${post.meta.category.toLowerCase().replace(/\s+/g, '-')}`}>
+              <Link href={`/category/${post.meta.category.toLowerCase().replace(/\s+/g, '-')}/`}>
                 <Badge className="mb-4 cursor-pointer hover:bg-secondary/80 transition-colors" variant="secondary">
                   {post.meta.category}
                 </Badge>
@@ -354,7 +356,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <footer className="mt-12 border-t pt-8">
             <div className="flex items-center justify-between">
               <Link
-                href="/blog"
+                href="/blog/"
                 className="text-sm font-medium text-primary hover:underline"
               >
                 ← Back to Blog

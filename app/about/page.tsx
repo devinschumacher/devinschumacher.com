@@ -223,13 +223,13 @@ export default function AboutPage() {
               
               {/* Social Links */}
               <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
-                <Link href="https://youtube.com/@devinschumacher1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://serp.ly/@devinschumacher/youtube" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Youtube className="h-8 w-8" />
                 </Link>
-                <Link href="https://instagram.com/dvnschmchr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://serp.ly/@devinschumacher/instagram" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Instagram className="h-8 w-8" />
                 </Link>
-                <Link href="https://www.linkedin.com/in/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://serp.ly/@devinschumacher/linkedin" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                   <Linkedin className="h-8 w-8" />
                 </Link>
                 <Link href="https://github.com/devinschumacher" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

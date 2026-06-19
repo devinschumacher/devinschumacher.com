@@ -40,7 +40,7 @@ export default async function CategoriesPage() {
 
             <div className="grid gap-6 md:grid-cols-2">
               {categories.map((category) => (
-                <Link key={category.slug} href={`/category/${category.slug}`}>
+                <Link key={category.slug} href={`/category/${category.slug}/`}>
                   <Card className="h-full transition-all hover:shadow-lg hover:-translate-y-1 cursor-pointer">
                     <CardHeader>
                       <div className="flex items-center justify-between">

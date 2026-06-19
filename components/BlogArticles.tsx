@@ -211,7 +211,7 @@ export function BlogArticles({ posts }: BlogArticlesProps) {
 
         <div className="text-center mt-12">
           <Button size="lg" variant="outline" asChild>
-            <Link href="/blog">
+            <Link href="/blog/">
               Blog
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

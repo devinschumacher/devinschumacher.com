@@ -312,6 +312,21 @@ const contentPathToUrl = Object.entries(urlMappings).reduce<Record<string, strin
   {}
 );
 
+const nonBlogPostPrefixes = new Set(['best', 'reviews', 'comparison']);
+
+function normalizePostSlug(slug: string): string {
+  return slug.replace(/^\/|\/$/g, '');
+}
+
+function withTrailingSlash(path: string): string {
+  return path.endsWith('/') ? path : `${path}/`;
+}
+
+function isNonBlogPostSlug(slug: string): boolean {
+  const firstSegment = slug.split('/')[0];
+  return nonBlogPostPrefixes.has(firstSegment);
+}
+
 // Get all available URL paths
 export function getAllUrlPaths(): string[] {
   return Object.keys(urlMappings);
@@ -336,22 +351,19 @@ export function getUrlForContentPath(contentPath: string): string | undefined {
 }
 
 export function getPostUrl(slug: string, fileSlug?: string): string {
-  const normalizedSlug = slug.replace(/^\/|\/$/g, '');
-  const fileSlugUrl = fileSlug ? getUrlForContentPath(fileSlug) : undefined;
+  const normalizedSlug = normalizePostSlug(slug || fileSlug || '');
 
-  if (fileSlugUrl) {
-    return fileSlugUrl;
+  if (!normalizedSlug) {
+    return '/blog/';
   }
 
-  const slugUrl = getUrlForContentPath(normalizedSlug);
-  if (slugUrl) {
-    return slugUrl;
+  if (normalizedSlug.startsWith('blog/')) {
+    return withTrailingSlash(`/${normalizedSlug}`);
   }
 
-  const directUrl = `/${normalizedSlug}/`;
-  if (directUrl in urlMappings) {
-    return directUrl;
+  if (isNonBlogPostSlug(normalizedSlug)) {
+    return withTrailingSlash(`/${normalizedSlug}`);
   }
 
-  return `/blog/${normalizedSlug}/`;
+  return withTrailingSlash(`/blog/${normalizedSlug}`);
 }

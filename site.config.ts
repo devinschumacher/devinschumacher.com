@@ -5,7 +5,7 @@ export const siteConfig = {
   title: "Devin Schumacher",
   author: {
     name: "Devin Schumacher",
-    email: "yeahright@devinschumacher.com",
+    email: "dmca@devinschumacher.com",
   },
   social: {
     youtube: "https://www.youtube.com/@devinschumacher1?sub_confirmation=1",

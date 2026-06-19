@@ -99,7 +99,7 @@ export default function PrivacyPage() {
             </p>
             <ul>
               <li>Email: {siteConfig.author.email}</li>
-              <li>Website: {siteConfig.url}/contact</li>
+              <li>Website: {siteConfig.url}/contact/</li>
             </ul>
           </div>
         </div>

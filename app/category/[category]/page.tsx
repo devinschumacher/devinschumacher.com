@@ -93,7 +93,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 <p className="text-lg text-muted-foreground">
                   No posts found in this category.
                 </p>
-                <Link href="/blog" className="mt-4 inline-block text-primary hover:underline">
+                <Link href="/blog/" className="mt-4 inline-block text-primary hover:underline">
                   ← Back to all posts
                 </Link>
               </div>
@@ -163,7 +163,7 @@ export default async function CategoryPage({ params }: PageProps) {
                 </div>
                 
                 <div className="mt-12 text-center">
-                  <Link href="/blog">
+                  <Link href="/blog/">
                     <Badge variant="outline" className="cursor-pointer hover:bg-primary/10">
                       ← View all posts
                     </Badge>

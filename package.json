@@ -6,6 +6,7 @@
     "dev": "tinacms dev -c \"next dev\"",
     "build": "next build",
     "build:tina": "tinacms build && next build",
+    "build:cloudflare": "tinacms build && NEXT_OUTPUT=export next build",
     "start": "next start",
     "lint": "next lint",
     "check-links": "find content -name '*.md' -exec npx markdown-link-check {} \\;",

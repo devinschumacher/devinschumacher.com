@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: `Brands | ${siteConfig.name}`,
   description: `Browse sites and products in the ${siteConfig.name} network.`,
   alternates: {
-    canonical: `${siteConfig.url}/brands`,
+    canonical: `${siteConfig.url}/brands/`,
   },
   openGraph: {
     type: "website",
     locale: siteConfig.metadata.openGraph.locale,
-    url: `${siteConfig.url}/brands`,
+    url: `${siteConfig.url}/brands/`,
     title: `Brands | ${siteConfig.name}`,
     description: `Browse sites and products in the ${siteConfig.name} network.`,
     siteName: siteConfig.metadata.openGraph.siteName,

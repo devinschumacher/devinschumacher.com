@@ -3,6 +3,21 @@ import createMDX from '@next/mdx'
 const shouldExport =
   process.env.GITHUB_ACTIONS === 'true' || process.env.NEXT_OUTPUT === 'export'
 
+const postHogRewrites = [
+  {
+    source: '/ingest/static/:path*',
+    destination: 'https://us-assets.i.posthog.com/static/:path*',
+  },
+  {
+    source: '/ingest/:path*',
+    destination: 'https://us.i.posthog.com/:path*',
+  },
+  {
+    source: '/ingest/flags',
+    destination: 'https://us.i.posthog.com/flags',
+  },
+]
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   ...(shouldExport ? { output: 'export' } : {}),
@@ -12,22 +27,13 @@ const nextConfig = {
     unoptimized: true,
   },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  async rewrites() {
-    return [
-      {
-        source: '/ingest/static/:path*',
-        destination: 'https://us-assets.i.posthog.com/static/:path*',
-      },
-      {
-        source: '/ingest/:path*',
-        destination: 'https://us.i.posthog.com/:path*',
-      },
-      {
-        source: '/ingest/flags',
-        destination: 'https://us.i.posthog.com/flags',
-      },
-    ]
-  },
+  ...(!shouldExport
+    ? {
+        async rewrites() {
+          return postHogRewrites
+        },
+      }
+    : {}),
   // This is required to support PostHog trailing slash API requests
   skipTrailingSlashRedirect: true,
 }

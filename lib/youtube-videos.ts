@@ -1,4 +1,4 @@
-export const DEVIN_YOUTUBE_CHANNEL_URL = "https://youtube.com/@devinschumacher1";
+export const DEVIN_YOUTUBE_CHANNEL_URL = "https://serp.ly/@devinschumacher/youtube";
 
 export type DevinYoutubeVideo = {
   title: string;

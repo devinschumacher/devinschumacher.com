@@ -6,12 +6,16 @@ import { useEffect } from "react";
 
 export default function GlobalError({
   error,
-  reset,
+  reset: _reset,
 }: {
   error: Error & { digest?: string }
   reset: () => void
 }) {
   useEffect(() => {
+    if (!process.env.NEXT_PUBLIC_POSTHOG_KEY) {
+      return;
+    }
+
     posthog.captureException(error);
   }, [error]);
 
