@@ -26,10 +26,22 @@ export function getStaticPageSitemapEntries(baseUrl: string): MetadataRoute.Site
       priority: 0.8,
     },
     {
+      url: sitemapUrl(baseUrl, "/about/"),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: sitemapUrl(baseUrl, "/brands/"),
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
+    },
+    {
+      url: sitemapUrl(baseUrl, "/videos/"),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
     {
       url: sitemapUrl(baseUrl, "/tools/character-counter/"),
