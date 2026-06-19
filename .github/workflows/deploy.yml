@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Validate Cloudflare Pages Export
 
 on:
   push:
@@ -61,8 +61,5 @@ jobs:
           NEXT_PUBLIC_POSTHOG_KEY: ${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
           NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
 
-      - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy out --project-name=devinschumacher-com --branch="${{ github.head_ref || github.ref_name }}"
-        env:
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Confirm export artifact
+        run: test -f out/index.html && test -f out/sitemap.xml && test -f out/robots.txt
