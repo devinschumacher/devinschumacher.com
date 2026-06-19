@@ -2,8 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ProjectCard, type Project } from "@/components/project-card";
+import { Card } from "@/components/ui/card";
 import { VideoCard } from "@/components/video-card";
 import { BlogArticles } from "@/components/BlogArticles";
 import Link from "next/link";
@@ -62,44 +61,6 @@ export default async function HomePage() {
       description: "5x Two Comma Club award winner. Generated hundreds of millions in revenue helping businesses scale through strategic digital marketing."
     }
   ];
-
-  const projects: Project[] = [
-    {
-      name: "SERP",
-      description: "Business services directory and AI tools marketplace platform",
-      category: "software",
-      url: "https://serp.co",
-      content: "SERP is a comprehensive directory platform that connects businesses with various services and AI-powered tools. The platform serves as a marketplace for discovering and accessing business solutions across multiple industries."
-    },
-    {
-      name: "SERP AI",
-      description: "AI-powered tools and services aggregator platform",
-      category: "artificial-intelligence",
-      url: "https://serp.ai",
-      content: "SERP AI showcases cutting-edge AI-powered tools and services across diverse industries. From protein engineering to content creation and legal services automation, the platform curates innovative AI solutions."
-    },
-    {
-      name: "Boxing Undefeated",
-      description: "Your comprehensive guide to the sweet science",
-      category: "boxing",
-      url: "https://boxingundefeated.com",
-      content: "Boxing Undefeated is the definitive online resource for boxing enthusiasts, featuring an extensive database of professional boxer profiles, detailed fight records, and career statistics."
-    },
-    {
-      name: "SERP University",
-      description: "Learn SEO, digital marketing, programming while building a brand online and making money on your own terms.",
-      category: "education",
-      url: "https://serp.ly/@serp/community",
-      content: "SERP University is a comprehensive SEO education platform providing free courses, tutorials, and resources for digital marketers and business owners."
-    }
-  ];
-  
-  const categoryColors: Record<string, string> = {
-    'software': 'bg-blue-500/10 text-blue-700 dark:text-blue-400',
-    'artificial-intelligence': 'bg-purple-500/10 text-purple-700 dark:text-purple-400',
-    'boxing': 'bg-green-500/10 text-green-700 dark:text-green-400',
-    'education': 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400'
-  };
 
   const films = [
     {
@@ -241,41 +202,6 @@ export default async function HomePage() {
                   </svg>
                 </Link>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Projects Section */}
-        <section className="border-t bg-muted/30">
-          <div className="container py-20 md:py-28">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-                projects
-              </h2>
-              <p className="mb-12 text-lg text-muted-foreground">
-                a collection of ventures and platforms I&apos;ve built and manage
-              </p>
-            </div>
-
-            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {projects.map((project, index) => (
-                <ProjectCard
-                  key={index}
-                  project={project}
-                  index={index}
-                  categoryColors={categoryColors}
-                  wrapWithLink={true}
-                />
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/projects/">
-                  Projects
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>

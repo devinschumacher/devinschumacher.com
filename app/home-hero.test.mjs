@@ -25,10 +25,8 @@ test("home page does not render SERP University button CTAs", () => {
   );
 });
 
-test("home projects omit removed DAFT FM and snowboarding links", () => {
+test("home page does not link to the removed projects route", () => {
   const homeSource = fs.readFileSync(homePagePath, "utf8");
 
-  assert.doesNotMatch(homeSource, /daft\.fm/i);
-  assert.doesNotMatch(homeSource, /DAFT FM/);
-  assert.doesNotMatch(homeSource, /devingoessnowboarding/i);
+  assert.doesNotMatch(homeSource, /href="\/projects\/"/);
 });

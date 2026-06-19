@@ -8,48 +8,12 @@ export function Footer() {
   return (
     <footer className="border-t bg-muted/30">
       <div className="container py-12">
-        <div className="grid gap-8 md:grid-cols-5">
+        <div className="grid gap-8 md:grid-cols-4">
           <div>
               <Logo size={100} showLink={false} className="h-30 mb-6" />
             
           </div>
-          
-          <div>
-            <h4 className="mb-4 text-sm font-semibold">projects</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>
-                <a 
-                  href="https://serp.co" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  serp
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://serp.ai" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  serp ai
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://boxingundefeated.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-primary"
-                >
-                  boxing undefeated
-                </a>
-              </li>
-            </ul>
-          </div>
-          
+
           <div>
             <h4 className="mb-4 text-sm font-semibold">products</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
@@ -76,7 +40,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <a 
-                  href="https://serp.ly/@devinschumacher/youtube"
+                  href="https://youtube.com/@devinschumacher1"
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-primary flex items-center gap-2"
