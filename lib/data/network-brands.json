@@ -18,6 +18,12 @@
       "description": "Quick search, clipboard history, screenshots, on-device dictation, window management, and shortcut coaching in one native macOS app.",
       "logo": "/logos/keybumps.png"
     },
+    "serp-co": {
+      "name": "SERP",
+      "url": "https://serp.co",
+      "description": "SERP builds everyday software: Keybumps for Mac, Zenbu Japanese for iPhone, and free tools, games, and checklists for everyone.",
+      "logo": "/logos/serp.png"
+    },
     "serp-ai": {
       "name": "SERP AI",
       "url": "https://serp.ai",
