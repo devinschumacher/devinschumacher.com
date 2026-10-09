@@ -1,92 +1,82 @@
 {
   "brands": {
-    "apps-serp-co": {
-      "name": "SERP Apps",
-      "url": "https://apps.serp.co"
-    },
-    "awesome-shadcn-ui-com": {
-      "name": "Awesome Shadcn UI",
-      "url": "https://awesome-shadcn-ui.com"
-    },
-    "blocks-serp-co": {
-      "name": "SERP Blocks",
-      "url": "https://blocks.serp.co"
-    },
     "boxingundefeated-com": {
       "name": "Boxing Undefeated",
-      "url": "https://boxingundefeated.com"
+      "url": "https://boxingundefeated.com",
+      "description": "Records, statistics, and fight history for thousands of professional boxers.",
+      "logo": "/logos/boxingundefeated.png"
     },
     "browserextensions-io": {
-      "name": "Browser Extensions IO",
-      "url": "https://browserextensions.io"
+      "name": "BrowserExtensions.io",
+      "url": "https://browserextensions.io",
+      "description": "Discover the best browser extensions in one searchable directory.",
+      "logo": "/logos/browserextensions.png"
     },
-    "devinschumacher-com": {
-      "name": "Devin Schumacher",
-      "url": "https://devinschumacher.com"
-    },
-    "dr-serp-co": {
-      "name": "SERP DR",
-      "url": "https://dr.serp.co"
-    },
-    "extensions-serp-co": {
-      "name": "SERP Extensions",
-      "url": "https://extensions.serp.co"
-    },
-    "launchbuzz-io": {
-      "name": "LaunchBuzz.io",
-      "url": "https://launchbuzz.io"
-    },
-    "games-serp-co": {
-      "name": "SERP Games",
-      "url": "https://games.serp.co"
-    },
-    "howtodownloadvideos-com": {
-      "name": "How to Download Videos",
-      "url": "https://howtodownloadvideos.com"
-    },
-    "serp-ai": {
-      "name": "SERP AI",
-      "url": "https://serp.ai"
+    "keybumps-app": {
+      "name": "Keybumps",
+      "url": "https://keybumps.app",
+      "description": "Quick search, clipboard history, screenshots, on-device dictation, window management, and shortcut coaching in one native macOS app.",
+      "logo": "/logos/keybumps.png"
     },
     "serp-co": {
       "name": "SERP",
-      "url": "https://serp.co"
+      "url": "https://serp.co",
+      "description": "Everyday software for Mac, iPhone, and the web.",
+      "logo": "/logos/serp.png"
     },
-    "serp-download": {
-      "name": "SERP Download",
-      "url": "https://serp.download"
+    "serp-ai": {
+      "name": "SERP AI",
+      "url": "https://serp.ai",
+      "description": "AI tools, companies, models, datasets, news, and resources in one searchable directory.",
+      "logo": "/logos/serpai.png"
     },
-    "serp-software": {
-      "name": "SERP Software",
-      "url": "https://serp.software"
+    "apps-serp-co": {
+      "name": "SERP Apps",
+      "url": "https://apps.serp.co",
+      "description": "Single-purpose tools for the modern web: no ads, no spyware, no nonsense.",
+      "logo": "/logos/serpapps.png"
     },
-    "serp-wiki": {
-      "name": "SERP Wiki",
-      "url": "https://serp.wiki"
+    "best-serp-co": {
+      "name": "SERP Best",
+      "url": "https://best.serp.co",
+      "description": "Software, AI tools, companies, resources, and SERP projects in one searchable directory.",
+      "logo": "/logos/serp.png"
     },
-    "serpdownloaders-com": {
-      "name": "SERP Downloaders",
-      "url": "https://serpdownloaders.com"
+    "dr-serp-co": {
+      "name": "SERP DR",
+      "url": "https://dr.serp.co",
+      "description": "Check a site's Domain Rating and generate a verified badge.",
+      "logo": "/logos/serp.png"
+    },
+    "extensions-serp-co": {
+      "name": "SERP Extensions",
+      "url": "https://extensions.serp.co",
+      "description": "Discover browser extensions for productivity, privacy, downloads, accessibility, shopping, and more.",
+      "logo": "/logos/serpextensions.png"
+    },
+    "games-serp-co": {
+      "name": "SERP Games",
+      "url": "https://games.serp.co",
+      "description": "Free games to play online.",
+      "logo": "/logos/serpgames.png"
     },
     "serplists-com": {
       "name": "SERP Lists",
-      "url": "https://serplists.com"
-    },
-    "subsmarine-com": {
-      "name": "Subs Marine",
-      "url": "https://subsmarine.com"
-    },
-    "themecobra-com": {
-      "name": "Theme Cobra",
-      "url": "https://themecobra.com"
+      "url": "https://serplists.com",
+      "description": "Create and run checklists for your processes.",
+      "logo": "/logos/serp.png"
     },
     "tools-serp-co": {
       "name": "SERP Tools",
-      "url": "https://tools.serp.co"
+      "url": "https://tools.serp.co",
+      "description": "Free online file converters, compressors, and utilities for images, audio, and video.",
+      "logo": "/logos/serp.png"
     },
-    "dlp-yt": {
-      "name": "yt-dlp online",
-      "url": "https://dlp.yt"
+    "zenbujapanese-com": {
+      "name": "Zenbu Japanese",
+      "url": "https://zenbujapanese.com",
+      "description": "Apps and tools that make learning Japanese fun.",
+      "logo": "/logos/zenbu-japanese.png"
     }
   }
 }

@@ -28,6 +28,25 @@ export const siteConfig = {
       creator: "@dvnschmchr",
     },
   },
+  // serp.ly links to our products get ?via={tenantId} for Dub attribution.
+  // Only links listed here are tagged; everything else stays as-is.
+  serply: {
+    via: "devinschumacher.com",
+    attributedLinks: [
+      "https://serp.ly/circle-downloader",
+      "https://serp.ly/coursera-downloader",
+      "https://serp.ly/loom-video-downloader",
+      "https://serp.ly/m3u8-downloader",
+      "https://serp.ly/onlyfans-downloader",
+      "https://serp.ly/skool-video-downloader",
+      "https://serp.ly/tiktok-downloader",
+      "https://serp.ly/udemy-video-downloader",
+      "https://serp.ly/vimeo-video-downloader",
+      "https://serp.ly/whop-video-downloader",
+      "https://serp.ly/wistia-video-downloader",
+      "https://serp.ly/youtube-downloader",
+    ],
+  },
   // Analytics Configuration
   analytics: {
     gtmId: "GTM-NFB664F",

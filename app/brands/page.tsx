@@ -66,13 +66,31 @@ export default function BrandsPage() {
                     rel="noopener noreferrer"
                     className="group flex h-full flex-col justify-between gap-6"
                   >
-                    <div>
-                      <h2 className="text-lg font-bold leading-7 text-foreground group-hover:text-primary">
-                        {brand.name}
-                      </h2>
-                      <p className="mt-2 break-words text-sm text-muted-foreground">
-                        {brand.hostname}
-                      </p>
+                    <div className="flex items-start gap-4">
+                      {brand.logo && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={brand.logo}
+                          alt=""
+                          width={56}
+                          height={56}
+                          loading="lazy"
+                          className="h-14 w-14 shrink-0 rounded-xl border border-border object-cover"
+                        />
+                      )}
+                      <div className="min-w-0">
+                        <h2 className="text-lg font-bold leading-7 text-foreground group-hover:text-primary">
+                          {brand.name}
+                        </h2>
+                        <p className="mt-1 break-words font-mono text-sm text-muted-foreground">
+                          {brand.hostname}
+                        </p>
+                        {brand.description && (
+                          <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                            {brand.description}
+                          </p>
+                        )}
+                      </div>
                     </div>
                     <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary">
                       Visit

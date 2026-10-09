@@ -3,6 +3,7 @@ import remarkGfm from 'remark-gfm';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CodeBlock } from './code-block';
+import { addSerplyVia } from '@/lib/serply';
 
 // Helper function to extract YouTube video ID from URL
 function getYouTubeVideoId(url: string): string | null {
@@ -67,7 +68,7 @@ const components = {
     
     return (
       <a
-        href={href}
+        href={addSerplyVia(href)}
         target="_blank"
         rel="noopener noreferrer"
         className="text-primary font-medium underline underline-offset-4 decoration-primary/30 hover:decoration-primary transition-colors"

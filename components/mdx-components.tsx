@@ -1,6 +1,7 @@
 type MDXComponents = Record<string, React.ComponentType<any>>;
 import Image from 'next/image';
 import Link from 'next/link';
+import { addSerplyVia } from '@/lib/serply';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -21,7 +22,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     a: ({ href, children }) => (
       <Link
-        href={href as string}
+        href={addSerplyVia(href as string)}
         className="font-medium text-primary underline underline-offset-4 hover:no-underline"
       >
         {children}
