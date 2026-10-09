@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { addSerplyVia } from '@/lib/serply';
 
 type DownloadCtaBarProps = {
   slug: string;
@@ -38,9 +39,11 @@ export function DownloadCtaBar({ slug, label, className }: DownloadCtaBarProps) 
   const normalized = normalizeSlug(slug);
   if (!normalized) return null;
 
-  const href = normalized.startsWith('http')
-    ? normalized
-    : `https://serp.ly/${normalized}`;
+  const href = addSerplyVia(
+    normalized.startsWith('http')
+      ? normalized
+      : `https://serp.ly/${normalized}`
+  );
   const fallbackLabel = toTitleCase(
     normalized.replace(/^https?:\/\/(www\.)?serp\.ly\//, '')
   );

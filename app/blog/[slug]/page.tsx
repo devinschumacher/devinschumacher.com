@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { siteConfig } from '@/site.config';
 import { DownloadCtaBar } from '@/components/DownloadCtaBar';
 import { cn } from '@/lib/utils';
+import { addSerplyVia } from '@/lib/serply';
 
 const components = {
   h1: ({ children }: any) => (
@@ -31,7 +32,7 @@ const components = {
   ),
   a: ({ href, children }: any) => (
     <Link
-      href={href as string}
+      href={addSerplyVia(href as string)}
       className="font-medium text-primary underline underline-offset-4 hover:no-underline"
     >
       {children}
