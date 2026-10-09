@@ -5,11 +5,17 @@ export type NetworkBrandEntry = {
   name: string;
   url: string;
   hostname: string;
+  description: string;
+  logo: string;
+  order: number;
 };
 
 type RawNetworkBrand = {
   name?: string;
   url?: string;
+  description?: string;
+  logo?: string;
+  order?: number;
 };
 
 type RawNetworkBrandsData = {
@@ -37,6 +43,9 @@ function toNetworkBrandEntry(
   const cleanSlug = slug.trim();
   const name = brand.name?.trim();
   const url = brand.url?.trim();
+  const description = brand.description?.trim() ?? "";
+  const logo = brand.logo?.trim() ?? "";
+  const order = brand.order ?? Number.MAX_SAFE_INTEGER;
 
   if (!cleanSlug) {
     throw new Error("Network brand slug must not be empty");
@@ -67,6 +76,9 @@ function toNetworkBrandEntry(
     name,
     url,
     hostname: parsedUrl.hostname,
+    description,
+    logo,
+    order,
   };
 }
 
@@ -92,6 +104,7 @@ function normalizeBrandUrl(url: URL): string {
 
 function compareNetworkBrands(first: NetworkBrandEntry, second: NetworkBrandEntry): number {
   return (
+    first.order - second.order ||
     first.name.localeCompare(second.name) ||
     first.hostname.localeCompare(second.hostname) ||
     first.slug.localeCompare(second.slug)
